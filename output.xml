@@ -1,0 +1,4068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.0 on win32)" generated="2026-05-06T15:55:19.699215" rpa="false" schemaversion="5">
+<suite id="s1" name="AuthorScreen" source="C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\tests\ui\Mentor-web\AuthorScreen.robot">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Login To Mentor Application" owner="Login">
+<kw name="Launch Mentor Application" owner="Login">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:55:30.577265" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002103B731AD0&gt;</msg>
+<var>${options}</var>
+<arg>selenium.webdriver.ChromeOptions()</arg>
+<arg>modules=selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:55:30.577265" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>window-size\=1920,1080</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-05-06T15:55:30.577265" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-05-06T15:55:30.577265" elapsed="0.001017"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-05-06T15:55:30.578282" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-notifications</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-05-06T15:55:30.578282" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-05-06T15:55:30.578282" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-05-06T15:55:30.578282" level="INFO">alias=None</msg>
+<arg>alias=${browser_alias}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-05-06T15:55:30.578282" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:55:30.579279" level="INFO">Opening browser 'chrome' to base url 'https://mentor-uat3.cdsvisual.net'.</msg>
+<arg>${Url}</arg>
+<arg>chrome</arg>
+<arg>options=${options}</arg>
+<arg>alias=${browser_alias}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-06T15:55:30.578282" elapsed="16.190733"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-06T15:55:46.770054" elapsed="0.046968"/>
+</kw>
+<arg>${browser_alias}</arg>
+<status status="PASS" start="2026-05-06T15:55:30.576277" elapsed="16.241746"/>
+</kw>
+<kw name="Verify Base Sign In Page" owner="Login">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EmailField}</arg>
+<arg>${MaxTime}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T15:55:46.819022" elapsed="0.386407"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:55:47.206428" level="INFO">Typing text 'uatautoauthor1@mailinator.com' into text field '//input[@type="email"] | //input[@id="signInName"]'.</msg>
+<arg>${EmailField}</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:55:47.205429" elapsed="0.281671"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:55:47.488101" level="INFO">Selecting checkbox '//input[@name="eula"]'.</msg>
+<arg>${Eula}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:55:47.488101" elapsed="0.203362"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EULALink}</arg>
+<arg>${MaxTime}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T15:55:47.691463" elapsed="0.033828"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EulaText}</arg>
+<arg>${MaxTime}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T15:55:47.725291" elapsed="0.031205"/>
+</kw>
+<arg>${UserEmail}</arg>
+<status status="PASS" start="2026-05-06T15:55:46.818023" elapsed="0.938473"/>
+</kw>
+<kw name="Click On Sign In" owner="Login">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:55:47.757498" level="INFO">Clicking element '//button[text()="Sign In"]| //button[@id="next"]'.</msg>
+<arg>${SignIn_Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:55:47.757498" elapsed="0.131578"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:55:47.756496" elapsed="0.132580"/>
+</kw>
+<kw name="Verify Main Sign In page" owner="Login">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CompanyLogo}</arg>
+<arg>${MaxTime}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T15:55:47.890082" elapsed="4.963023"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:55:52.888780" level="INFO">Element '//input[@id="password"]' is displayed.</msg>
+<arg>${password}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T15:55:52.853105" elapsed="0.035675"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:55:52.888780" level="INFO">Typing text 'uatautoauthor1@mailinator.com' into text field '//input[@type="email"] | //input[@id="signInName"]'.</msg>
+<arg>${EmailField}</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:55:52.888780" elapsed="0.349524"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:55:53.239303" level="INFO">Typing text 'qwertyuiop12@A' into text field '//input[@id="password"]'.</msg>
+<arg>${password}</arg>
+<arg>${UserPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:55:53.239303" elapsed="0.192275"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:55:53.431578" level="INFO">Double clicking element '//button[text()="Sign In"]| //button[@id="next"]'.</msg>
+<arg>${SignIn_Button}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:55:53.431578" elapsed="0.487157"/>
+</kw>
+<kw name="wait for the page to load" owner="Common">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LoadingBar}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T15:55:53.920772" elapsed="4.416138"/>
+</kw>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${LoadingBar}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-06T15:55:53.920772" elapsed="4.416138"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${LoadingBar}</arg>
+<arg>120s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-05-06T15:55:58.337913" elapsed="1.440619"/>
+</kw>
+<arg>Wait Until Element Is Not Visible</arg>
+<arg>${LoadingBar}</arg>
+<arg>120s</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-06T15:55:58.336910" elapsed="1.442639"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:55:53.919779" elapsed="5.859770"/>
+</kw>
+<arg>${UserEmail}</arg>
+<arg>${UserPassword}</arg>
+<status status="PASS" start="2026-05-06T15:55:47.889076" elapsed="11.890473"/>
+</kw>
+<arg>${AUTHOR1_EMAIL}</arg>
+<arg>${AUTHOR1_PASS}</arg>
+<status status="PASS" start="2026-05-06T15:55:30.575364" elapsed="29.204185"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-05-06T15:55:59.779549" elapsed="0.000000"/>
+</kw>
+<arg>Login To Mentor Application</arg>
+<arg>${AUTHOR1_EMAIL}</arg>
+<arg>${AUTHOR1_PASS}</arg>
+<arg>AND</arg>
+<arg>Set Selenium Speed</arg>
+<arg>0.1</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2026-05-06T15:55:30.574362" elapsed="29.206184"/>
+</kw>
+<test id="s1-t1" name="Verify that users can modify the list of approval managers and co-authors before publishing." line="632">
+<kw name="When User Clicks on Add Button On Procedures List Page" owner="AuthorScreen">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${LoadingBar}</arg>
+<arg>${MaxTime}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-05-06T15:55:59.781547" elapsed="0.270168"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element By JS" owner="Common">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:00.052762" level="INFO">${js} = let xpath = "//button//span[normalize-space()='Add New']"; let el = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue; if (el) el.click();</msg>
+<var>${js}</var>
+<arg>let xpath = "${xpath}";</arg>
+<arg>let el = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;</arg>
+<arg>if (el) el.click();</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2026-05-06T15:56:00.052762" elapsed="0.000000"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:00.053733" level="INFO">Executing JavaScript:
+let xpath = "//button//span[normalize-space()='Add New']"; let el = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue; if (el) el.click();
+Without any arguments.</msg>
+<arg>${js}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-05-06T15:56:00.053733" elapsed="0.118681"/>
+</kw>
+<arg>${ADD_BUTTON_ON_PROCEDURE_LIST_PAGE}</arg>
+<status status="PASS" start="2026-05-06T15:56:00.051715" elapsed="0.120699"/>
+</kw>
+<arg>10s</arg>
+<arg>2s</arg>
+<arg>Click Element By JS</arg>
+<arg>${ADD_BUTTON_ON_PROCEDURE_LIST_PAGE}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:00.051715" elapsed="0.120699"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:05.908161" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1119.png"&gt;&lt;img src="selenium-screenshot-1119.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:56:05.908161" level="FAIL">Element '//div[@role="menuitem"]//span[normalize-space()='Procedure']' not visible after 5 seconds.</msg>
+<arg>${PROCEDURE_OPTION}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-05-06T15:56:00.173443" elapsed="5.761890">Element '//div[@role="menuitem"]//span[normalize-space()='Procedure']' not visible after 5 seconds.</status>
+</kw>
+<msg time="2026-05-06T15:56:05.935333" level="INFO">${status} = False</msg>
+<var>${status}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${PROCEDURE_OPTION}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-05-06T15:56:00.173443" elapsed="5.761890"/>
+</kw>
+<if>
+<branch type="IF" condition="not ${status}">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:05.937334" level="INFO">Clicking element '//button//span[normalize-space()='Add New']'.</msg>
+<arg>${ADD_BUTTON_ON_PROCEDURE_LIST_PAGE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:05.936335" elapsed="0.396802"/>
+</kw>
+<arg>10s</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${ADD_BUTTON_ON_PROCEDURE_LIST_PAGE}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:05.936335" elapsed="0.397319"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:05.935333" elapsed="0.398321"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:05.935333" elapsed="0.398321"/>
+</if>
+<kw name="Select The Procedure Option On Procedure List Page" owner="AuthorScreen">
+<kw name="Wait For The Element And Click" owner="Common">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${Max_limit}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T15:56:06.335679" elapsed="0.233568"/>
+</kw>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<arg>${Max_limit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-06T15:56:06.334673" elapsed="0.234574"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:06.570356" level="INFO">Clicking element '//div[@role="menuitem"]//span[normalize-space()='Procedure']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:06.570356" elapsed="0.429080"/>
+</kw>
+<arg>10x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:06.569247" elapsed="0.430728"/>
+</kw>
+<arg>${PROCEDURE_OPTION}</arg>
+<doc>To Wait For The Element And Click</doc>
+<status status="PASS" start="2026-05-06T15:56:06.334673" elapsed="0.666332"/>
+</kw>
+<doc>To Select The Procedure Option On Procedure List Page</doc>
+<status status="PASS" start="2026-05-06T15:56:06.333654" elapsed="0.667351"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:55:59.781547" elapsed="7.219458"/>
+</kw>
+<kw name="And User Lands on Add New Procedure Page" owner="AuthorScreen">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${LoadingBar}</arg>
+<arg>${MaxTime}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-05-06T15:56:07.005002" elapsed="0.149125"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-06T15:56:10.155485" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-06T15:56:07.155145" elapsed="3.000340"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:10.290216" level="INFO">Current page contains element '//div[contains(@class, "option selectable")]'.</msg>
+<arg>${GENERAL_DETAILS_SECTION}</arg>
+<arg>${MaxTime}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-05-06T15:56:10.155999" elapsed="0.135232"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:07.002997" elapsed="3.289232"/>
+</kw>
+<kw name="And User Adds General Details" owner="AuthorScreen">
+<kw name="Generate Unique Number" owner="AuthorScreen">
+<kw name="Generate Random String" owner="String">
+<msg time="2026-05-06T15:56:10.298444" level="INFO">${UniqueNumbertest} = xUz0JZ3y</msg>
+<var>${UniqueNumbertest}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-05-06T15:56:10.297439" elapsed="0.001005"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-05-06T15:56:10.299444" level="INFO">${UniqueNumbertest} = xUz0JZ3y</msg>
+<arg>${UniqueNumbertest}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-05-06T15:56:10.298444" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:10.296441" elapsed="0.003003"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Name_input}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T15:56:10.299444" elapsed="0.263750"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:10.563707" level="INFO">Clicking element '(//input[@placeholder= "Name"])|(//input[@placeholder= "Procedure Name"])'.</msg>
+<arg>${Name_input}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:10.563707" elapsed="0.472223"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:11.036440" level="INFO">Typing text 'Pro-xUz0JZ3y' into text field '(//input[@placeholder= "Name"])|(//input[@placeholder= "Procedure Name"])'.</msg>
+<arg>${Name_input}</arg>
+<arg>Pro-${UniqueNumberTest}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:11.036440" elapsed="0.597204"/>
+</kw>
+<variable name="${TD_PROCEDURE_NAME}">
+<msg time="2026-05-06T15:56:11.633644" level="INFO">${TD_PROCEDURE_NAME} = Pro-xUz0JZ3y</msg>
+<var>Pro-${UniqueNumberTest}</var>
+<status status="PASS" start="2026-05-06T15:56:11.633644" elapsed="0.000000"/>
+</variable>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2026-05-06T15:56:11.634658" level="INFO">${TD_PROCEDURE_NAME} = Pro-xUz0JZ3y</msg>
+<arg>${TD_PROCEDURE_NAME}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2026-05-06T15:56:11.634658" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:11.635655" level="INFO">Clicking element '(//input[@placeholder= "Name"])|(//input[@placeholder= "Procedure Name"])'.</msg>
+<arg>${Name_input}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:11.635655" elapsed="0.414920"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:12.050575" level="INFO">Typing text 'MAT-xUz0JZ3y' into text field '//input[@placeholder= "Material Ids"]'.</msg>
+<arg>${Material_Number}</arg>
+<arg>MAT-${UniqueNumberTest}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:12.050575" elapsed="0.634772"/>
+</kw>
+<if>
+<branch type="IF" condition="'${VERIFY_DUPLICATE_MAT_NUM}'=='True'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${Name_input}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:12.685865" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:12.685865" elapsed="0.001034"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${Material_Number}</arg>
+<arg>MAT-${UniqueNumberTest}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:12.686899" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${Name_input}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:12.686899" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:12.686899" elapsed="0.000000"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<var>${TEMP}</var>
+<arg>${Material_Number}</arg>
+<arg>text</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:12.687890" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${TEMP}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:12.687890" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-05-06T15:56:12.685347" elapsed="0.002543"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:12.685347" elapsed="0.002543"/>
+</if>
+<variable name="${TD_MATERIAL_NUMBER}">
+<msg time="2026-05-06T15:56:12.687890" level="INFO">${TD_MATERIAL_NUMBER} = MAT-xUz0JZ3y</msg>
+<var>MAT-${UniqueNumberTest}</var>
+<status status="PASS" start="2026-05-06T15:56:12.687890" elapsed="0.000000"/>
+</variable>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2026-05-06T15:56:12.688890" level="INFO">${TD_MATERIAL_NUMBER} = MAT-xUz0JZ3y</msg>
+<arg>${TD_MATERIAL_NUMBER}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2026-05-06T15:56:12.688890" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:12.689890" level="INFO">Clicking element '(//input[@placeholder="Document Id"])'.</msg>
+<arg>${DOCUMENT_ID_INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:12.688890" elapsed="0.335467"/>
+</kw>
+<variable name="${TD_DOCUMENT_ID}">
+<msg time="2026-05-06T15:56:13.024867" level="INFO">${TD_DOCUMENT_ID} = DOCID-xUz0JZ3y</msg>
+<var>DOCID-${UniqueNumberTest}</var>
+<status status="PASS" start="2026-05-06T15:56:13.024357" elapsed="0.000510"/>
+</variable>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2026-05-06T15:56:13.025882" level="INFO">${TD_DOCUMENT_ID} = DOCID-xUz0JZ3y</msg>
+<arg>${TD_DOCUMENT_ID}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2026-05-06T15:56:13.024867" elapsed="0.001015"/>
+</kw>
+<if>
+<branch type="IF" condition="'${FORM_FILLING}'=='FREE_FORM'">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${DOCUMENT_ID_INPUT}</arg>
+<arg>${EMPTY}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:13.027874" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-05-06T15:56:13.025882" elapsed="0.001992"/>
+</branch>
+<branch type="ELSE IF" condition="'${FORM_FILLING}'=='AUTO_GENERATE'">
+<if>
+<branch type="IF" condition="'${AUTO_GENERATE}'=='PREFIX'">
+<if>
+<branch type="IF" condition="'${CHANGES_REVERTED}'=='True'">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${STATUS}</var>
+<arg>Element Attribute Value Should Be</arg>
+<arg>${DOCUMENT_ID_INPUT}</arg>
+<arg>value</arg>
+<arg>MAT-${TD_MATERIAL_NUMBER}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:13.028875" elapsed="0.000000"/>
+</kw>
+<kw name="Should Not Be True" owner="BuiltIn">
+<arg>${STATUS}</arg>
+<doc>Fails if the given condition is true.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:13.028875" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-05-06T15:56:13.027874" elapsed="0.002001"/>
+</branch>
+<branch type="ELSE IF" condition="'${BLANK_PREFIX_SUFFIX_VALUE}'=='True'">
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<var>${EXTRACTED_VALUE}</var>
+<arg>${DOCUMENT_ID_INPUT}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:13.029875" elapsed="0.000000"/>
+</kw>
+<kw name="Should Not Contain" owner="BuiltIn">
+<arg>${EXTRACTED_VALUE}</arg>
+<arg>MAT-${TD_MATERIAL_NUMBER}</arg>
+<doc>Fails if ``container`` contains ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:13.029875" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-05-06T15:56:13.029875" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
+<arg>${DOCUMENT_ID_INPUT}</arg>
+<arg>value</arg>
+<arg>MAT-${TD_MATERIAL_NUMBER}</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:13.030873" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-05-06T15:56:13.029875" elapsed="0.000998"/>
+</branch>
+<status status="NOT RUN" start="2026-05-06T15:56:13.027874" elapsed="0.002999"/>
+</if>
+<status status="NOT RUN" start="2026-05-06T15:56:13.027874" elapsed="0.002999"/>
+</branch>
+<branch type="ELSE IF" condition="'${AUTO_GENERATE}'=='SUFFIX'">
+<if>
+<branch type="IF" condition="'${CHANGES_REVERTED}'=='True'">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${STATUS}</var>
+<arg>Element Attribute Value Should Be</arg>
+<arg>${DOCUMENT_ID_INPUT}</arg>
+<arg>value</arg>
+<arg>${TD_MATERIAL_NUMBER}-MAT</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:13.030873" elapsed="0.000000"/>
+</kw>
+<kw name="Should Not Be True" owner="BuiltIn">
+<arg>${STATUS}</arg>
+<doc>Fails if the given condition is true.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:13.030873" elapsed="0.001001"/>
+</kw>
+<status status="NOT RUN" start="2026-05-06T15:56:13.030873" elapsed="0.001001"/>
+</branch>
+<branch type="ELSE IF" condition="'${BLANK_PREFIX_SUFFIX_VALUE}'=='True'">
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<var>${EXTRACTED_VALUE}</var>
+<arg>${DOCUMENT_ID_INPUT}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:13.031874" elapsed="0.000000"/>
+</kw>
+<kw name="Should Not Contain" owner="BuiltIn">
+<arg>${EXTRACTED_VALUE}</arg>
+<arg>${TD_MATERIAL_NUMBER}-MAT</arg>
+<doc>Fails if ``container`` contains ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:13.031874" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-05-06T15:56:13.031874" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
+<arg>${DOCUMENT_ID_INPUT}</arg>
+<arg>value</arg>
+<arg>${TD_MATERIAL_NUMBER}-MAT</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:13.031874" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-05-06T15:56:13.031874" elapsed="0.000000"/>
+</branch>
+<status status="NOT RUN" start="2026-05-06T15:56:13.030873" elapsed="0.001001"/>
+</if>
+<status status="NOT RUN" start="2026-05-06T15:56:13.030873" elapsed="0.001001"/>
+</branch>
+<status status="NOT RUN" start="2026-05-06T15:56:13.027874" elapsed="0.004000"/>
+</if>
+<status status="NOT RUN" start="2026-05-06T15:56:13.027874" elapsed="0.004000"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:13.025882" elapsed="0.007009"/>
+</if>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-05-06T15:56:13.032891" level="INFO">False</msg>
+<arg>${BLANK_DOCUMENT_ID}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-05-06T15:56:13.032891" elapsed="0.000000"/>
+</kw>
+<kw name="Return From Keyword If" owner="BuiltIn">
+<arg>'${BLANK_DOCUMENT_ID}'=='True'</arg>
+<doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
+<status status="PASS" start="2026-05-06T15:56:13.032891" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:13.033874" level="INFO">Typing text 'DOCID-xUz0JZ3y' into text field '(//input[@placeholder="Document Id"])'.</msg>
+<arg>${DOCUMENT_ID_INPUT}</arg>
+<arg>${TD_DOCUMENT_ID}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:13.033874" elapsed="0.494726"/>
+</kw>
+<doc>To Add Procedure Details</doc>
+<status status="PASS" start="2026-05-06T15:56:10.294445" elapsed="3.234155"/>
+</kw>
+<kw name="And Add The Approval Managers And Co-Author" owner="AuthorScreen">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:13.530639" level="INFO">Clicking element 'xpath:(//mat-select)[5]'.</msg>
+<arg>${APPROVAL_MANAGERS_SELECT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:13.529639" elapsed="0.368618"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIRST_MANAGER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T15:56:13.898257" elapsed="0.240747"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:14.264026" level="INFO">${MANAGERS_END_LIMIT} = 15</msg>
+<var>${MANAGERS_END_LIMIT}</var>
+<arg>${ALL_MANAGERS}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.139514" elapsed="0.124512"/>
+</kw>
+<kw name="Get Values In List For Validation" owner="Common">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:14.265550" level="INFO">${start_index} = 1</msg>
+<var>${start_index}</var>
+<arg>int(${start_index})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.265550" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:14.265550" level="INFO">${end_index} = 16</msg>
+<var>${end_index}</var>
+<arg>int(${end_index})+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.265550" elapsed="0.001002"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2026-05-06T15:56:14.266552" level="INFO">@{return_list} = [ ]</msg>
+<var>@{return_list}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.266552" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:14.267550" level="INFO">${i} = 1</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.267550" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:14.267550" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[1]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.267550" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.268550" elapsed="0.258875"/>
+</kw>
+<msg time="2026-05-06T15:56:14.527425" level="INFO">${text} = Author 3qWR2sc1
+AuthorCsJ0@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.268550" elapsed="0.258875"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:14.528442" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:14.527425" elapsed="0.001017"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:14.529456" level="INFO">${text} = Author 3qWR2sc1
+AuthorCsJ0@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.528442" elapsed="0.001014"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:14.529456" level="INFO">${text} = Author 3qWR2sc1
+AuthorCsJ0@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:14.529456" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.530456" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:14.528442" elapsed="0.002014"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:14.528442" elapsed="0.002014"/>
+</if>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-05-06T15:56:14.266552" elapsed="0.263904"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:14.531550" level="INFO">${i} = 2</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.531550" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:14.532547" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[2]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.531550" elapsed="0.000997"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.533548" elapsed="0.246960"/>
+</kw>
+<msg time="2026-05-06T15:56:14.780508" level="INFO">${text} = Author uTYn7cOk
+Authort3YW@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.532547" elapsed="0.247961"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:14.781550" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:14.780508" elapsed="0.001042"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:14.781550" level="INFO">${text} = Author uTYn7cOk
+Authort3YW@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.781550" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:14.782547" level="INFO">${text} = Author uTYn7cOk
+Authort3YW@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:14.782547" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.782547" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:14.781550" elapsed="0.000997"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:14.781550" elapsed="0.000997"/>
+</if>
+<var name="${i}">2</var>
+<status status="PASS" start="2026-05-06T15:56:14.531550" elapsed="0.250997"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:14.786551" level="INFO">${i} = 3</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.783549" elapsed="0.003002"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:14.787611" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[3]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.786551" elapsed="0.001060"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.788546" elapsed="0.238271"/>
+</kw>
+<msg time="2026-05-06T15:56:15.026817" level="INFO">${text} = leGgA9NQ Jo6PRilC
+Author0312@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:14.787611" elapsed="0.239206"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:15.027327" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:15.027327" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:15.028334" level="INFO">${text} = leGgA9NQ Jo6PRilC
+Author0312@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.027327" elapsed="0.001007"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:15.028334" level="INFO">${text} = leGgA9NQ Jo6PRilC
+Author0312@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:15.028334" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.028334" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:15.027327" elapsed="0.001007"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:15.027327" elapsed="0.001007"/>
+</if>
+<var name="${i}">3</var>
+<status status="PASS" start="2026-05-06T15:56:14.783549" elapsed="0.244785"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:15.029333" level="INFO">${i} = 4</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.029333" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:15.029333" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[4]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.029333" elapsed="0.001000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.030333" elapsed="0.239498"/>
+</kw>
+<msg time="2026-05-06T15:56:15.270412" level="INFO">${text} = Mentor dZT9e2O6
+TrainerenTo@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.030333" elapsed="0.240079"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:15.271479" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:15.270412" elapsed="0.001067"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:15.272429" level="INFO">${text} = Mentor dZT9e2O6
+TrainerenTo@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.271479" elapsed="0.000950"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:15.272429" level="INFO">${text} = Mentor dZT9e2O6
+TrainerenTo@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:15.272429" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.272429" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:15.271479" elapsed="0.000950"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:15.271479" elapsed="0.000950"/>
+</if>
+<var name="${i}">4</var>
+<status status="PASS" start="2026-05-06T15:56:15.029333" elapsed="0.243096"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:15.273914" level="INFO">${i} = 5</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.273914" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:15.274934" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[5]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.273914" elapsed="0.001020"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.274934" elapsed="0.249206"/>
+</kw>
+<msg time="2026-05-06T15:56:15.524140" level="INFO">${text} = Mentor IOJDMrrX
+Mentor_Trainer8@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.274934" elapsed="0.249206"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:15.525222" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:15.525222" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:15.526157" level="INFO">${text} = Mentor IOJDMrrX
+Mentor_Trainer8@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.525222" elapsed="0.000935"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:15.526157" level="INFO">${text} = Mentor IOJDMrrX
+Mentor_Trainer8@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:15.526157" elapsed="0.001006"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.527163" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:15.525222" elapsed="0.003000"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:15.525222" elapsed="0.003000"/>
+</if>
+<var name="${i}">5</var>
+<status status="PASS" start="2026-05-06T15:56:15.273914" elapsed="0.254308"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:15.528222" level="INFO">${i} = 6</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.528222" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:15.529155" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[6]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.529155" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.530155" elapsed="0.238148"/>
+</kw>
+<msg time="2026-05-06T15:56:15.768303" level="INFO">${text} = Mentor oadXHsTw
+Mentor_Trainer1@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.529155" elapsed="0.239148"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:15.769545" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:15.769545" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:15.770526" level="INFO">${text} = Mentor oadXHsTw
+Mentor_Trainer1@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.770526" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:15.771521" level="INFO">${text} = Mentor oadXHsTw
+Mentor_Trainer1@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:15.771521" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.772536" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:15.769545" elapsed="0.002991"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:15.769545" elapsed="0.002991"/>
+</if>
+<var name="${i}">6</var>
+<status status="PASS" start="2026-05-06T15:56:15.528222" elapsed="0.244314"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:15.774471" level="INFO">${i} = 7</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.773532" elapsed="0.000939"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:15.774471" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[7]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.774471" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.775476" elapsed="0.240590"/>
+</kw>
+<msg time="2026-05-06T15:56:16.016066" level="INFO">${text} = Mentor QBFcIJ79
+Mentor_Trainer2@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:15.774471" elapsed="0.242627"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:16.018090" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:16.017098" elapsed="0.000992"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:16.019090" level="INFO">${text} = Mentor QBFcIJ79
+Mentor_Trainer2@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.019090" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:16.020089" level="INFO">${text} = Mentor QBFcIJ79
+Mentor_Trainer2@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:16.020089" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.021087" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:16.018090" elapsed="0.002997"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:16.018090" elapsed="0.002997"/>
+</if>
+<var name="${i}">7</var>
+<status status="PASS" start="2026-05-06T15:56:15.773532" elapsed="0.247555"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:16.022087" level="INFO">${i} = 8</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.022087" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:16.023222" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[8]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.023222" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.024108" elapsed="0.234615"/>
+</kw>
+<msg time="2026-05-06T15:56:16.258723" level="INFO">${text} = Mentor Trainer
+Mentor_Trainer9@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.024108" elapsed="0.234615"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:16.258723" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:16.258723" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:16.259730" level="INFO">${text} = Mentor Trainer
+Mentor_Trainer9@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.259730" elapsed="0.001000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:16.260730" level="INFO">${text} = Mentor Trainer
+Mentor_Trainer9@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:16.260730" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.260730" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:16.259730" elapsed="0.001000"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:16.259730" elapsed="0.001000"/>
+</if>
+<var name="${i}">8</var>
+<status status="PASS" start="2026-05-06T15:56:16.022087" elapsed="0.238643"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:16.261732" level="INFO">${i} = 9</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.261732" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:16.262730" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[9]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.262730" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.263866" elapsed="0.241431"/>
+</kw>
+<msg time="2026-05-06T15:56:16.505297" level="INFO">${text} = Mentor ULpO9BvM
+Mentor_Trainer5@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.263866" elapsed="0.241431"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:16.505297" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:16.505297" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:16.506734" level="INFO">${text} = Mentor ULpO9BvM
+Mentor_Trainer5@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.506734" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:16.506734" level="INFO">${text} = Mentor ULpO9BvM
+Mentor_Trainer5@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:16.506734" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.506734" elapsed="0.001015"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:16.505297" elapsed="0.002452"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:16.505297" elapsed="0.002452"/>
+</if>
+<var name="${i}">9</var>
+<status status="PASS" start="2026-05-06T15:56:16.261732" elapsed="0.246017"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:16.507749" level="INFO">${i} = 10</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.507749" elapsed="0.000997"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:16.508746" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[10]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.508746" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.509752" elapsed="0.234678"/>
+</kw>
+<msg time="2026-05-06T15:56:16.744430" level="INFO">${text} = Mentor V3w4y0NC
+Mentor_Trainer6@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.509752" elapsed="0.234678"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:16.745922" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:16.744430" elapsed="0.001492"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:16.746919" level="INFO">${text} = Mentor V3w4y0NC
+Mentor_Trainer6@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.746919" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:16.747937" level="INFO">${text} = Mentor V3w4y0NC
+Mentor_Trainer6@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:16.747937" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.748882" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:16.745922" elapsed="0.002960"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:16.745922" elapsed="0.002960"/>
+</if>
+<var name="${i}">10</var>
+<status status="PASS" start="2026-05-06T15:56:16.507749" elapsed="0.241133"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:16.750921" level="INFO">${i} = 11</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.749926" elapsed="0.000995"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:16.750921" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[11]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.750921" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.751903" elapsed="0.234355"/>
+</kw>
+<msg time="2026-05-06T15:56:16.986258" level="INFO">${text} = Mentor XORmKEAl
+TrainerJRFL@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.751903" elapsed="0.235522"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:16.988402" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:16.987425" elapsed="0.000977"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:16.989281" level="INFO">${text} = Mentor XORmKEAl
+TrainerJRFL@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.988402" elapsed="0.000879"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:16.989281" level="INFO">${text} = Mentor XORmKEAl
+TrainerJRFL@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:16.989281" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.990275" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:16.988402" elapsed="0.001873"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:16.988402" elapsed="0.001873"/>
+</if>
+<var name="${i}">11</var>
+<status status="PASS" start="2026-05-06T15:56:16.749926" elapsed="0.240349"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:16.991276" level="INFO">${i} = 12</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.991276" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:16.992389" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[12]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.991276" elapsed="0.001113"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.992389" elapsed="0.234519"/>
+</kw>
+<msg time="2026-05-06T15:56:17.226908" level="INFO">${text} = teBFL1dW 8kkYNRM1
+Mentor_Trainer0@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:16.992389" elapsed="0.234519"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:17.227973" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:17.227973" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:17.229083" level="INFO">${text} = teBFL1dW 8kkYNRM1
+Mentor_Trainer0@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.229083" elapsed="0.001000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:17.230083" level="INFO">${text} = teBFL1dW 8kkYNRM1
+Mentor_Trainer0@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:17.230083" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.231080" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:17.227973" elapsed="0.003107"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:17.227973" elapsed="0.003107"/>
+</if>
+<var name="${i}">12</var>
+<status status="PASS" start="2026-05-06T15:56:16.991276" elapsed="0.239804"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:17.232072" level="INFO">${i} = 13</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.232072" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:17.233081" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[13]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.233081" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.234081" elapsed="0.232957"/>
+</kw>
+<msg time="2026-05-06T15:56:17.467038" level="INFO">${text} = UAT Automation Author 1
+uatautoauthor1@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.234081" elapsed="0.232957"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:17.467655" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:17.467655" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:17.468771" level="INFO">${text} = UAT Automation Author 1
+uatautoauthor1@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.468771" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:17.469787" level="INFO">${text} = UAT Automation Author 1
+uatautoauthor1@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:17.468771" elapsed="0.001016"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.469787" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:17.467655" elapsed="0.002132"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:17.467655" elapsed="0.002132"/>
+</if>
+<var name="${i}">13</var>
+<status status="PASS" start="2026-05-06T15:56:17.232072" elapsed="0.237715"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:17.470665" level="INFO">${i} = 14</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.470665" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:17.471765" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[14]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.470665" elapsed="0.001100"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.472662" elapsed="0.234320"/>
+</kw>
+<msg time="2026-05-06T15:56:17.706982" level="INFO">${text} = UAT Automation Author 2
+uatautoauthor2@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.471765" elapsed="0.235217"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:17.707489" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:17.707489" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:17.707489" level="INFO">${text} = UAT Automation Author 2
+uatautoauthor2@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.707489" elapsed="0.001008"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:17.708497" level="INFO">${text} = UAT Automation Author 2
+uatautoauthor2@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:17.708497" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.708497" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:17.707489" elapsed="0.001008"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:17.707489" elapsed="0.001008"/>
+</if>
+<var name="${i}">14</var>
+<status status="PASS" start="2026-05-06T15:56:17.470665" elapsed="0.237832"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:17.710504" level="INFO">${i} = 15</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.709505" elapsed="0.000999"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:17.710504" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[15]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.710504" elapsed="0.001000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.711504" elapsed="0.230965"/>
+</kw>
+<msg time="2026-05-06T15:56:17.942469" level="INFO">${text} = UAT Automation Author 3
+uatautoauthor3@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.711504" elapsed="0.230965"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:17.943623" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:17.943623" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:17.945489" level="INFO">${text} = UAT Automation Author 3
+uatautoauthor3@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.945489" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:17.946487" level="INFO">${text} = UAT Automation Author 3
+uatautoauthor3@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:17.945489" elapsed="0.000998"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.946487" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:17.943623" elapsed="0.002864"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:17.943623" elapsed="0.003862"/>
+</if>
+<var name="${i}">15</var>
+<status status="PASS" start="2026-05-06T15:56:17.709505" elapsed="0.237980"/>
+</iter>
+<var>${i}</var>
+<value>${start_index}</value>
+<value>${end_index}</value>
+<status status="PASS" start="2026-05-06T15:56:14.266552" elapsed="3.680933"/>
+</for>
+<return>
+<value>${return_list}</value>
+<status status="PASS" start="2026-05-06T15:56:17.947485" elapsed="0.000000"/>
+</return>
+<msg time="2026-05-06T15:56:17.947485" level="INFO">${APPROVAL_MANAGERS_LIST} = ['Author 3qWR2sc1\nAuthorCsJ0@mailinator.com', 'Author uTYn7cOk\nAuthort3YW@mailinator.com', 'leGgA9NQ Jo6PRilC\nAuthor0312@mailinator.com', 'Mentor dZT9e2O6\nTrainerenTo@mailinator.com', 'Mentor IOJD...</msg>
+<var>${APPROVAL_MANAGERS_LIST}</var>
+<arg>${MANAGERS_OPTION}</arg>
+<arg>1</arg>
+<arg>${MANAGERS_END_LIMIT}</arg>
+<doc>Get Values In List For Validation</doc>
+<status status="PASS" start="2026-05-06T15:56:14.264537" elapsed="3.682948"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2026-05-06T15:56:17.948486" level="INFO">${APPROVAL_MANAGERS_LIST} = ['Author 3qWR2sc1\nAuthorCsJ0@mailinator.com', 'Author uTYn7cOk\nAuthort3YW@mailinator.com', 'leGgA9NQ Jo6PRilC\nAuthor0312@mailinator.com', 'Mentor dZT9e2O6\nTrainerenTo@mailinator.com', 'Mentor IOJD...</msg>
+<arg>${APPROVAL_MANAGERS_LIST}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.948486" elapsed="0.000000"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:17.949485" level="INFO">Sending key(s) ('ESC',) to xpath:(//mat-select)[5] element.</msg>
+<msg time="2026-05-06T15:56:18.451027" level="INFO">Pressing special key ESCAPE to element.</msg>
+<msg time="2026-05-06T15:56:18.451027" level="INFO">Releasing special key ESCAPE.</msg>
+<arg>${APPROVAL_MANAGERS_SELECT}</arg>
+<arg>ESC</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-06T15:56:17.949485" elapsed="0.621739"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:18.572232" level="INFO">Clicking element 'xpath://label[normalize-space()='Co-authors']//following-sibling::mat-form-field//mat-select'.</msg>
+<arg>${COAUTHORS_SELECT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:18.571224" elapsed="0.294133"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIRST_COAUTHOR}</arg>
+<arg>${Max_limit}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T15:56:18.865877" elapsed="0.236229"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:19.219022" level="INFO">${COAUTHORS_END_LIMIT} = 14</msg>
+<var>${COAUTHORS_END_LIMIT}</var>
+<arg>${ALL_COAUTHORS}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.103298" elapsed="0.115724"/>
+</kw>
+<kw name="Get Values In List For Validation" owner="Common">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:19.221142" level="INFO">${start_index} = 1</msg>
+<var>${start_index}</var>
+<arg>int(${start_index})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.221142" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:19.222068" level="INFO">${end_index} = 15</msg>
+<var>${end_index}</var>
+<arg>int(${end_index})+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.222068" elapsed="0.000000"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2026-05-06T15:56:19.222068" level="INFO">@{return_list} = [ ]</msg>
+<var>@{return_list}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.222068" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:19.222068" level="INFO">${i} = 1</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.222068" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:19.223120" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[1]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.222068" elapsed="0.001052"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.223120" elapsed="0.228840"/>
+</kw>
+<msg time="2026-05-06T15:56:19.451960" level="INFO">${text} = Author 3qWR2sc1
+AuthorCsJ0@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.223120" elapsed="0.228840"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:19.452999" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:19.452999" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:19.454968" level="INFO">${text} = Author 3qWR2sc1
+AuthorCsJ0@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.453971" elapsed="0.000997"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:19.454968" level="INFO">${text} = Author 3qWR2sc1
+AuthorCsJ0@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:19.454968" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.454968" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:19.453971" elapsed="0.002016"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:19.453971" elapsed="0.002016"/>
+</if>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-05-06T15:56:19.222068" elapsed="0.233919"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:19.455987" level="INFO">${i} = 2</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.455987" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:19.456983" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[2]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.456983" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.457983" elapsed="0.228973"/>
+</kw>
+<msg time="2026-05-06T15:56:19.686956" level="INFO">${text} = Author uTYn7cOk
+Authort3YW@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.457983" elapsed="0.228973"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:19.687987" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:19.686956" elapsed="0.001031"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:19.687987" level="INFO">${text} = Author uTYn7cOk
+Authort3YW@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.687987" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:19.688982" level="INFO">${text} = Author uTYn7cOk
+Authort3YW@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:19.688982" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.688982" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:19.687987" elapsed="0.000995"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:19.687987" elapsed="0.001994"/>
+</if>
+<var name="${i}">2</var>
+<status status="PASS" start="2026-05-06T15:56:19.455987" elapsed="0.233994"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:19.690973" level="INFO">${i} = 3</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.689981" elapsed="0.000992"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:19.691971" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[3]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.691971" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.692995" elapsed="0.224966"/>
+</kw>
+<msg time="2026-05-06T15:56:19.917961" level="INFO">${text} = leGgA9NQ Jo6PRilC
+Author0312@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.692995" elapsed="0.224966"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:19.919981" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:19.919001" elapsed="0.000980"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:19.920979" level="INFO">${text} = leGgA9NQ Jo6PRilC
+Author0312@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.920979" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:19.920979" level="INFO">${text} = leGgA9NQ Jo6PRilC
+Author0312@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:19.920979" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.920979" elapsed="0.001017"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:19.919981" elapsed="0.002015"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:19.919981" elapsed="0.002015"/>
+</if>
+<var name="${i}">3</var>
+<status status="PASS" start="2026-05-06T15:56:19.689981" elapsed="0.232015"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:19.921996" level="INFO">${i} = 4</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.921996" elapsed="0.000999"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:19.922995" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[4]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.922995" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.923995" elapsed="0.235908"/>
+</kw>
+<msg time="2026-05-06T15:56:20.160415" level="INFO">${text} = Mentor dZT9e2O6
+TrainerenTo@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:19.923995" elapsed="0.236420"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:20.161432" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:20.160415" elapsed="0.001017"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:20.162434" level="INFO">${text} = Mentor dZT9e2O6
+TrainerenTo@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.162434" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:20.163434" level="INFO">${text} = Mentor dZT9e2O6
+TrainerenTo@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:20.162434" elapsed="0.001000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.163434" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:20.161432" elapsed="0.003000"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:20.161432" elapsed="0.003000"/>
+</if>
+<var name="${i}">4</var>
+<status status="PASS" start="2026-05-06T15:56:19.921996" elapsed="0.242436"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:20.165434" level="INFO">${i} = 5</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.164432" elapsed="0.001002"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:20.165434" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[5]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.165434" elapsed="0.000998"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.166432" elapsed="0.228249"/>
+</kw>
+<msg time="2026-05-06T15:56:20.394681" level="INFO">${text} = Mentor IOJDMrrX
+Mentor_Trainer8@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.166432" elapsed="0.228249"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:20.396775" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:20.395746" elapsed="0.001029"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:20.397777" level="INFO">${text} = Mentor IOJDMrrX
+Mentor_Trainer8@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.397777" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:20.398701" level="INFO">${text} = Mentor IOJDMrrX
+Mentor_Trainer8@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:20.397777" elapsed="0.000924"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.398701" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:20.396775" elapsed="0.002981"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:20.396775" elapsed="0.002981"/>
+</if>
+<var name="${i}">5</var>
+<status status="PASS" start="2026-05-06T15:56:20.164432" elapsed="0.235324"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:20.400761" level="INFO">${i} = 6</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.399756" elapsed="0.001005"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:20.401761" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[6]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.400761" elapsed="0.001000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.401761" elapsed="0.229750"/>
+</kw>
+<msg time="2026-05-06T15:56:20.631511" level="INFO">${text} = Mentor oadXHsTw
+Mentor_Trainer1@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.401761" elapsed="0.229750"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:20.632533" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:20.632533" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:20.634531" level="INFO">${text} = Mentor oadXHsTw
+Mentor_Trainer1@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.633531" elapsed="0.001000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:20.634531" level="INFO">${text} = Mentor oadXHsTw
+Mentor_Trainer1@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:20.634531" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.635531" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:20.633531" elapsed="0.002000"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:20.633531" elapsed="0.002000"/>
+</if>
+<var name="${i}">6</var>
+<status status="PASS" start="2026-05-06T15:56:20.399756" elapsed="0.235775"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:20.637098" level="INFO">${i} = 7</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.637098" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:20.637098" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[7]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.637098" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.638196" elapsed="0.235447"/>
+</kw>
+<msg time="2026-05-06T15:56:20.873643" level="INFO">${text} = Mentor QBFcIJ79
+Mentor_Trainer2@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.637098" elapsed="0.236545"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:20.874666" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:20.874666" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:20.875672" level="INFO">${text} = Mentor QBFcIJ79
+Mentor_Trainer2@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.875672" elapsed="0.001611"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:20.877283" level="INFO">${text} = Mentor QBFcIJ79
+Mentor_Trainer2@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:20.877283" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.878428" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:20.874666" elapsed="0.003762"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:20.874666" elapsed="0.004758"/>
+</if>
+<var name="${i}">7</var>
+<status status="PASS" start="2026-05-06T15:56:20.635531" elapsed="0.243893"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:20.880364" level="INFO">${i} = 8</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.879424" elapsed="0.000940"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:20.881370" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[8]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.880364" elapsed="0.001006"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.882302" elapsed="0.231055"/>
+</kw>
+<msg time="2026-05-06T15:56:21.113357" level="INFO">${text} = Mentor Trainer
+Mentor_Trainer9@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:20.881370" elapsed="0.233405"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:21.115858" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:21.114775" elapsed="0.001083"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:21.116919" level="INFO">${text} = Mentor Trainer
+Mentor_Trainer9@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.116919" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:21.117935" level="INFO">${text} = Mentor Trainer
+Mentor_Trainer9@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:21.117935" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.118838" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:21.115858" elapsed="0.002980"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:21.115858" elapsed="0.002980"/>
+</if>
+<var name="${i}">8</var>
+<status status="PASS" start="2026-05-06T15:56:20.879424" elapsed="0.239414"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:21.119820" level="INFO">${i} = 9</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.119820" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:21.119820" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[9]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.119820" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.120879" elapsed="0.235381"/>
+</kw>
+<msg time="2026-05-06T15:56:21.356260" level="INFO">${text} = Mentor ULpO9BvM
+Mentor_Trainer5@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.119820" elapsed="0.236440"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:21.356260" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:21.356260" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:21.358625" level="INFO">${text} = Mentor ULpO9BvM
+Mentor_Trainer5@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.357625" elapsed="0.001000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:21.359726" level="INFO">${text} = Mentor ULpO9BvM
+Mentor_Trainer5@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:21.358625" elapsed="0.001101"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.359726" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:21.356260" elapsed="0.004469"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:21.356260" elapsed="0.004469"/>
+</if>
+<var name="${i}">9</var>
+<status status="PASS" start="2026-05-06T15:56:21.119820" elapsed="0.240909"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:21.361732" level="INFO">${i} = 10</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.360729" elapsed="0.001003"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:21.362786" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[10]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.362786" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.363941" elapsed="0.230784"/>
+</kw>
+<msg time="2026-05-06T15:56:21.594725" level="INFO">${text} = Mentor V3w4y0NC
+Mentor_Trainer6@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.362786" elapsed="0.231939"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:21.595877" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:21.595877" elapsed="0.001011"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:21.597886" level="INFO">${text} = Mentor V3w4y0NC
+Mentor_Trainer6@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.596888" elapsed="0.000998"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:21.597886" level="INFO">${text} = Mentor V3w4y0NC
+Mentor_Trainer6@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:21.597886" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.598886" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:21.596888" elapsed="0.001998"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:21.596888" elapsed="0.001998"/>
+</if>
+<var name="${i}">10</var>
+<status status="PASS" start="2026-05-06T15:56:21.360729" elapsed="0.238157"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:21.599885" level="INFO">${i} = 11</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.599885" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:21.600886" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[11]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.599885" elapsed="0.001001"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.601872" elapsed="0.230797"/>
+</kw>
+<msg time="2026-05-06T15:56:21.832669" level="INFO">${text} = Mentor XORmKEAl
+TrainerJRFL@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.600886" elapsed="0.231783"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:21.834139" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:21.832669" elapsed="0.001470"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:21.835153" level="INFO">${text} = Mentor XORmKEAl
+TrainerJRFL@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.834139" elapsed="0.001014"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:21.835153" level="INFO">${text} = Mentor XORmKEAl
+TrainerJRFL@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:21.835153" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.836152" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:21.834139" elapsed="0.002013"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:21.834139" elapsed="0.002013"/>
+</if>
+<var name="${i}">11</var>
+<status status="PASS" start="2026-05-06T15:56:21.598886" elapsed="0.237266"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:21.837144" level="INFO">${i} = 12</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.837144" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:21.837144" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[12]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.837144" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.838143" elapsed="0.233340"/>
+</kw>
+<msg time="2026-05-06T15:56:22.071483" level="INFO">${text} = teBFL1dW 8kkYNRM1
+Mentor_Trainer0@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:21.838143" elapsed="0.233340"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:22.071483" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:22.071483" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:22.072501" level="INFO">${text} = teBFL1dW 8kkYNRM1
+Mentor_Trainer0@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:22.072501" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:22.072501" level="INFO">${text} = teBFL1dW 8kkYNRM1
+Mentor_Trainer0@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:22.072501" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:22.072501" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:22.072501" elapsed="0.001000"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:22.072501" elapsed="0.001000"/>
+</if>
+<var name="${i}">12</var>
+<status status="PASS" start="2026-05-06T15:56:21.836152" elapsed="0.237349"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:22.073501" level="INFO">${i} = 13</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:22.073501" elapsed="0.001001"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:22.074502" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[13]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:22.074502" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:22.075515" elapsed="0.230802"/>
+</kw>
+<msg time="2026-05-06T15:56:22.306317" level="INFO">${text} = UAT Automation Author 2
+uatautoauthor2@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:22.075515" elapsed="0.230802"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:22.306317" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:22.306317" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:22.307340" level="INFO">${text} = UAT Automation Author 2
+uatautoauthor2@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:22.307340" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:22.308407" level="INFO">${text} = UAT Automation Author 2
+uatautoauthor2@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:22.307340" elapsed="0.001067"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:22.308407" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:22.307340" elapsed="0.001067"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:22.307340" elapsed="0.001067"/>
+</if>
+<var name="${i}">13</var>
+<status status="PASS" start="2026-05-06T15:56:22.073501" elapsed="0.234906"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:56:22.309387" level="INFO">${i} = 14</msg>
+<var>${i}</var>
+<arg>str(${i})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:56:22.309387" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-05-06T15:56:22.309387" level="INFO">${locator} = xpath:(//span[@class="dropdown-option"])[14]</msg>
+<var>${locator}</var>
+<arg>${elements_locator}</arg>
+<arg>INDEX</arg>
+<arg>${i}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-05-06T15:56:22.309387" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:22.310415" elapsed="0.234481"/>
+</kw>
+<msg time="2026-05-06T15:56:22.544896" level="INFO">${text} = UAT Automation Author 3
+uatautoauthor3@mailinator.com</msg>
+<var>${text}</var>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Get Text</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:22.309387" elapsed="0.235509"/>
+</kw>
+<kw name="Check If Not Empty" owner="CommonUtils">
+<msg time="2026-05-06T15:56:22.544896" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:22.544896" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}'=='True'">
+<kw name="Strip String" owner="String">
+<msg time="2026-05-06T15:56:22.545920" level="INFO">${text} = UAT Automation Author 3
+uatautoauthor3@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2026-05-06T15:56:22.545920" elapsed="0.000000"/>
+</kw>
+<kw name="Remove Trailing Dots" owner="CommonUtils">
+<msg time="2026-05-06T15:56:22.545920" level="INFO">${text} = UAT Automation Author 3
+uatautoauthor3@mailinator.com</msg>
+<var>${text}</var>
+<arg>${text}</arg>
+<status status="PASS" start="2026-05-06T15:56:22.545920" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${return_list}</arg>
+<arg>${text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2026-05-06T15:56:22.546912" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:56:22.545920" elapsed="0.000992"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:56:22.545920" elapsed="0.000992"/>
+</if>
+<var name="${i}">14</var>
+<status status="PASS" start="2026-05-06T15:56:22.308407" elapsed="0.238505"/>
+</iter>
+<var>${i}</var>
+<value>${start_index}</value>
+<value>${end_index}</value>
+<status status="PASS" start="2026-05-06T15:56:19.222068" elapsed="3.324844"/>
+</for>
+<return>
+<value>${return_list}</value>
+<status status="PASS" start="2026-05-06T15:56:22.546912" elapsed="0.000000"/>
+</return>
+<msg time="2026-05-06T15:56:22.546912" level="INFO">${COAUTHORS_LIST} = ['Author 3qWR2sc1\nAuthorCsJ0@mailinator.com', 'Author uTYn7cOk\nAuthort3YW@mailinator.com', 'leGgA9NQ Jo6PRilC\nAuthor0312@mailinator.com', 'Mentor dZT9e2O6\nTrainerenTo@mailinator.com', 'Mentor IOJD...</msg>
+<var>${COAUTHORS_LIST}</var>
+<arg>${COAUTHORS_OPTION}</arg>
+<arg>1</arg>
+<arg>${COAUTHORS_END_LIMIT}</arg>
+<doc>Get Values In List For Validation</doc>
+<status status="PASS" start="2026-05-06T15:56:19.220169" elapsed="3.326743"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2026-05-06T15:56:22.547912" level="INFO">${COAUTHORS_LIST} = ['Author 3qWR2sc1\nAuthorCsJ0@mailinator.com', 'Author uTYn7cOk\nAuthort3YW@mailinator.com', 'leGgA9NQ Jo6PRilC\nAuthor0312@mailinator.com', 'Mentor dZT9e2O6\nTrainerenTo@mailinator.com', 'Mentor IOJD...</msg>
+<arg>${COAUTHORS_LIST}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2026-05-06T15:56:22.546912" elapsed="0.001000"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:22.547912" level="INFO">Sending key(s) ('ESC',) to xpath://label[normalize-space()='Co-authors']//following-sibling::mat-form-field//mat-select element.</msg>
+<msg time="2026-05-06T15:56:23.058063" level="INFO">Pressing special key ESCAPE to element.</msg>
+<msg time="2026-05-06T15:56:23.058063" level="INFO">Releasing special key ESCAPE.</msg>
+<arg>${COAUTHORS_SELECT}</arg>
+<arg>ESC</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-06T15:56:22.547912" elapsed="0.633752"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:23.181664" level="INFO">Clicking element 'xpath:(//mat-select)[5]'.</msg>
+<arg>${APPROVAL_MANAGERS_SELECT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:23.181664" elapsed="0.283698"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2026-05-06T15:56:23.467410" level="INFO">${MANAGER} = ['Author', '3qWR2sc1\nAuthorCsJ0@mailinator.com']</msg>
+<var>${MANAGER}</var>
+<arg>${MANAGER}</arg>
+<arg>${SPACE}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2026-05-06T15:56:23.466476" elapsed="0.000934"/>
+</kw>
+<kw name="Scroll Element And Enter Value" owner="Common">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${Max_limit}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-06T15:56:23.483570" elapsed="0.116879"/>
+</kw>
+<arg>Wait Until Page Contains Element</arg>
+<arg>${locator}</arg>
+<arg>${Max_limit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-06T15:56:23.482568" elapsed="0.117881"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-05-06T15:56:23.601544" elapsed="0.490254"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T15:56:24.091798" elapsed="0.231953"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:24.324764" level="INFO">Typing text '3qWR2sc1
+AuthorCsJ0@mailinator.com' into text field '(//input[@placeholder="Search..."])[2]'.</msg>
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<arg>clear=True</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:24.323751" elapsed="0.432706"/>
+</kw>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<arg>clear=True</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:24.323751" elapsed="0.432706"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${LoadingBar}</arg>
+<arg>${MaxTime}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-05-06T15:56:24.757482" elapsed="0.118195"/>
+</kw>
+<arg>Wait Until Element Is Not Visible</arg>
+<arg>${LoadingBar}</arg>
+<arg>${MaxTime}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-06T15:56:24.756457" elapsed="0.119220"/>
+</kw>
+<arg>${MANAGER_INPUT}</arg>
+<arg>${MANAGER[-1]}</arg>
+<doc>To Scroll Element And Enter Value</doc>
+<status status="PASS" start="2026-05-06T15:56:23.468463" elapsed="1.407214"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-06T15:56:26.877371" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-06T15:56:24.875677" elapsed="2.001694"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:27.443994" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1120.png"&gt;&lt;img src="selenium-screenshot-1120.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:56:27.443994" level="FAIL">Element 'xpath://span[@class="option-name"]' should have contained text '3qWR2sc1
+AuthorCsJ0@mailinator.com' but its text was 'Author 3qWR2sc1'.</msg>
+<arg>${FIRST_MANAGER}</arg>
+<arg>${MANAGER[-1]}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="FAIL" start="2026-05-06T15:56:26.877371" elapsed="0.580588">Element 'xpath://span[@class="option-name"]' should have contained text '3qWR2sc1
+AuthorCsJ0@mailinator.com' but its text was 'Author 3qWR2sc1'.</status>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:29.056409" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1121.png"&gt;&lt;img src="selenium-screenshot-1121.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:56:29.056409" level="FAIL">Element 'xpath://span[@class="option-name"]' should have contained text '3qWR2sc1
+AuthorCsJ0@mailinator.com' but its text was 'Author 3qWR2sc1'.</msg>
+<arg>${FIRST_MANAGER}</arg>
+<arg>${MANAGER[-1]}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="FAIL" start="2026-05-06T15:56:28.458506" elapsed="0.599923">Element 'xpath://span[@class="option-name"]' should have contained text '3qWR2sc1
+AuthorCsJ0@mailinator.com' but its text was 'Author 3qWR2sc1'.</status>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:30.635825" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1122.png"&gt;&lt;img src="selenium-screenshot-1122.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:56:30.635825" level="FAIL">Element 'xpath://span[@class="option-name"]' should have contained text '3qWR2sc1
+AuthorCsJ0@mailinator.com' but its text was 'Author 3qWR2sc1'.</msg>
+<arg>${FIRST_MANAGER}</arg>
+<arg>${MANAGER[-1]}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="FAIL" start="2026-05-06T15:56:30.058761" elapsed="0.579156">Element 'xpath://span[@class="option-name"]' should have contained text '3qWR2sc1
+AuthorCsJ0@mailinator.com' but its text was 'Author 3qWR2sc1'.</status>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:32.218910" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1123.png"&gt;&lt;img src="selenium-screenshot-1123.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:56:32.218910" level="FAIL">Element 'xpath://span[@class="option-name"]' should have contained text '3qWR2sc1
+AuthorCsJ0@mailinator.com' but its text was 'Author 3qWR2sc1'.</msg>
+<arg>${FIRST_MANAGER}</arg>
+<arg>${MANAGER[-1]}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="FAIL" start="2026-05-06T15:56:31.638128" elapsed="0.580782">Element 'xpath://span[@class="option-name"]' should have contained text '3qWR2sc1
+AuthorCsJ0@mailinator.com' but its text was 'Author 3qWR2sc1'.</status>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:33.797581" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1124.png"&gt;&lt;img src="selenium-screenshot-1124.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:56:33.798589" level="FAIL">Element 'xpath://span[@class="option-name"]' should have contained text '3qWR2sc1
+AuthorCsJ0@mailinator.com' but its text was 'Author 3qWR2sc1'.</msg>
+<arg>${FIRST_MANAGER}</arg>
+<arg>${MANAGER[-1]}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="FAIL" start="2026-05-06T15:56:33.219170" elapsed="0.580529">Element 'xpath://span[@class="option-name"]' should have contained text '3qWR2sc1
+AuthorCsJ0@mailinator.com' but its text was 'Author 3qWR2sc1'.</status>
+</kw>
+<msg time="2026-05-06T15:56:33.799699" level="FAIL">Keyword 'Element Should Contain' failed after retrying 5 times. The last error was: Element 'xpath://span[@class="option-name"]' should have contained text '3qWR2sc1
+AuthorCsJ0@mailinator.com' but its text was 'Author 3qWR2sc1'.</msg>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Element Should Contain</arg>
+<arg>${FIRST_MANAGER}</arg>
+<arg>${MANAGER[-1]}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2026-05-06T15:56:26.877371" elapsed="6.924317">Keyword 'Element Should Contain' failed after retrying 5 times. The last error was: Element 'xpath://span[@class="option-name"]' should have contained text '3qWR2sc1
+AuthorCsJ0@mailinator.com' but its text was 'Author 3qWR2sc1'.</status>
+</kw>
+<kw name="Wait For The Element And Click" owner="Common">
+<arg>${FIRST_MANAGER}</arg>
+<doc>To Wait For The Element And Click</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:33.802692" elapsed="0.000000"/>
+</kw>
+<var name="${MANAGER}">Author 3qWR2sc1
+AuthorCsJ0@mailinator.com</var>
+<status status="FAIL" start="2026-05-06T15:56:23.466476" elapsed="10.336216">Keyword 'Element Should Contain' failed after retrying 5 times. The last error was: Element 'xpath://span[@class="option-name"]' should have contained text '3qWR2sc1
+AuthorCsJ0@mailinator.com' but its text was 'Author 3qWR2sc1'.</status>
+</iter>
+<var>${MANAGER}</var>
+<value>@{APPROVAL_MANAGERS_LIST}</value>
+<status status="FAIL" start="2026-05-06T15:56:23.465362" elapsed="10.337330">Keyword 'Element Should Contain' failed after retrying 5 times. The last error was: Element 'xpath://span[@class="option-name"]' should have contained text '3qWR2sc1
+AuthorCsJ0@mailinator.com' but its text was 'Author 3qWR2sc1'.</status>
+</for>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<arg>${APPROVAL_MANAGERS_SELECT}</arg>
+<arg>ESC</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:33.803696" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${COAUTHORS_SELECT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:33.803696" elapsed="0.000000"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Split String" owner="String">
+<var>${COAUTHOR}</var>
+<arg>${COAUTHOR}</arg>
+<arg>${SPACE}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:33.804688" elapsed="0.000000"/>
+</kw>
+<kw name="Scroll Element And Enter Value" owner="Common">
+<arg>${COAUTHOR_INPUT}</arg>
+<arg>${COAUTHOR[-1]}</arg>
+<doc>To Scroll Element And Enter Value</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:33.804688" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Element Should Contain</arg>
+<arg>${FIRST_COAUTHOR}</arg>
+<arg>${COAUTHOR[-1]}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:33.804688" elapsed="0.000000"/>
+</kw>
+<kw name="Wait For The Element And Click" owner="Common">
+<arg>${FIRST_COAUTHOR}</arg>
+<doc>To Wait For The Element And Click</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:33.805689" elapsed="0.000000"/>
+</kw>
+<var name="${COAUTHOR}"/>
+<status status="NOT RUN" start="2026-05-06T15:56:33.803696" elapsed="0.001993"/>
+</iter>
+<var>${COAUTHOR}</var>
+<value>@{COAUTHORS_LIST}</value>
+<status status="NOT RUN" start="2026-05-06T15:56:33.803696" elapsed="0.001993"/>
+</for>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<arg>${COAUTHORS_SELECT}</arg>
+<arg>ESC</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:33.805689" elapsed="0.000000"/>
+</kw>
+<doc>To Add The Approval Managers And Co-Author</doc>
+<status status="FAIL" start="2026-05-06T15:56:13.529639" elapsed="20.276050">Keyword 'Element Should Contain' failed after retrying 5 times. The last error was: Element 'xpath://span[@class="option-name"]' should have contained text '3qWR2sc1
+AuthorCsJ0@mailinator.com' but its text was 'Author 3qWR2sc1'.</status>
+</kw>
+<kw name="And User Add Step To Procedure" owner="AuthorScreen">
+<status status="NOT RUN" start="2026-05-06T15:56:33.806694" elapsed="0.000000"/>
+</kw>
+<kw name="And User Publishes The Procedure" owner="AuthorScreen">
+<status status="NOT RUN" start="2026-05-06T15:56:33.808202" elapsed="0.000000"/>
+</kw>
+<kw name="And Verify The Approval Managers And Co-Author Are Correctly Displayed" owner="AuthorScreen">
+<doc>To Verify The Approval Managers And Co-Author Are Correctly Displayed</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:33.809213" elapsed="0.000000"/>
+</kw>
+<kw name="And Deselect The Approval Managers And Co-Author" owner="AuthorScreen">
+<doc>To Deselect The Approval Managers And Co-Author</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:33.809213" elapsed="0.000000"/>
+</kw>
+<kw name="And Add The Approval Managers And Co-Author" owner="AuthorScreen">
+<doc>To Add The Approval Managers And Co-Author</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:33.810265" elapsed="0.000000"/>
+</kw>
+<kw name="And User Publishes The Procedure" owner="AuthorScreen">
+<status status="NOT RUN" start="2026-05-06T15:56:33.812347" elapsed="0.000000"/>
+</kw>
+<kw name="Then Verify The Approval Managers And Co-Author Are Correctly Displayed" owner="AuthorScreen">
+<doc>To Verify The Approval Managers And Co-Author Are Correctly Displayed</doc>
+<status status="NOT RUN" start="2026-05-06T15:56:33.812719" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword" owner="BuiltIn" type="TEARDOWN">
+<kw name="Ensure Procedures List Page Is Open" owner="AuthorScreen">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Navigate To Procedures List Page" owner="AuthorScreen">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${DASHBOARD_LINK}</arg>
+<arg>${Max_limit}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T15:56:33.816841" elapsed="0.236548"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:34.056416" level="INFO">Simulating Mouse Over on element 'xpath://span[.='Dashboard']/..'.</msg>
+<arg>${DASHBOARD_LINK}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:56:34.055418" elapsed="0.520745"/>
+</kw>
+<arg>10x</arg>
+<arg>1s</arg>
+<arg>Mouse Over</arg>
+<arg>${DASHBOARD_LINK}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T15:56:34.054425" elapsed="0.521738"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:56:40.096204" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1125.png"&gt;&lt;img src="selenium-screenshot-1125.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:56:40.096204" level="FAIL">Element 'xpath:(//mat-tree-node)[2]//span' not visible after 5 seconds.</msg>
+<arg>${PROCEDURE_TAB}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-05-06T15:56:34.576163" elapsed="5.521032">Element 'xpath:(//mat-tree-node)[2]//span' not visible after 5 seconds.</status>
+</kw>
+<msg time="2026-05-06T15:56:40.098193" level="INFO">${STATUS} = False</msg>
+<var>${STATUS}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${PROCEDURE_TAB}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-05-06T15:56:34.576163" elapsed="5.522030"/>
+</kw>
+<kw name="Wait For The Element And Click" owner="Common">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:57:40.530694" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1126.png"&gt;&lt;img src="selenium-screenshot-1126.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:57:40.530694" level="FAIL">Element 'xpath:(//mat-tree-node)[2]//span' not visible after 1 minute.</msg>
+<arg>${locator}</arg>
+<arg>${Max_limit}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-05-06T15:56:40.099191" elapsed="60.432593">Element 'xpath:(//mat-tree-node)[2]//span' not visible after 1 minute.</status>
+</kw>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<arg>${Max_limit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-06T15:56:40.098193" elapsed="60.433591"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:57:40.532779" level="INFO">Clicking element 'xpath:(//mat-tree-node)[2]//span'.</msg>
+<msg time="2026-05-06T15:57:41.017739" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1127.png"&gt;&lt;img src="selenium-screenshot-1127.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:57:41.017739" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-06T15:57:40.532779" elapsed="0.521584">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:57:43.056339" level="INFO">Clicking element 'xpath:(//mat-tree-node)[2]//span'.</msg>
+<msg time="2026-05-06T15:57:43.508986" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1128.png"&gt;&lt;img src="selenium-screenshot-1128.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:57:43.508986" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-06T15:57:43.055168" elapsed="0.455175">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:57:45.511113" level="INFO">Clicking element 'xpath:(//mat-tree-node)[2]//span'.</msg>
+<msg time="2026-05-06T15:57:45.971915" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1129.png"&gt;&lt;img src="selenium-screenshot-1129.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:57:45.971915" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-06T15:57:45.510605" elapsed="0.464418">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:57:47.975200" level="INFO">Clicking element 'xpath:(//mat-tree-node)[2]//span'.</msg>
+<msg time="2026-05-06T15:57:48.432351" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1130.png"&gt;&lt;img src="selenium-screenshot-1130.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:57:48.432351" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-06T15:57:47.975200" elapsed="0.460190">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:57:50.437334" level="INFO">Clicking element 'xpath:(//mat-tree-node)[2]//span'.</msg>
+<msg time="2026-05-06T15:57:50.902064" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1131.png"&gt;&lt;img src="selenium-screenshot-1131.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:57:50.902953" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-06T15:57:50.436308" elapsed="0.467646">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:57:52.907951" level="INFO">Clicking element 'xpath:(//mat-tree-node)[2]//span'.</msg>
+<msg time="2026-05-06T15:57:53.413404" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1132.png"&gt;&lt;img src="selenium-screenshot-1132.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:57:53.413404" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-06T15:57:52.905930" elapsed="0.509487">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:57:55.417167" level="INFO">Clicking element 'xpath:(//mat-tree-node)[2]//span'.</msg>
+<msg time="2026-05-06T15:57:55.881342" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1133.png"&gt;&lt;img src="selenium-screenshot-1133.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:57:55.881342" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-06T15:57:55.417167" elapsed="0.466175">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:57:57.885154" level="INFO">Clicking element 'xpath:(//mat-tree-node)[2]//span'.</msg>
+<msg time="2026-05-06T15:57:58.390091" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1134.png"&gt;&lt;img src="selenium-screenshot-1134.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:57:58.390091" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-06T15:57:57.884042" elapsed="0.510214">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:58:00.394633" level="INFO">Clicking element 'xpath:(//mat-tree-node)[2]//span'.</msg>
+<msg time="2026-05-06T15:58:00.892442" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1135.png"&gt;&lt;img src="selenium-screenshot-1135.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:58:00.893494" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-06T15:58:00.394633" elapsed="0.501859">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:58:02.897889" level="INFO">Clicking element 'xpath:(//mat-tree-node)[2]//span'.</msg>
+<msg time="2026-05-06T15:58:03.336327" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1136.png"&gt;&lt;img src="selenium-screenshot-1136.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:58:03.336327" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-06T15:58:02.896863" elapsed="0.441535">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</status>
+</kw>
+<msg time="2026-05-06T15:58:03.339470" level="FAIL">Keyword 'Click Element' failed after retrying 10 times. The last error was: ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</msg>
+<arg>10x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2026-05-06T15:57:40.531784" elapsed="22.809673">Keyword 'Click Element' failed after retrying 10 times. The last error was: ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</status>
+</kw>
+<arg>${PROCEDURE_TAB}</arg>
+<doc>To Wait For The Element And Click</doc>
+<status status="FAIL" start="2026-05-06T15:56:40.098193" elapsed="83.243264">Keyword 'Click Element' failed after retrying 10 times. The last error was: ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</status>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:59:03.740361" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1137.png"&gt;&lt;img src="selenium-screenshot-1137.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:59:03.740361" level="FAIL">Element '//button//span[normalize-space()='Add New']' not visible after 1 minute.</msg>
+<arg>${ADD_BUTTON_ON_PROCEDURE_LIST_PAGE}</arg>
+<arg>${Max_limit}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-05-06T15:58:03.342397" elapsed="60.398952">Element '//button//span[normalize-space()='Add New']' not visible after 1 minute.</status>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:59:03.742344" level="INFO">Simulating Mouse Over on element '//button//span[normalize-space()='Add New']'.</msg>
+<msg time="2026-05-06T15:59:04.169877" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1138.png"&gt;&lt;img src="selenium-screenshot-1138.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-06T15:59:04.169877" level="FAIL">Element with locator '//button//span[normalize-space()='Add New']' not found.</msg>
+<arg>${ADD_BUTTON_ON_PROCEDURE_LIST_PAGE}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="FAIL" start="2026-05-06T15:59:03.742344" elapsed="0.448022">Element with locator '//button//span[normalize-space()='Add New']' not found.</status>
+</kw>
+<status status="FAIL" start="2026-05-06T15:58:03.341457" elapsed="60.848909">Several failures occurred:
+
+1) Element '//button//span[normalize-space()='Add New']' not visible after 1 minute.
+
+2) Element with locator '//button//span[normalize-space()='Add New']' not found.</status>
+</branch>
+<branch type="EXCEPT">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:59:04.191383" level="INFO">Simulating Mouse Over on element '//section[@class="header"]//button'.</msg>
+<arg>${BELL_ICON_ON_LIST_PAGE}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2026-05-06T15:59:04.191383" elapsed="0.519955"/>
+</kw>
+<status status="PASS" start="2026-05-06T15:59:04.190366" elapsed="0.521509"/>
+</branch>
+<status status="PASS" start="2026-05-06T15:58:03.341457" elapsed="61.370418"/>
+</try>
+<doc>To Navigate To Procedures List Page</doc>
+<status status="FAIL" start="2026-05-06T15:56:33.815919" elapsed="150.895956">Keyword 'Click Element' failed after retrying 10 times. The last error was: ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff670b336a5+15b35]
+	chromedriver!GetHandleVerifier [0x7ff670b33710+15ba0]
+	chromedriver!(No symbol) [0x7ff67087d6c6]
+	chromedriver!(No symbol) [0x7ff6708d81d4]
+	chromedriver!(No symbol) [0x7ff6708cb236]
+	chromedriver!(No symbol) [0x7ff67090002a]
+	chromedriver!(No symbol) [0x7ff6708caab6]
+	chromedriver!(No symbol) [0x7ff670924df3]
+	chromedriver!(No symbol) [0x7ff6708c9348]
+	chromedriver!(No symbol) [0x7ff6708ca233]
+	chromedriver!GetHandleVerifier [0x7ff670e25cf9+308189]
+	chromedriver!GetHandleVerifier [0x7ff670e2040a+30289a]
+	chromedriver!GetHandleVerifier [0x7ff670e416b2+323b42]
+	chromedriver!GetHandleVerifier [0x7ff670b50ab5+32f45]
+	chromedriver!GetHandleVerifier [0x7ff670b5a0cc+3c55c]
+	chromedriver!GetHandleVerifier [0x7ff670b3c9f4+1ee84]
+	chromedriver!GetHandleVerifier [0x7ff670b3cba6+1f036]
+	chromedriver!GetHandleVerifier [0x7ff670b20957+2de7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd6461e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd65f4c3fc+2c]
+</status>
+</kw>
+<msg time="2026-05-06T15:59:04.711875" level="INFO">${status} = False</msg>
+<var>${status}</var>
+<arg>Navigate To Procedures List Page</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-05-06T15:56:33.814835" elapsed="150.897040"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${status}</arg>
+<arg>RETURN FROM KEYWORD</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-05-06T15:59:04.712918" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-06T15:59:04.712918" elapsed="2.480223"/>
+</kw>
+<kw name="Login To Mentor Application" owner="Login">
+<kw name="Launch Mentor Application" owner="Login">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-06T15:59:07.195207" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002103CBB88D0&gt;</msg>
+<var>${options}</var>
+<arg>selenium.webdriver.ChromeOptions()</arg>
+<arg>modules=selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-06T15:59:07.194199" elapsed="0.001008"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>window-size\=1920,1080</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-05-06T15:59:07.195207" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-05-06T15:59:07.195207" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-05-06T15:59:07.195207" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-notifications</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-05-06T15:59:07.196204" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-05-06T15:59:07.196204" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-05-06T15:59:07.196204" level="INFO">alias=None</msg>
+<arg>alias=${browser_alias}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-05-06T15:59:07.196204" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-06T15:59:07.196204" level="INFO">Opening browser 'chrome' to base url 'https://mentor-uat3.cdsvisual.net'.</msg>
+<arg>${Url}</arg>
+<arg>chrome</arg>
+<arg>options=${options}</arg>
+<arg>alias=${browser_alias}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-06T15:59:07.196204" elapsed="75.224528"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-06T16:00:22.420732" elapsed="0.150674"/>
+</kw>
+<arg>${browser_alias}</arg>
+<status status="PASS" start="2026-05-06T15:59:07.194199" elapsed="75.377207"/>
+</kw>
+<kw name="Verify Base Sign In Page" owner="Login">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EmailField}</arg>
+<arg>${MaxTime}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T16:00:22.572929" elapsed="1.020914"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-06T16:00:23.594382" level="INFO">Typing text 'uatautoauthor1@mailinator.com' into text field '//input[@type="email"] | //input[@id="signInName"]'.</msg>
+<arg>${EmailField}</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T16:00:23.594382" elapsed="0.662428"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-05-06T16:00:24.257820" level="INFO">Selecting checkbox '//input[@name="eula"]'.</msg>
+<arg>${Eula}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T16:00:24.257820" elapsed="0.822278"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EULALink}</arg>
+<arg>${MaxTime}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T16:00:25.080609" elapsed="0.256594"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EulaText}</arg>
+<arg>${MaxTime}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T16:00:25.337203" elapsed="0.250616"/>
+</kw>
+<arg>${UserEmail}</arg>
+<status status="PASS" start="2026-05-06T16:00:22.571916" elapsed="3.015903"/>
+</kw>
+<kw name="Click On Sign In" owner="Login">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T16:00:25.590534" level="INFO">Clicking element '//button[text()="Sign In"]| //button[@id="next"]'.</msg>
+<arg>${SignIn_Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T16:00:25.589519" elapsed="0.409195"/>
+</kw>
+<status status="PASS" start="2026-05-06T16:00:25.587819" elapsed="0.410895"/>
+</kw>
+<kw name="Verify Main Sign In page" owner="Login">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CompanyLogo}</arg>
+<arg>${MaxTime}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T16:00:26.001901" elapsed="4.859704"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-05-06T16:00:31.132038" level="INFO">Element '//input[@id="password"]' is displayed.</msg>
+<arg>${password}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T16:00:30.861605" elapsed="0.270433"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-06T16:00:31.133060" level="INFO">Typing text 'uatautoauthor1@mailinator.com' into text field '//input[@type="email"] | //input[@id="signInName"]'.</msg>
+<arg>${EmailField}</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T16:00:31.133060" elapsed="0.636313"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-06T16:00:31.770382" level="INFO">Typing text 'qwertyuiop12@A' into text field '//input[@id="password"]'.</msg>
+<arg>${password}</arg>
+<arg>${UserPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T16:00:31.769373" elapsed="0.514781"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T16:00:32.285698" level="INFO">Double clicking element '//button[text()="Sign In"]| //button[@id="next"]'.</msg>
+<arg>${SignIn_Button}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T16:00:32.284681" elapsed="0.540305"/>
+</kw>
+<kw name="wait for the page to load" owner="Common">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LoadingBar}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T16:00:32.827301" elapsed="6.330630"/>
+</kw>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${LoadingBar}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-06T16:00:32.826281" elapsed="6.331650"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${LoadingBar}</arg>
+<arg>120s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-05-06T16:00:39.159460" elapsed="1.308876"/>
+</kw>
+<arg>Wait Until Element Is Not Visible</arg>
+<arg>${LoadingBar}</arg>
+<arg>120s</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-06T16:00:39.158441" elapsed="1.310411"/>
+</kw>
+<status status="PASS" start="2026-05-06T16:00:32.824986" elapsed="7.643866"/>
+</kw>
+<arg>${UserEmail}</arg>
+<arg>${UserPassword}</arg>
+<status status="PASS" start="2026-05-06T16:00:25.998714" elapsed="14.470138"/>
+</kw>
+<arg>${AUTHOR1_EMAIL}</arg>
+<arg>${AUTHOR1_PASS}</arg>
+<status status="PASS" start="2026-05-06T15:59:07.193141" elapsed="93.275711"/>
+</kw>
+<kw name="Navigate To Procedures List Page" owner="AuthorScreen">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${DASHBOARD_LINK}</arg>
+<arg>${Max_limit}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T16:00:40.471382" elapsed="0.637661"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2026-05-06T16:00:41.112353" level="INFO">Simulating Mouse Over on element 'xpath://span[.='Dashboard']/..'.</msg>
+<arg>${DASHBOARD_LINK}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2026-05-06T16:00:41.111336" elapsed="0.553865"/>
+</kw>
+<arg>10x</arg>
+<arg>1s</arg>
+<arg>Mouse Over</arg>
+<arg>${DASHBOARD_LINK}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T16:00:41.110314" elapsed="0.554887"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PROCEDURE_TAB}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T16:00:41.666269" elapsed="5.151783"/>
+</kw>
+<msg time="2026-05-06T16:00:46.818052" level="INFO">${STATUS} = True</msg>
+<var>${STATUS}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${PROCEDURE_TAB}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-05-06T16:00:41.666269" elapsed="5.152801"/>
+</kw>
+<kw name="Wait For The Element And Click" owner="Common">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${Max_limit}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T16:00:46.821118" elapsed="0.245372"/>
+</kw>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<arg>${Max_limit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-06T16:00:46.821118" elapsed="0.245372"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-06T16:00:47.067610" level="INFO">Clicking element 'xpath:(//mat-tree-node)[2]//span'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-06T16:00:47.067610" elapsed="0.399541"/>
+</kw>
+<arg>10x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-06T16:00:47.066490" elapsed="0.400661"/>
+</kw>
+<arg>${PROCEDURE_TAB}</arg>
+<doc>To Wait For The Element And Click</doc>
+<status status="PASS" start="2026-05-06T16:00:46.819070" elapsed="0.648081"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ADD_BUTTON_ON_PROCEDURE_LIST_PAGE}</arg>
+<arg>${Max_limit}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-06T16:00:47.467151" elapsed="0.248073"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2026-05-06T16:00:47.715224" level="INFO">Simulating Mouse Over on element '//button//span[normalize-space()='Add New']'.</msg>
+<arg>${ADD_BUTTON_ON_PROCEDURE_LIST_PAGE}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2026-05-06T16:00:47.715224" elapsed="0.511863"/>
+</kw>
+<status status="PASS" start="2026-05-06T16:00:47.467151" elapsed="0.759936"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<arg>${BELL_ICON_ON_LIST_PAGE}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-06T16:00:48.227087" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-05-06T16:00:48.227087" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2026-05-06T16:00:47.467151" elapsed="0.759936"/>
+</try>
+<doc>To Navigate To Procedures List Page</doc>
+<status status="PASS" start="2026-05-06T16:00:40.469865" elapsed="7.757222"/>
+</kw>
+<doc>To Ensure Procedures List Page Is Open</doc>
+<status status="PASS" start="2026-05-06T15:56:33.814835" elapsed="254.412252"/>
+</kw>
+<arg>Ensure Procedures List Page Is Open</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2026-05-06T15:56:33.813929" elapsed="254.414218"/>
+</kw>
+<tag>CZ-6531</tag>
+<tag>sanity</tag>
+<status status="FAIL" start="2026-05-06T15:55:59.780546" elapsed="288.452588">Keyword 'Element Should Contain' failed after retrying 5 times. The last error was: Element 'xpath://span[@class="option-name"]' should have contained text '3qWR2sc1
+AuthorCsJ0@mailinator.com' but its text was 'Author 3qWR2sc1'.</status>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-05-06T16:00:48.247363" elapsed="2.656706"/>
+</kw>
+<status status="FAIL" start="2026-05-06T15:55:19.703217" elapsed="331.200852"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">CZ-6531</stat>
+<stat pass="0" fail="1" skip="0">sanity</stat>
+</tag>
+<suite>
+<stat name="AuthorScreen" id="s1" pass="0" fail="1" skip="0">AuthorScreen</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-05-06T15:55:22.848446" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Common\Common.resource' on line 9: Importing library 'csvLibrary' failed: ModuleNotFoundError: No module named 'csvLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\.venv1\Scripts\robot.exe
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311
+  C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\.venv1
+  C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\.venv1\Lib\site-packages</msg>
+<msg time="2026-05-06T15:55:30.490368" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\BOM_BOT\BOM.resource' on line 7: Importing library 'CSVLibrary' failed: ModuleNotFoundError: No module named 'CSVLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\.venv1\Scripts\robot.exe
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311
+  C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\.venv1
+  C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\.venv1\Lib\site-packages</msg>
+</errors>
+</robot>

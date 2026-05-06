@@ -1,0 +1,182 @@
+Url:        https://mentor-qa.cdsvisual.net
+Browser:        chrome
+
+#QA Automation Quality Manager
+QA_MANAGER_EMAIL:  Quality_Manager@mailinator.com
+QA_MANAGER_PASS:  qwertyuiop12@A
+#QA Automation Expert Ope...
+EXPERT_OPERATOR_EMAIL:  autoexoperator2@mailinator.com
+EXPERT_OPERATOR_PASS:  qwertyuiop12@A
+#QA Automation Supervisor...
+SUPERVISOR_EMAIL:  autosupervisor@mailinator.com
+SUPERVISOR_PASS:  qwertyuiop12@A
+#QA Automation Operator 2...
+OPERATOR2_EMAIL:  autooperator2@mailinator.com
+OPERATOR2_PASS:  qwertyuiop12@A
+#QA Automation Operator
+OPERATOR1_EMAIL:  autooperator@mailinator.com
+OPERATOR1_PASS:  qwertyuiop12@A
+#QA Automation Author 3
+AUTHOR3_EMAIL:  autoauthor03@mailinator.com
+AUTHOR3_PASS:  qwertyuiop12@A
+#QA Automation Author 2
+AUTHOR2_EMAIL:  autoauthor2@mailinator.com
+AUTHOR2_PASS:  qwertyuiop12@A
+#QA Automation Author 1
+AUTHOR1_EMAIL:  autoauthor1@mailinator.com
+AUTHOR1_PASS:  qwertyuiop12@A
+#Automation Site Admin
+SITE_ADMIN_EMAIL:  autositeadm@mailinator.com
+SITE_ADMIN_PASS:  qwertyuiop12@A
+#Automation Org Admin
+ORG_ADMIN_EMAIL:  automationOrgad@mailinator.com
+ORG_ADMIN_PASS:  qwertyuiop12@A
+#New Site Admin
+SiteAdminNew: autositeadm2@mailinator.com
+SiteAdminNewPass: qwertyuiop12@A
+#New Different Site Site Admin
+SiteAdminSite2: siteadmautsite@mailinator.com
+SiteAdminSite2Pass: qwertyuiop12@A
+
+
+#Org 2 -Automation Org 2
+
+#QA Automation Quality Manager
+QA_MANAGER_EMAIL_ORG2:  autoqualitymanog2@mailinator.com
+QA_MANAGER__PASS_ORG2:  qwertyuiop12@A
+#QA Automation Expert Ope...
+EXPERT_OPERATOR_EMAIL_ORG2:  autoexoperator2og2@mailinator.com
+EXPERT_OPERATOR_PASS_ORG2:  qwertyuiop12@A
+#QA Automation Supervisor...
+SUPERVISOR_EMAIL_ORG2:  autosupervisorog2@mailinator.com
+SUPERVISOR_PASS_ORG2:  qwertyuiop12@A
+#QA Automation Operator 2...
+OPERATOR2_EMAIL_ORG2:  autooperatorog2@mailinator.com
+OPERATOR2_PASS_ORG2:  qwertyuiop12@A
+#QA Automation Operator
+OPERATOR1_EMAIL_ORG2:  autooperator2og2@mailinator.com
+OPERATOR1_PASS_ORG2:  qwertyuiop12@A
+#QA Automation Author 3
+AUTHOR3_EMAIL_ORG2:  autoauthor3og2@mailinator.com
+AUTHOR3_PASS_ORG2:  qwertyuiop12@A
+#QA Automation Author 2
+AUTHOR2_EMAIL_ORG2:  autoauthor2og2@mailinator.com
+AUTHOR2_PASS_ORG2:  qwertyuiop12@A
+#QA Automation Author 1
+AUTHOR1_EMAIL_ORG2:  autoauthor1og2@mailinator.com
+AUTHOR1_PASS_ORG2:  qwertyuiop12@A
+#Automation Site Admin
+SITE_ADMIN_EMAIL_ORG2:  autositeadmog2@mailinator.com
+SITE_ADMIN_PASS_ORG2:  qwertyuiop12@A
+#Automation Org Admin
+ORG_ADMIN_EMAIL_ORG2:  automationOrgadog2@mailinator.com
+ORG_ADMIN_PASS_ORG2:  qwertyuiop12@A
+
+
+
+GENERIC_PASSWORD:  qwertyuiop12@A
+AdminEmail:     cdsmentorQASeed@mailinator.com
+AdminPass :     CDSAdmin@12345
+AuthorEmail:   qaauthor7jul@mailinator.com
+OrgAdmin2:   qaorg7juladm@mailinator.com
+OrgAdminPass2:   qwertyuiop12@A
+SiteAdmin:  qasitead7july@mailinator.com
+SiteAdminPass:  qwertyuiop12@A
+OrgAdmin:    qaorgnew25@mailinator.com
+OrgAdminPass:   qwertyuiop12@A
+AuthorPass:    qwertyuiop12@A
+AuthorA:  qaauthor17july@mailinator.com
+Author3:  qaauthor2@mailinator.com
+Author3Pass:   qwertyuiop12@A
+Author4:  qaauthor3@mailinator.com
+Author4Pass:   qwertyuiop12@A
+AuthorAPass:  qwertyuiop12@A
+NewPassword: qwertyuiop12@A
+OperatorEmail:  qaoperator2@mailinator.com
+OperatorPass:  qwertyuiop12@A
+STANDARD_OPERATOR:  qaoperator2@mailinator.com
+STANDARD_OPERATOR_PASS:  qwertyuiop12@A
+SupervisorEmail:  qa.supervisor@mailinator.com
+SupervisorPass:  qwertyuiop12@A
+CrossSiteUser: userpooja@mailinator.com
+
+MaxTime: 60s
+Time_120s:     120s
+Time_15s:   15s
+MaxLimit: 30s
+WorkspaceName: Demo Workspace
+WorkspaceDescription: For Automation Purpose
+# Static Data (Need to change)
+Address1:   44/1 Bharat Apartment
+Address2:   4C 5th Main Road Jayanagar
+CountryValue:   " India "
+State_value:    " Karnataka "
+City_value:    Bangalore
+Post_code: 290876
+EmailId: minewauthor@mailinator.com
+Country_code: +91
+Phone_number: 8767567890
+description_text: This is for Dg Site.
+
+
+Tag: Abc
+TD_SERIAL_NUMBER:  TESTSR1234
+TestMatNo:  MAT001-WbE4ZK2J
+TestJobName:  TESTJOB
+NCR_affected_partnamne:  Bolts
+NCR_affected_quantity:  5
+NCR_description_text:  Part is cracked and unusable.
+
+
+FirstNameTrainer:      SDETAuthor
+LastNameTrainer:       Testing
+FirstNameTrainee:      robotTrainee
+LastNameTrainee:       Testing
+SuccessText:    Mentor is open in another window.
+LinkText:       Embed Procedure Link
+ProcedureText:  Procedure Link
+Text:           You can use this procedure without any password
+MailBox_URL:     https://www.mailinator.com/
+NewFirstName: Roger
+NewLastName: Federer
+OrgName: TestJulOrg
+AssignedTrainerName: SDETTrainer Testing
+MentorSupport: mentor-support@cdsvisual.com
+OrgOwnEmail: neworganization12@gmail.com
+ProcedureApprovalAuthorEmail: qaauthor2@mailinator.com
+SignOffApprovalAuthorEmail: qaauthor3@mailinator.com
+FromEmail: dd-noreply@dovercorp.com
+MaxTime_180s: 180s
+
+contact_us: "https://cdsvisual.com/contact"
+#workspace
+UserGroupTo_Search: Demo User Group 1
+Max_limit : 60s
+ExistingProcedure:
+OPERATOR1_NAME: Automation Operator
+ORG_ADMIN_NAME: Automation Org Admin
+SITE_ADMIN_NAME: Auto Site Admin
+OPERATOR2_NAME: Automation Operator 2
+AUTHOR1_NAME:    Automation Author 1
+AUTHOR2_NAME:    Automation Author 2
+AUTHOR3_NAME:    Automation Author 3
+RED:    rgba(228, 0, 43, 1)
+ORANGE:    rgba(241, 92, 47, 1)
+RGB_ORANGE:    rgb(241, 92, 47)
+GRAY:    rgba(204, 204, 204, 1)
+RGB_GRAY:    rgb(0, 143, 49)
+NORMAL_IMAGE_ATTR:    'transform: scale(1) translate(0px, 0px); cursor: grab;'
+ZOOMED_IN_IMAGE_ATTR:    'transform: scale(1.2) translate(0px, 0px); cursor: grab;'
+GREEN:    rgba(242, 242, 242, 1)
+MY_TRAINING_GREEN:    rgba(0, 143, 49, 1)
+RGB_GREEN:    rgb(0, 143, 49)
+PROCEDURE_COMPLETION_GREEN:    rgba(118, 173, 53, 1)
+MATRIX_IN_PROGRESS:    rgba(244, 125, 89, 1)
+MATRIX_COMPLETED:    rgba(136, 194, 63, 1)
+MATRIX_COMPLETED_LIGHT:    rgba(231, 243, 217, 1)
+LIGHT_RED:    rgba(255, 83, 86, 1)
+SELECTED_RECORDS_COLOR:    rgba(207, 229, 255, 1)
+
+TD_SITE_NAME: Automation Site
+TD_MATERIAL_NUMBER: MAT-1234
+DELETED_USER_EMAIL:  deleted_user@mailinator.com

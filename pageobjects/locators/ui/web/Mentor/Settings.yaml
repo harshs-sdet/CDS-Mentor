@@ -1,0 +1,68 @@
+LEFT_NAVIGATION_SETTINGS_TAB: xpath://mat-icon[@data-mat-icon-name="settings"]//following-sibling::span
+DISPLAY_NAME_LABEL: xpath://div[@class="display-name"]
+SETTINGS_CANCEL_BUTTON: xpath://footer//button[1]
+SETTINGS_SAVE_BUTTON: xpath://footer//button[2]
+SITE_SETTINGS_TAB: xpath://a[@href="/settings/site"]
+JOB_SETTINGS_TAB: xpath://a[@href="/settings/job"]
+
+#Site
+PROCEDURE_NAME_INPUT: xpath://input[@placeholder="Procedure Name"]
+DOCUMENT_ID_INPUT: xpath://input[@placeholder="Document Id"]
+MATERIAL_ID_INPUT: xpath://input[@placeholder="Material Ids"]
+TAGS_NAME_INPUT: xpath://input[@placeholder="Tags"]
+LANGUAGE_DROPDOWN_TOGGLE_BUTTON: xpath:(//button[@role="switch"])[8]
+SIGNOFF_MANAGER_MANDATORY_CHECKBOX: xpath:(//input[@type="checkbox"])[9]
+SIGNOFF_MANAGER_MANDATORY_CHECKBOX_LABEL: xpath:(//label[normalize-space()='Mandatory'])[5]
+SITE_SETTING_FREE_FORM_RADIO: xpath://input[@value="FREE_FORM"]
+SITE_SETTING_AUTO_GENERATE_RADIO: xpath://input[@value="AUTO_GENERATED"]
+SITE_SETTING_AUTO_GENERATE_PREFIX_RADIO: xpath://input[@value="OPTION2"]
+SITE_SETTING_AUTO_GENERATE_SUFFIX_RADIO: xpath://input[@value="OPTION1"]
+SETTINGS_DOCID_PREFIX_INPUT: xpath://input[@placeholder="Add Prefix"]
+SETTINGS_DOCID_SUFFIX_INPUT: xpath://input[@placeholder="Add Suffix"]
+SETTINGS_DESCRIPTION_SITE_TAB: xpath:(//div[@class="setting-description"])[1]
+SETTINGS_PROCEDURE_NAME_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[2]
+SETTINGS_DOCUMENT_ID_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[4]
+SETTINGS_MATERIAL_ID_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[6]
+SETTINGS_CO_AUTHOR_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[8]
+SETTINGS_SIGNOFF_MANAGERS_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[10]
+SETTINGS_APPROVAL_MANAGERS_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[12]
+SETTINGS_TAGS_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[14]
+SETTINGS_LANGUAGE_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[16]
+SETTINGS_CYCLE_TIME_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[18]
+
+
+
+
+#updated
+UPDATED_PROCEDURE_NAME_LABEL: //label[contains(text(),'Procedure Name Updated')]
+UPDATED_PROCEDURE_NAME_INPUT: //input[@placeholder="Procedure Name Updated"]
+HIDDEN_LANGUAGE_DROPDOWN: (//span[normalize-space()='English'])[2]
+
+#Job
+#JOB_ID_INPUT: xpath://input[@placeholder="Job Id"]
+JOB_NAME_INPUT_SETTINGS: xpath://input[@placeholder="Job Name"]
+PURCHASE_ORDER_NUMBER_INPUT: xpath://input[@placeholder="Purchase Order Number"]
+PRODUCTION_PLANT_INPUT: xpath://input[@placeholder="Production Plant"]
+BATCH_NUMBER_INPUT_SETTINGS: xpath://input[@placeholder="Batch Number"]
+PRODUCTION_PLANT_TOGGLE_BUTTON: xpath:(//button[@role="switch"])[4]
+VERSION_MANDATORY_CHECKBOX: (//input[@type="checkbox"])[13]
+VERSION_MANDATORY_CHECKBOX_LABEL: (//label[normalize-space()='Mandatory'])[7]
+SETTINGS_JOB_ID_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[2]
+SETTINGS_JOB_NAME_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[4]
+SETTINGS_JOB_MATERIAL_ID_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[6]
+SETTINGS_PRODUCTION_PLANT_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[8]
+SETTINGS_PO_NUMBER_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[10]
+SETTINGS_BATCH_NUMBER_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[12]
+SETTINGS_VERSION_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[14]
+SETTINGS_SALES_ORDER_NUMBER_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[16]
+SETTINGS_ORDER_TYPE_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[18]
+SETTINGS_MRP_CONTROLLER_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[20]
+SETTINGS_STORAGE_LOCATION_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[22]
+SETTINGS_QUANTITY_TIME_SCANNABLE_CHECKBOX: xpath:(//input[@type="checkbox"])[24]
+
+#updated
+UPDATED_JOB_NAME_LABEL: //label[contains(text(),'Job Name Updated')]
+UPDATED_JOB_NAME_INPUT: //input[@placeholder="Job Name Updated"]
+
+
+

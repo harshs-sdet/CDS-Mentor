@@ -1,0 +1,3 @@
+ScenarioName,PAD_IncorrectPhoneNumber,PAD_IncorrectUsers
+InvalidPhoneNumber,"76543,2343234,324523334",
+InvalidUsers,"76543,2343234,324523334","miNewTrainer@mailinator.com,user2pooja@mailinator.com,authoruser@mailinator.com"

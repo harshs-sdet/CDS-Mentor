@@ -1,0 +1,63 @@
+# change logs dashboard
+change_log_option: //mat-tree-node//span[normalize-space()='Change Log']
+date_header_item: //div[contains(@class,'group-header') and contains(.,'${todays_date}')]
+date_header_expand_icon: //div[contains(@class,'group-header') and contains(.,'${todays_date}')]//mat-icon[contains(@class,'toggle-icon')]
+change_logs_first_procedure: //span[@class='mat-mdc-tooltip-trigger clickable']
+change_logs_time: //tbody/tr[2]/td[1]
+change_logs_version: //tbody/tr[2]/td[3]
+change_logs_activity: //tbody/tr[2]/td[4]
+change_logs_author: //tbody/tr[2]/td[5]
+
+# procedure change logs
+change_logs_heading: //div[@class='text ng-star-inserted']
+change_logs_preview_icon: //icon-button[3]//button[1]
+change_logs_user_contribution: //icon-button[2]//button[1]
+change_logs_procedure_details: //icon-button[1]//button[1]
+change_logs_export: //button[.//span[contains(text(),'Export')]]
+change_logs_restore: //button[.//span[contains(text(), 'Restore')]]
+left_panel_version_numbers: //span[contains(@class,'version-heading') and contains(normalize-space(.),"Ver xy")]
+change_logs_show_detailed_view: //span[@class='mdc-switch__shadow']
+change_logs_contributors_list:  //div[contains(@class, 'contributor-item')]
+change_logs_contributor_name:   .//span[contains(@class, 'title')]
+change_logs_dateandtime: //tbody/tr[2]/td[1]
+change_logs_activity_column: //tbody/tr[2]/td[2]
+change_logs_user_name: //tbody/tr[2]/td[3]
+
+# procedure preview page
+change_version_dropdown: //select[@id="version-select"]
+first_version_option: (//select[@id="version-select"]//option)[1]
+second_version_option: (//select[@id="version-select"]//option)[2]
+all_version_options_dropdown: //select[@id='version-select']/option
+preview_back_button: //a[normalize-space()="Back"]
+preview_button_change_log: //icon-button[@class="mat-mdc-tooltip-trigger"]//button[@class="small"]
+
+# show detailed view
+show_detailed_view_activities: //span[@class='option-label' and text()='Activities']
+show_detailed_view_content: //div[contains(@class,'view-option')]//span[text()='Content']
+activity_column_cells:  //td[contains(@class, 'cdk-column-activity')]
+preview_details_bom: //div[normalize-space()='Bill of Materials:']
+preview_details_bot: //div[normalize-space()='Bill of Tools:']
+preview_details_com: //div[normalize-space()='Components:']
+preview_details_options: //div[normalize-space()='Options']
+preview_details_preventive: //span[normalize-space()='Preventive Troubleshooting:']
+preview_details_image: //img[@class="ng-star-inserted"]
+preview_details_video: //video[@class='ng-star-inserted']
+#//div[@class='procedure-container ng-star-inserted']//div[2]//div[4]//div[2]//div[1]//div[1]//thumbnail[1]//div[1]//img[1]
+preview_details_pdf: //img[@src='/assets/images/PDF.png']
+preview_details_general: //div[normalize-space()='General Details']
+preview_details_ppe: //div[normalize-space()='PPE Equipments (Optional)']
+preview_details_user_input: //div[normalize-space()='User Inputs:']
+
+DASHBOARD_OPTION: //mat-tree-node/descendant::span[contains(text(),"Dashboard")]
+PROCEDURE_LIBRARY_OPTION: //mat-tree-node/descendant::span[contains(text(),"Procedure Library")]
+
+
+
+preview_page_header: //div[@class="text ng-star-inserted"]
+preview_header_message: //span[@class="ng-star-inserted"]
+
+old_versions_text: //span[@class="ng-star-inserted"]
+change_logs_restore_confirm: //button[.//span[contains(text(), 'Confirm')]]
+change_logs_restore_cancel: //button[.//span[contains(text(), 'Cancel')]]
+preview_close_button: //button[.//span[contains(text(), 'Close')]]
+version_locator: //span[starts-with(@class,"version-heading")]

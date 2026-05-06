@@ -1,0 +1,58 @@
+#Login Page Locators (New Screens)
+
+#Base Sign In Page
+
+EmailField: //input[@type="email"] | //input[@id="signInName"]
+Eula: //input[@name="eula"]
+SignIn_Button: //button[text()="Sign In"]| //button[@id="next"]
+SignInText: //div[@class="sign-in-name"]
+EULALink: //a[@class="eula-doc-link"]
+EulaText: //label[@class="eula-text"]
+PARTICULAR_EMAIL_IN_INBOX: (//tr[@ng-repeat="email in emails"]//td[contains(text(),'TEXT')])[1]
+EMAIL_IMAGE_RECEIVED: //img[@src="https://cds-mentor-assets-common-s3.s3.us-west-2.amazonaws.com/email-asset/dover_white_logo.png"]
+EMAIL_CONTENT_IFRAME: //iframe[@id="html_msg_body"]
+
+#MainSign In:
+
+CompanyLogo: //img[@class="companyLogo"]
+password: //input[@id="password"]
+forgotPassword: //a[@id="forgotPassword"]
+SSOLogin: //button[@id="DoverAADExchange"]
+SignInMainText: //form//div[@class="intro"]//h2
+ManageWorkspace: (//*[local-name()='svg'][contains(@class,'ng-star-inserted')])[5]
+
+#ForgotPassword
+
+LoginCancelButton: //button[@id="cancel"]
+SignInLabel: //label[@id="signInName_label"]
+ContinueButton: //button[@id="continue"]
+SendVerificationCode: //button[@id="alternateEmail_ver_but_send"]
+ForgotEmailField: //input[@id="alternateEmail"]
+VerificationText: //div[@id="alternateEmail_intro"]
+VerificationCodeInput: //input[@id="alternateEmail_ver_input"]
+VerifyCode: //button[@id="alternateEmail_ver_but_verify"]
+SendNewCode: //button[@id="alternateEmail_ver_but_resend"]
+EmailVerified: //div[@id="alternateEmail_success"]
+NewPasswordLabel: //label[@id="newPassword_label"]
+NewPasswordTextfield: //input[@id="newPassword"]
+ConfirmPasswordLabel: //LABEL[@id="reenterPassword_label"]
+ConfirmPasswordTextfield: //input[@id="reenterPassword"]
+UseHereButton: //button[text()="Use Here"]
+LoadingBar: //div[contains(@class,'loading-bar')] | //div[@class='text-center'] | //div[@class='container overlay ng-star-inserted']
+
+#Mailinator
+Mailinator_SearchEmail: //input[@id="search"]
+GO_Button: // button[text()="GO"]
+Verification_Email: //td[contains(text(),"verification")]
+NEW_USER_EMAIL: //td[contains(text(),"Activate your Account")]
+Frame: //iframe[@id="html_msg_body"]
+VerifyEmail: //span[@id="HeaderPlaceholder_UserVerificationEmailHeader"]
+TEMPORARY_PASSWORD: //strong[.='Temporary Password:']/..
+VerificationCode: //span[@id="BodyPlaceholder_UserVerificationEmailBodySentence2"]
+
+User_profile:  //mat-select[@id='mat-select-2']
+txt_logout:  //div[contains(text(), 'Logout')]
+
+ActivateMail: //table[contains(@class, "table-striped")]
+TemporaryPassword: //p[strong[normalize-space()='Temporary Password:']]/text()
+WelcomeImage: //img[contains(@alt, "Welcome Icon")]

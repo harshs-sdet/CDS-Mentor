@@ -1,0 +1,55 @@
+Add_btn: //div[@class = "toolbar-container"]//button
+DASHBOARD_LINK: xpath://span[.='Dashboard']/..
+RECORD_COUNT: xpath://div[contains(@class,"paginator-range")]/div
+POP_UP_WINDOW_RECORDS_COUNT: //div[contains(@class,"paginator-range")]/div
+SELECT_PAGE_SIZE: xpath:(//mat-option/span)[INDEX]
+PAGINATION_NEXT_PAGE: xpath://button[@aria-label="Next Page"]
+PAGE_SIZE_DROPDOWN: xpath:(//mat-select)[3]/div/div[2]
+LoadingBar: //div[contains(@class,'loading-bar')] | //div[@class='text-center'] | //div[@class='container overlay ng-star-inserted']
+SELECTED_RECORD: xpath://div[contains(text(),'Selected (2)')]
+DELETE_MULTIPLE_RECORD: xpath:(//select-count-bar//following-sibling::button)[2]
+DELETE_MULTIPLE_POPUP: xpath:(//span[contains(text(),'Delete')])[3]
+LEFT_NAV_WORKSPACE_TAB: xpath://mat-tree-node//span[text()='Workspaces']
+WORKS_MAGANEMENT_HEADER: xpath://div[contains(text(),'Workspace Management')]
+ADMINISTRATION_LINK:  xpath://span[.='Administration']
+left_Navigation_user_management: xpath://span[.='User Management']
+ADD_NEW_BUTTON: xpath://span[.='Add New']
+CLOSE_POPUP: xpath:(//mat-icon[normalize-space()='close'])[3]
+DEFAULT_RECORD: xpath:(//tr[@role="row"])//td//delete-button
+RECORDS_ON_CURRENT_PAGE: xpath:(//tr[@role="row"])
+FIRST_RECORD: xpath:(//tbody/tr/td)[2]//span
+PAGE_DOWN_ELEMENT: xpath:(//thead[@role="rowgroup"]//input[@type="checkbox"])[1]
+INSIDE_PAGINATION_NEXT_PAGE: xpath:(//button[@aria-label="Next Page"])[2]
+INSIDE_PAGE_SIZE_SELECT: (//div[contains(@class,'mat-mdc-paginator-touch-target')])[2]
+INSIDE_RECORDS_COUNT: xpath:(//div[contains(@class,"paginator-range")]/div)[2]
+filter_button: xpath://filter-button
+filter_clear_all: xpath://span[contains(text(),'Clear all')]
+option_role_filter: xpath:(//div[@role="region"]//label[@class="mdc-label"])[INDEX]
+status_filter: xpath:(//mat-panel-title)[3]
+apply_filter: xpath:(//span[contains(text(),'Apply')])
+APPLIED_FILTERS: xpath://span[contains(text(),'Filters')]
+DIFFERENT_SITE_DROPDOWN: (//mat-form-field)[3]
+DIFFERENT_SITE_OPTION: xpath:(//mat-option/span[not(contains(text(), 'SITE'))])[3]
+ZERO_RECORDS: xpath://div[contains(text(),'0 of 0')]
+INPUT_SEARCH: //input[@placeholder="Search..."]
+DELETE_POPUP: xpath:(//span[contains(text(),'Delete')])[2]
+SELECT_MULTIPLE_RECORD: xpath:(//input[contains(@class,'mdc-checkbox__native-control')])[INDEX]
+DELETE_RECORD_ICON: //mat-icon[@svgicon='deleteIcon'][1]
+DELETE_RECORD_POPUP_BUTTON: //mat-dialog-actions/button[2]
+ALL_RECORDS_CHECKBOX_ON_LIST_PAGE: (//mat-checkbox)[1]
+ADDED_RECORDS_COUNT: //div[@class="selected-btn"]
+user_name: //span[@class='title']
+
+#Notification
+BELL_ICON_ON_LIST_PAGE: //section[@class="header"]//button
+NOTIFICATION_FLYOUT_TITLE: //h4[@class="title" and normalize-space()='Notification']
+NOTIFICATION_FLYOUT_MARK_ALL_AS_COMPLETE_BUTTON: //span//span[normalize-space()='Mark all as read']
+NOTIFICATION_FLYOUT_EXPAND_BUTTON: //mat-icon[@data-mat-icon-name="open-new-icon"]
+NOTIFICATION_FLYOUT_CLOSE_BUTTON: (//button//mat-icon[normalize-space()='close'])[1]
+NOTIFICATION_FLYOUT_COMMENTS_SECTION: //span[@class="option-label" and normalize-space()='Comments']
+FIRST_NOTIFICATION_TITLE_ICON: //div[@class="avatar"]//mat-icon
+FIRST_NOTIFICATION_TITLE_TEXT: //span[contains(@class,'notification-title')]
+FIRST_NOTIFICATION_SUB_TITLE_ICON: (//span[contains(@class,'notification-title')]//following-sibling::div)[1]/span[1]
+FIRST_NOTIFICATION_SUB_TITLE_TEXT: (//span[contains(@class,'notification-title')]//following-sibling::div)[INDEX]/span[2]
+FIRST_NOTIFICATION_DATE: //span[@class="date-font"]
+FIRST_NOTIFICATION_CATEGORY: //span[contains(@class,'category-name')]

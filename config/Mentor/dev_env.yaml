@@ -1,0 +1,139 @@
+#credentials
+Url:        https://mentor-dev.cdsvisual.net
+Browser:        chrome
+
+#QA Automation Quality Manager
+QA_MANAGER_EMAIL:  autoqualityman@mailinator.com
+QA_MANAGER_PASS:  qwertyuiop12@A
+#QA Automation Expert Ope...
+EXPERT_OPERATOR_EMAIL:  autoexoperator2@mailinator.com
+EXPERT_OPERATOR_PASS:  qwertyuiop12@A
+#QA Automation Supervisor...
+SUPERVISOR_EMAIL:  autosupervisor@mailinator.com
+SUPERVISOR_PASS:  qwertyuiop12@A
+#QA Automation Operator 2...
+OPERATOR2_EMAIL:  autooperator2@mailinator.com
+OPERATOR2_PASS:  qwertyuiop12@A
+#QA Automation Operator
+OPERATOR1_EMAIL:  autooperatora1@mailinator.com
+OPERATOR1_PASS:  qwertyuiop12@A
+#QA Automation Author 3
+AUTHOR3_EMAIL:  autoauthor3@mailinator.com
+AUTHOR3_PASS:  qwertyuiop12@A
+#QA Automation Author 2
+AUTHOR2_EMAIL:  autoauthor2@mailinator.com
+AUTHOR2_PASS:  qwertyuiop12@A
+#QA Automation Author 1
+AUTHOR1_EMAIL:  autoauthora1@mailinator.com
+AUTHOR1_PASS:  qwertyuiop12@A
+#Automation Site Admin
+SITE_ADMIN_EMAIL:  autositeadm@mailinator.com
+SITE_ADMIN_PASS:  qwertyuiop12@A
+#Automation Org Admin
+ORG_ADMIN_EMAIL:  automationOrgad@mailinator.com
+ORG_ADMIN_PASS:  qwertyuiop12@A
+
+#New Site Admin
+SiteAdminNew: pj1@maiinator.com
+SiteAdminNewPass: qwertyuiop12@A
+
+
+GENERIC_PASSWORD:  qwertyuiop12@A
+DELETED_USER_EMAIL:  deleted_user@mailinator.com
+
+AuthorEmail:   userpooja@mailinator.com
+OrgAdmin:   qwert@mailinator.com
+OrgAdminPass:   qwertyuiop12@A
+OrgAdmin2:   technouser118@mailinator.com
+OrgAdminPass2:   qwertyuiop12@A
+AuthorPass:    qwertyuiop12@A
+AuthorA:  newtechnouser@mailinator.com
+Author3:  Author3test@mailinator.com
+Author3Pass:   qwertyuiop12@A
+Author4:  Author4test@mailinator.com
+Author4Pass:   qwertyuiop12@A
+AuthorAPass:  qwertyuiop12@A
+AuthorName: user Pooja
+NewPassword: qwertyuiop@A12
+OperatorEmail:  useroperator@mailinator.com
+OperatorPass:  qwertyuiop@A12
+SupervisorEmail:  supervisor11aug@mailinator.com
+SupervisorPass:  qwertyuiop@A12
+CrossSiteUser: newtechnouser@mailinator.com
+MaxTime: 60s
+Time_120s:     120s
+Time_15s:   15s
+MaxLimit: 30s
+WorkspaceName: Demo Workspace
+WorkspaceDescription: For Automation Purpose
+# Static Data (Need to change)
+Address1:   44/1 Bharat Apartment
+Address2:   4C 5th Main Road Jayanagar
+CountryValue:   " India "
+State_value:    " Karnataka "
+City_value:    Bangalore
+Post_code: 290876
+EmailId: minewtrainer@mailinator.com
+Country_code: +91
+Phone_number: 8767567890
+description_text: This is for Dg Site.
+Tag: Abc
+TD_SERIAL_NUMBER:  TESTSR1234
+TestMatNo:  TESTMT1234
+TestJobName:  TESTJOB
+NCR_affected_partnamne:  Bolts
+NCR_affected_quantity:  5
+NCR_description_text:  Part is cracked and unusable.
+
+FirstNameTrainer:      SDETAuthor
+LastNameTrainer:       Testing
+FirstNameTrainee:      robotTrainee
+LastNameTrainee:       Testing
+SuccessText:    Mentor is open in another window.
+LinkText:       Embed Procedure Link
+ProcedureText:  Procedure Link
+Text:           You can use this procedure without any password
+MailBox_URL:     https://www.mailinator.com/
+NewFirstName: Roger
+NewLastName: Federer
+OrgName: TestJulOrg
+AssignedTrainerName: SDETTrainer Testing
+MentorSupport: mentor-support@cdsvisual.com
+OrgOwnEmail: neworganization12@gmail.com
+ProcedureApprovalAuthorEmail: technouser118@mailinator.com
+SignOffApprovalAuthorEmail: newtechnouser@mailinator.com
+FromEmail: dd-noreply@dovercorp.com
+MaxTime_180s: 180s
+#url: "https://mentor-uat3.cdsvisual.net/"
+contact_us: "https://cdsvisual.com/contact"
+#workspace
+#data: {"displayName":"DemoWS3","workSpaceId":"wsdemoorg02220230509111232","createdBy":"test abc","generalConfig":{"displayName":"DemoWS3"},"uiConfig":{"sameConfigForAllProducts":False,"singleLayerBom":True},"searchBarConfig":{"searchTypeSerialNumber":True,"includeProductVersion":True,"includeSearchMethod":True},"searchResultViewConfig":{"defaultView":"cardView","listView":False,"cardView":True,"twodView":True,"threedView":True},"styleSheetConfig":{"styleTemplate":None},"pdpConfig":{"imageSourceUrl":"/products/parts","imageCountPerPage":"21","enableAddToCart":True,"enableAddToQuote":True,"includeAdditionalPDF":True,"url":"/product/parts","label":"20"},"ecomIntegrationConfig":{"integratedApplication":"salesforce","intershop_url":None,"intershop_context_uri":None,"intershop_default_customer_number":None,"intershop_default_username":None,"salesforce_login_url":None,"salesforce_url":None,"salesforce_context_uri":None,"salesforce_user":None,"salesforce_password":None,"salesforce_client_id":None,"salesforce_client_secret":None,"salesforce_default_customer_number":None,"salesforce_default_username":None,"operation_product_detail":None,"operation_product_exist":None,"operation_product_callbacks":None}}
+UserGroupTo_Search: Demo User Group 1
+Max_limit : 60s
+ExistingProcedure:
+OPERATOR1_NAME: Automation OperatorA1
+ORG_ADMIN_NAME: Automation Org Admin
+SITE_ADMIN_NAME: Auto Site Admin
+OPERATOR2_NAME: Automation Operator 2
+AUTHOR1_NAME:   Automation AuthorA1
+AUTHOR2_NAME:    Automation Author 2
+AUTHOR3_NAME:    Automation Author 3
+RED:    rgba(228, 0, 43, 1)
+ORANGE:    rgba(241, 92, 47, 1)
+RGB_ORANGE:    rgb(241, 92, 47)
+GRAY:    rgba(204, 204, 204, 1)
+RGB_GRAY:    rgb(0, 143, 49)
+NORMAL_IMAGE_ATTR:    'transform: scale(1) translate(0px, 0px); cursor: grab;'
+ZOOMED_IN_IMAGE_ATTR:    'transform: scale(1.2) translate(0px, 0px); cursor: grab;'
+GREEN:    rgba(242, 242, 242, 1)
+MY_TRAINING_GREEN:    rgba(0, 143, 49, 1)
+RGB_GREEN:    rgb(0, 143, 49)
+PROCEDURE_COMPLETION_GREEN:    rgba(118, 173, 53, 1)
+MATRIX_IN_PROGRESS:    rgba(244, 125, 89, 1)
+MATRIX_COMPLETED:    rgba(136, 194, 63, 1)
+MATRIX_COMPLETED_LIGHT:    rgba(231, 243, 217, 1)
+LIGHT_RED:    rgba(255, 83, 86, 1)
+SELECTED_RECORDS_COLOR:    rgba(207, 229, 255, 1)
+
+TD_SITE_NAME: Automation Site
+TD_MATERIAL_NUMBER: MAT-1234

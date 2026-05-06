@@ -1,0 +1,57 @@
+Approvals_view_more: (//mat-tree-node[8]//div[1]//mat-icon[2])|(//mat-tree-node[7]//div[1]//mat-icon[2])|(//span[text()="Approvals"])
+Procedure_approvals: //span[normalize-space()='Procedure Approvals']
+procedures_heading: //div[@class='text ng-star-inserted']
+search_bar_field: //input[starts-with(@id, 'mat-input-')]
+dashboard_headings: //div[starts-with(@class, 'mat-sort-header-content ng-tns-c1137168538-')]
+updated_by_name: (//span[@class='title'])[2]
+submissions_count: (//div[contains(@class, 'approver-label')])
+approvals_count: //div[contains(@class, 'approver-label')]
+search_icon: //mat-icon[starts-with(@class, 'mat-icon notranslate mat-icon-no-color ng-tns-c508571215-')]//*[name()='svg']
+approval_procedure_list: //table[contains(@class, 'mat-mdc-table')]//span[contains(@class, 'mat-mdc-tooltip-trigger clickable')]
+first_procedure_click: ((//tbody/tr/td)//span)[1]
+pagination_container: //div[@class='mat-mdc-paginator-container']
+twenty_rows_option: //mat-option//span[normalize-space(.)='20']
+Procedure_approvals_breadcrumb_link: //a[normalize-space()='Procedure Approvals']
+procedure_name_key: //span[normalize-space()='Name:']
+document_id_key: //span[normalize-space()='Document Id:']
+material_number_key: //span[normalize-space()='Material Ids:']
+approval_managers_key: //span[normalize-space()='Approval Managers:']
+version_details: //span[@class='version-value']
+view_instructions: //div[@class='key' and normalize-space(.)='Instructions']
+view_user_input: //div[@class='key' and normalize-space(.)='User Input']
+view_cycle_time: //div[@class='key' and normalize-space(.)='Cycle Time']
+view_step_details: //div[contains(@class,'section-heading') and contains(.,'Step')]
+view_prev_version: //div[contains(.,'Previous Version')]
+view_curr_version: //div[contains(.,'Current Version')]
+filter_icon: //mat-icon[@svgicon='filter']//*[name()='svg']//*[name()='path' and contains(@d,'M22 3H2L10')]
+procedure_name_link: //div[@class='text ng-star-inserted']
+approve_procedure: //span[normalize-space()='Approve']
+reject_procedure: //span[normalize-space()='Reject']
+approval_approved_counts: (//div[contains(@class,'circle green')])[1]
+approval_rejected_counts: (//div[contains(@class,'circle red')])[1]
+approval_pending_counts: (//div[contains(@class,'circle gray')])[1]
+approved_progress: (//div[contains(@class,'bar green')])
+rejected_progress: (//div[contains(@class,'bar red')])
+pending progress: (//div[contains(@class,'bar gray')])
+minor_release_color: //span[normalize-space(.)='minor']
+major_release_color: //span[normalize-space(.)='major']
+Procedure_Name_heading: ((//div[starts-with(@class, 'mat-sort-header-content')])[1])
+Change_Type: (//div[starts-with(@class, 'mat-sort-header-content')])[2]
+Updated_By: (//div[starts-with(@class, 'mat-sort-header-content')])[3]
+Received_On: (//div[starts-with(@class, 'mat-sort-header-content')])[4]    
+Status: (//div[starts-with(@class, 'mat-sort-header-content')])[5]    
+Approved_on: (//div[starts-with(@class, 'mat-sort-header-content')])[6]
+Approval_Status: (//div[starts-with(@class, 'mat-sort-header-content')])[7]
+procedure_approval_heading: //div[@class="text ng-star-inserted"]
+version_number: (//div[contains(@class,'version')]//span)[1]
+version_type: (//div[contains(@class,'version')]//span)[2]
+
+filter_click: //div[@class="filter-indicator"]
+filter_approval_status: (//span[starts-with(@class,"mat-expansion-indicator")])
+approved_filter: (//div[contains(@class, 'mdc-checkbox')])[7]
+reject_filter: (//div[contains(@class, 'mdc-checkbox')])[13]
+filter_apply: //button[starts-with(@class,'mdc-button mdc-button--unelevated')]
+
+Table_Procedure_Status: //tbody/tr[INDEX]/td[5]
+Table_procedures_name: ((//tbody/tr[INDEX]/td)//span)[1]
+rejection_reason_field: //textarea

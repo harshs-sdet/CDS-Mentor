@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2026-04-28T16:12:35.062258" rpa="false" schemaversion="5">
+<suite id="s1" name="SiteManagement" source="C:\Users\Mehak\Documents\dds-cdsmentor-automation\tests\ui\Mentor-web\SiteManagement.robot">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Login To Mentor Application" owner="Login">
+<msg time="2026-04-28T16:12:39.156821" level="FAIL">Variable '${ORG_ADMIN_EMAIL}' not found.</msg>
+<arg>${ORG_ADMIN_EMAIL}</arg>
+<arg>${ORG_ADMIN_PASS}</arg>
+<status status="FAIL" start="2026-04-28T16:12:39.139020" elapsed="0.017896">Variable '${ORG_ADMIN_EMAIL}' not found.</status>
+</kw>
+<arg>Login To Mentor Application</arg>
+<arg>${ORG_ADMIN_EMAIL}</arg>
+<arg>${ORG_ADMIN_PASS}</arg>
+<arg>AND</arg>
+<arg>Navigate To Site List Page</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2026-04-28T16:12:39.138679" elapsed="0.018865">Variable '${ORG_ADMIN_EMAIL}' not found.</status>
+</kw>
+<test id="s1-t1" name="Debug Only" line="216">
+<tag>debug</tag>
+<status status="FAIL" start="2026-04-28T16:12:39.157693" elapsed="0.001053">Parent suite setup failed:
+Variable '${ORG_ADMIN_EMAIL}' not found.</status>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-28T16:12:39.161682" elapsed="0.000345"/>
+</kw>
+<status status="FAIL" start="2026-04-28T16:12:35.066779" elapsed="4.095329">Suite setup failed:
+Variable '${ORG_ADMIN_EMAIL}' not found.</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">debug</stat>
+</tag>
+<suite>
+<stat name="SiteManagement" id="s1" pass="0" fail="1" skip="0">SiteManagement</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-04-28T16:12:35.694787" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Common\Common.resource' on line 7: Importing library 'csvLibrary' failed: ModuleNotFoundError: No module named 'csvLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Scripts\robot.exe
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages\win32
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages\win32\lib
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages\Pythonwin</msg>
+<msg time="2026-04-28T16:12:38.240285" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Common\Common.resource' on line 12: Library '..\..\..\..\..\..\src\ui\opcoUtils.py' does not exist.</msg>
+<msg time="2026-04-28T16:12:38.323410" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Procedure\AuthorScreen.resource' on line 3: Importing library 'Browser' failed: ModuleNotFoundError: No module named 'Browser'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Scripts\robot.exe
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages\win32
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages\win32\lib
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages\Pythonwin</msg>
+<msg time="2026-04-28T16:12:38.329843" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Procedure\AuthorScreen.resource' on line 6: Importing library 'JSONLibrary' failed: ModuleNotFoundError: No module named 'JSONLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Scripts\robot.exe
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages\win32
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages\win32\lib
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages\Pythonwin</msg>
+<msg time="2026-04-28T16:12:38.331701" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Procedure\AuthorScreen.resource' on line 7: Replacing variables from setting 'Variables' failed: Variable '${ENV}' not found.</msg>
+<msg time="2026-04-28T16:12:38.387977" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Approvals\ProcedureApproval.resource' on line 15: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-04-28T16:12:38.409699" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Approvals\SignOffApproval.resource' on line 15: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-04-28T16:12:38.478316" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Trainings\Training.resource' on line 7: Replacing variables from setting 'Variables' failed: Variable '${ENV}' not found.</msg>
+<msg time="2026-04-28T16:12:38.507383" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\Teams.resource' on line 4: Library '..\..\..\src\utilities\Common-utils\CommonUtils.py' does not exist.</msg>
+<msg time="2026-04-28T16:12:38.512631" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\Teams.resource' on line 5: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-04-28T16:12:38.529283" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Login\Login.resource' on line 3: Replacing variables from setting 'Variables' failed: Variable '${ENV}' not found.</msg>
+<msg time="2026-04-28T16:12:38.569562" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\Teams.resource' on line 9: Resource file '..\..\..\pageobjects\keywords\ui\web\Mentor\Trainings\Training.resource' does not exist.</msg>
+<msg time="2026-04-28T16:12:38.570372" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\Teams.resource' on line 10: Resource file '..\..\..\pageobjects\keywords\ui\web\Mentor\JobManagement\JobManagement.resource' does not exist.</msg>
+<msg time="2026-04-28T16:12:38.571585" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\Teams.resource' on line 11: Resource file '..\..\..\pageobjects\keywords\ui\web\Mentor\SiteManagement\SiteManagement.resource' does not exist.</msg>
+<msg time="2026-04-28T16:12:38.572361" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\Teams.resource' on line 12: Resource file '..\..\..\pageobjects\keywords\ui\web\Mentor\UserManagement\UserManagement.resource' does not exist.</msg>
+<msg time="2026-04-28T16:12:38.573155" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\Teams.resource' on line 13: Resource file '..\..\..\pageobjects\keywords\ui\web\Mentor\Common\Common.resource' does not exist.</msg>
+<msg time="2026-04-28T16:12:38.573912" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\Teams.resource' on line 14: Resource file '..\..\..\pageobjects\keywords\ui\web\Mentor\Procedure\AuthorScreen.resource' does not exist.</msg>
+<msg time="2026-04-28T16:12:38.615482" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\UserManagement.resource' on line 5: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-04-28T16:12:38.653639" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Workspace\Workspace.resource' on line 5: Replacing variables from setting 'Variables' failed: Variable '${ENV}' not found.</msg>
+<msg time="2026-04-28T16:12:38.729184" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\JobManagement\JobManagement.resource' on line 7: Importing library 'JSONLibrary' failed: ModuleNotFoundError: No module named 'JSONLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Scripts\robot.exe
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages\win32
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages\win32\lib
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages\Pythonwin</msg>
+<msg time="2026-04-28T16:12:38.736395" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\JobManagement\JobManagement.resource' on line 11: Replacing variables from setting 'Variables' failed: Variable '${ENV}' not found.</msg>
+<msg time="2026-04-28T16:12:38.877570" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\BOM_BOT\BOM.resource' on line 7: Importing library 'CSVLibrary' failed: ModuleNotFoundError: No module named 'CSVLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Scripts\robot.exe
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages\win32
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages\win32\lib
+  C:\Users\Mehak\AppData\Local\Programs\Python\Python313\Lib\site-packages\Pythonwin</msg>
+<msg time="2026-04-28T16:12:38.906234" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\BOM_BOT\BOM.resource' on line 14: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-04-28T16:12:38.931608" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\BOM_BOT\BOT.resource' on line 14: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-04-28T16:12:38.944815" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Common\Common.resource' on line 18: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-04-28T16:12:38.985837" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\SiteManagement\SiteManagement.resource' on line 8: Replacing variables from setting 'Variables' failed: Variable '${ENV}' not found.</msg>
+<msg time="2026-04-28T16:12:39.010875" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\tests\ui\Mentor-web\SiteManagement.robot' on line 12: Replacing variables from setting 'Variables' failed: Variable '${Env}' not found.</msg>
+<msg time="2026-04-28T16:12:39.029148" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\JobManagement\JobManagement.resource' on line 18: Setting variable '${JOB_LIST_PAGE}' failed: Variable '${Url}' not found.</msg>
+<msg time="2026-04-28T16:12:39.052247" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Procedure\AuthorScreen.resource' on line 23: Setting variable '${PROCEDURE_LIST_PAGE}' failed: Variable '${Url}' not found.</msg>
+<msg time="2026-04-28T16:12:39.074550" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\SiteManagement\SiteManagement.resource' on line 13: Setting variable '${SITE_LIST_PAGE}' failed: Variable '${Url}' not found.</msg>
+<msg time="2026-04-28T16:12:39.101601" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\UserManagement.resource' on line 17: Setting variable '${USERS_LIST_PAGE}' failed: Variable '${Url}' not found.</msg>
+<msg time="2026-04-28T16:12:39.122872" level="ERROR">Error in file 'C:\Users\Mehak\Documents\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Workspace\Workspace.resource' on line 11: Setting variable '${WORKSPACE_LIST_PAGE}' failed: Variable '${Url}' not found.</msg>
+</errors>
+</robot>

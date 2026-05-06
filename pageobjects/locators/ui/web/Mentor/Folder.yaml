@@ -1,0 +1,12 @@
+newFolderIcon: //mat-icon[@svgicon="create-new-folder"]
+folderNameField: //div[@class="form-group"]//input
+folderDescriptionField: //div[@class="form-group"]//textarea
+folderDialogCloseIcon: //button[contains(@class,"close-icon")]
+folderDialogCancel: (//div[contains(@class," mdc-dialog__surface")]//button[contains(@class,"ss-btn-add")])[1]
+folderDialogAdd: (//div[contains(@class," mdc-dialog__surface")]//button[contains(@class,"ss-btn-add")])[2]
+createdFolder: //tbody//td[text()=" replace "]
+arrowBack: //mat-icon[text() = 'arrow_back']
+renameIcon: //mat-icon[@svgicon="rename"]
+moveIcon: //mat-icon[@svgicon="move"]
+deleteIcon: //mat-icon[@svgicon="deleteIcon"]
+duplicateIcon: //mat-icon[@svgicon="duplicate"]

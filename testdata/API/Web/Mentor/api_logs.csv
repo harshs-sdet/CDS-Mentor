@@ -1,0 +1,147 @@
+JobManagement
+api/mentor/jobExecutionReport/report,json={'fromDate': '1756665000', 'toDate': '1758565799'},1.057972 sec
+api/mentor/joborders/list?,data=page=1&pageSize=10&sortBy=updatedOn&sortOrder=desc&filters[createdOn][0][0]=1756665000&filters[createdOn][0][1]=1758565799,2.613903 sec
+api/mentor/joborders/list?,data=page=1&pageSize=10&search=JOB&sortBy=updatedOn&sortOrder=desc&filters[createdOn][0][0]=1756665000&filters[createdOn][0][1]=1758565799,2.541993 sec
+api/mentor/procedures/library/list?,data=page=1&pageSize=10&sortBy=modified_at&sortOrder=desc&isPreviousVersionPublished=true,3.189871 sec
+api/mentor/user/v2?,data=page=1&pageSize=100,1.684301 sec
+api/mentor/procedures/library/list?,data=page=1&pageSize=10&sortBy=modified_at&sortOrder=desc&isPreviousVersionPublished=true,3.507218 sec
+api/mentor/user/v2?,data=page=1&pageSize=100,1.786514 sec
+api/mentor/joborders/create,json={'jobType': 'serial', 'jobId': 'SERIAL-MSy8rqzK', 'jobName': 'JOB-MSy8rqzK', 'material': 'MATERIAL-MSy8rqzK', 'purchaseOrderNumber': 'MSy8rqzK', 'assignee': '62993d7861ad4a24add25d4da1a74350', 'procedures': ['9a282206-eec5-4de9-933b-4d1eca510170', 'fc5c0af9-ef53-4033-bd46-148fedb644c7', '2771424b-ee7d-48e3-96c1-9ac538b23afc'], 'dueDate': '2026-03-20T11:44:06.000Z', 'estimatedTime': '0', 'serialIds': ['SERIAL-MSy8rqzK'], 'quantity': '1'},1.818459 sec
+/api/mentor/joborders/a8d4bae5-445c-4709-ac73-d3fbe9d0f5c7,False,1.239864 sec
+/api/mentor/joborders/procedures/a8d4bae5-445c-4709-ac73-d3fbe9d0f5c7,False,0.47757 sec
+/api/mentor/joborders/executedJob,json={'jobStatus': 'IN_PROGRESS'},0.784449 sec
+/api/mentor/joborders/executedJob,json={'key': 'a8d4bae5-445c-4709-ac73-d3fbe9d0f5c7', 'jobStatus': 'IN_PROGRESS'},0.26198 sec
+/api/mentor/joborders/executedJob,json={'key': 'a8d4bae5-445c-4709-ac73-d3fbe9d0f5c7', 'jobId': 'SERIAL-MSy8rqzK', 'jobStatus': 'IN_PROGRESS'},0.769965 sec
+api/mentor/procedures/library/list?,data=page=1&pageSize=10&sortBy=modified_at&sortOrder=desc&isPreviousVersionPublished=true,3.167992 sec
+api/mentor/user/v2?,data=page=1&pageSize=100,1.712463 sec
+api/mentor/joborders/create,json={'jobType': 'serial', 'jobId': 'SERIAL-shdzAkQJ', 'jobName': 'JOB-shdzAkQJ', 'material': 'MATERIAL-shdzAkQJ', 'purchaseOrderNumber': 'shdzAkQJ', 'assignee': '62993d7861ad4a24add25d4da1a74350', 'procedures': ['9a282206-eec5-4de9-933b-4d1eca510170', 'fc5c0af9-ef53-4033-bd46-148fedb644c7', '2771424b-ee7d-48e3-96c1-9ac538b23afc'], 'dueDate': '2026-03-20T11:44:18.000Z', 'estimatedTime': '0', 'quantity': '1', 'serialIds': ['SERIAL-shdzAkQJ']},2.681428 sec
+api/mentor/joborders/bf2a1fe8-b142-4630-9316-40350e25df09,False,0.270979 sec
+api/mentor/procedures/library/list?,data=page=1&pageSize=10&sortBy=modified_at&sortOrder=desc&isPreviousVersionPublished=true,3.337779 sec
+api/mentor/user/v2?,data=page=1&pageSize=100,1.722455 sec
+api/mentor/joborders/create,json={'jobType': 'serial', 'jobId': 'SERIAL-JzCPL94g', 'jobName': 'JOB-JzCPL94g', 'material': 'MATERIAL-JzCPL94g', 'purchaseOrderNumber': 'JzCPL94g', 'assignee': '62993d7861ad4a24add25d4da1a74350', 'procedures': ['9a282206-eec5-4de9-933b-4d1eca510170'], 'dueDate': '2026-03-20T11:44:28.000Z', 'estimatedTime': '0', 'quantity': '1', 'serialIds': ['SERIAL-JzCPL94g']},1.856463 sec
+PartsTools
+api/mentor/bom,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn', 'sortOrder': 'desc'},0.880215 sec
+api/mentor/bot,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn', 'sortOrder': 'desc'},0.88711 sec
+api/mentor/com,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn', 'sortOrder': 'desc'},0.895382 sec
+/api/mentor/bom/create,data={'name': 'BOMAPI-Test', 'supplyChainNumber': 'SCN98', 'quantity': '10', 'gageType': '', 'unit': '', 'description': ''},0.887989 sec
+api/mentor/bom,params={'page': '1', 'pageSize': '10', 'search': 'BOMAPI-Test', 'sortBy': 'createdOn', 'sortOrder': 'desc'},0.438776 sec
+/api/mentor/bot/create,data={'name': 'BOTAPI-Test', 'supplyChainNumber': 'SCN987', 'quantity': '10', 'gageType': '', 'unit': '', 'description': ''},0.819874 sec
+api/mentor/bot,params={'page': '1', 'pageSize': '10', 'search': 'BOTAPI-Test', 'sortBy': 'createdOn', 'sortOrder': 'desc'},0.342988 sec
+/api/mentor/com/create,data={'supplyChainNumber': 'SCN98', 'quantity': '10', 'unit': '', 'description': ''},0.805203 sec
+/api/mentor/com/create,data={'supplyChainNumber': 'SCN98', 'quantity': '10', 'unit': '', 'description': ''},0.260542 sec
+/api/mentor/com/create,data={'supplyChainNumber': 'SCN98', 'quantity': '10', 'unit': '', 'description': '', 'name': 'COMAPI-Test'},0.280046 sec
+api/mentor/com,params={'page': '1', 'pageSize': '10', 'search': 'COMAPI-Test', 'sortBy': 'createdOn', 'sortOrder': 'desc'},0.856161 sec
+AuthorScreen
+/api/mentor/procedures/library/listWithFolders,params={'page': '1', 'pageSize': '10', 'sortBy': 'modifiedOn', 'sortOrder': 'desc', 'folderId': ''},2.823109 sec
+/api/mentor/procedures/library/listWithFolders,params={'page': '1', 'pageSize': '10', 'sortBy': 'modifiedOn', 'procedureName': 'demo', 'sortOrder': 'desc', 'folderId': ''},1.790822 sec
+/api/mentor/folder/create,json={'title': 'Folder-OVRG8s5J', 'description': 'this is for testing purpose'},1.436635 sec
+/api/mentor/procedures/library/listWithFolders,params={'page': '1', 'pageSize': '10', 'sortBy': 'modifiedOn', 'procedureName': 'Folder-OVRG8s5J', 'sortOrder': 'desc', 'folderId': ''},1.108194 sec
+/api/mentor/folder/getPath/514d89af-c27f-4326-af9b-8a12d2e7e4cc,params={'type': 'Folder'},1.037378 sec
+/api/mentor/tasks/v2/getAllTasks/7d84ffe5-024f-4066-8752-714dcf7e784c/ab72c1b5-4cf6-463e-8e55-9492677affc2,data=db29cf2d-97a0-48df-bea4-3edec79ab163,3.526349 sec
+/api/mentor/user/v2?page=1&pageSize=1000&filters[status][]=active&filters[personaDetails.appScopes.PROCEDURE][]=CREATE,False,1.693387 sec
+/api/mentor/configurations/ppe/procedures/create,False,1.057487 sec
+/api/mentor/configurations/ppe/aa059bb6-b0ea-4697-8ccb-989e9f9f6d4b,False,0.756406 sec
+api/mentor/procedures/library/tags?pageSize=1000,False,0.784831 sec
+/api/mentor/folder/create,json={'title': 'Folder-BN1Oh9LK', 'description': 'this is for testing purpose'},1.954062 sec
+api/mentor/notifications/general?page=1&pageSize=10&search=Completed,False,0.936551 sec
+api/mentor/notifications/general?page=1&pageSize=10,False,0.931766 sec
+/api/mentor/folder/create,json={'description': 'this is for testing purpose'},0.788659 sec
+/api/mentor/procedures/createProcedure,data={'procedureName': 'Demo Procedure', 'isPrerequisite': 'false', 'workInstructionId': 'library', 'workInstructionType': '2D', 'visibilityScope': 'GLOBAL'},2.475324 sec
+/api/mentor/troubleShooting/save,data={'title': 'Fire', 'possibleCauses': 'Loosening of Wires', 'correctiveAction': 'Proper taping', 'preventiveAction': 'Proper taping'},0.780392 sec
+/api/mentor/troubleShooting/getAll,data={'optionalParams': ['b7ce4e4a-bdee-43a0-8d1b-6c7a77cc13e5'], 'searchKey': {}},0.831639 sec
+/api/mentor/bom,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn'},0.845675 sec
+/api/mentor/bom,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn', 'search': 'parts'},0.997445 sec
+/api/mentor/bot,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn'},0.827565 sec
+/api/mentor/bot,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn', 'search': 'mf'},0.884413 sec
+/api/mentor/com,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn'},0.92053 sec
+/api/mentor/com,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn', 'search': 'mf'},0.838149 sec
+/api/mentor/procedures/export/concisePdf/1bedc91b-23b1-4493-a351-999e040beace,False,0.815745 sec
+/api/mentor/procedures/export/pdf/1bedc91b-23b1-4493-a351-999e040beace,False,0.804266 sec
+/api/mentor/procedures/clone,json={'procedureId': '1bedc91b-23b1-4493-a351-999e040beace'},1.746353 sec
+/api/mentor/folder/create,json={'title': 'Folder-ZuUZzdv8', 'description': 'this is for testing purpose'},0.895382 sec
+/api/mentor/folder/create,json={'title': 'Folder-ZuUZzdv8', 'description': 'this is for testing purpose'},0.895382 sec
+/api/mentor/changelog/v2/1bedc91b-23b1-4493-a351-999e040beace/0094c4df-1042-4753-b14e-3dd9ca486c59/details,False,3.143042 sec
+/api/mentor/version/procedure/new/9a8d618d-d34f-4914-8e78-8c2179e98e29,False,0.815989 sec
+/v2/files,data={'org': '73f7170e-b71c-470f-918f-b3e8186884f5', 'model': 'd25f03d1-acec-4b91-97d4-4cd653a0633c', 'name': 'maxresdefault.jpg', 'type': 'image/png'},1.124135 sec
+/mentor/procedures/getProcedure/1bedc91b-23b1-4493-a351-999e040beace,params={'translate': 'false'},1.050291 sec
+/api/mentor/languages/translate,json={'sourceLanguage': 'en', 'targetLanguage': 'fr', 'text': ['This is for testing purpose']},0.780446 sec
+/api/mentor/dynamicForms/generate?blockId=&formId=,json={'iStepUserGroup': {'id': '', 'name': '', 'rules': '', 'description': '', 'inputBlocks': [{'showAtStart': False, 'inputFields': [{'title': 'Enter the Room temperature', 'hint': '', 'type': 'number', 'required': False, 'attachmentsRequired': False, 'checklistAllRequired': False, 'validationRule': {'type': 'startsWith'}}]}], 'cycleTime': 1}, 'procedureIds': [''], 'workInstructionIds': ['']},0.98259 sec
+api/mentor/approvals/v2/list?page=1&pageSize=10&sortBy=requestedOn&sortOrder=desc,False,1.012043 sec
+/api/mentor/approvals/v2/list?page=1&pageSize=10&sortBy=requestedOn&sortOrder=desc&filters[approverStatus][]=approved,False,0.95993 sec
+/api/mentor/approvals/v2/list?page=1&pageSize=10&sortBy=requestedOn&sortOrder=desc&filters[approverStatus][]=rejected,False,1.136441 sec
+api/mentor/approvals/v2/list?page=1&pageSize=10&search=procedure&sortBy=requestedOn&sortOrder=desc,False,1.031946 sec
+/api/mentor/executedTraining/signOffs?,data=page=1&pageSize=10&sortBy=updatedOn&sortOrder=desc&groupBy=versionId,2.000416 sec
+api/mentor/executedTraining/signOffs?page=1&pageSize=10&search=bolt&sortBy=updatedOn&sortOrder=desc&groupBy=versionId,data=page=1&pageSize=10&search=bolt&sortBy=updatedOn&sortOrder=desc&groupBy=versionId,2.007251 sec
+api/mentor/user/preferences,params=False,0.809852 sec
+api/mentor/changelog/v2/list,params={'page': '1', 'pageSize': '10'},4.804912 sec
+api/mentor/changelog/v2/list,params={'page': '1', 'pageSize': '10', 'search': 'version'},3.367705 sec
+SiteManagement
+api/mentor/site?,data=page=1&pageSize=10,1.440196 sec
+api/mentor/site?,data=page=1&pageSize=10,1.362509 sec
+api/mentor/site/create,json={'name': 'Site-L7MCs4PY', 'address': {'addressLine1': 'L7MCs4PY', 'addressLine2': 'Corner Lane', 'city': 'San Francisco', 'country': 'United States', 'postalCode': '123932', 'state': 'Alabama'}, 'contact': {'countryCode': '1', 'number': ' 9382939794'}, 'email': 'siteL7MCs4PY@mailinator.com', 'description': 'This is for testing purpose', 'workspace': []},0.834526 sec
+api/mentor/site?,data=page=1&pageSize=10,1.309187 sec
+api/mentor/site/create,json={'name': 'Site-UM08vLkq', 'address': {'addressLine1': 'UM08vLkq', 'addressLine2': 'Corner Lane', 'city': 'San Francisco', 'country': 'United States', 'postalCode': '123932', 'state': 'Alabama'}, 'contact': {'countryCode': '1', 'number': ' 9382930935'}, 'email': 'siteUM08vLkq@mailinator.com', 'description': 'This is for testing purpose', 'workspace': []},0.867611 sec
+api/mentor/site/7c1cbacb-2297-4a67-98c4-8985d0294622,False,0.368913 sec
+api/mentor/site?,params={'page': '1', 'pageSize': '10'},1.278215 sec
+api/mentor/site/create,json={'name': 'Site-A2M1nd42', 'address': {'addressLine1': 'A2M1nd42', 'addressLine2': 'Corner Lane', 'city': 'San Francisco', 'country': 'United States', 'postalCode': '123932', 'state': 'Alabama'}, 'contact': {'countryCode': '1', 'number': '9382932986'}, 'email': 'siteA2M1nd42@mailinator.com', 'description': 'This is for testing purpose', 'workspace': []},0.334303 sec
+api/mentor/site?,params={'page': '1', 'pageSize': '10', 'search': 'Site-A2M1nd42', 'sortBy': 'createdOn', 'sortOrder': 'desc'},1.158995 sec
+api/mentor/site?,data=page=1&pageSize=10,1.364517 sec
+api/mentor/site/create,json={'name': 'Site-xLaW0qAv', 'address': {'addressLine1': 'xLaW0qAv', 'addressLine2': 'Corner Lane', 'city': 'San Francisco', 'country': 'United States', 'postalCode': '123932', 'state': 'Alabama'}, 'contact': {'countryCode': '1', 'number': ' 9382937680'}, 'email': 'sitexLaW0qAv@mailinator.com', 'description': 'This is for testing purpose', 'workspace': []},0.878313 sec
+api/mentor/site/ea5465ed-ec04-4cc3-88bd-7a5b67b811e6,json={'name': 'Site-xLaW0qAv', 'address': {'addressLine1': 'xLaW0qAv', 'addressLine2': 'Corner Lane', 'city': 'San Francisco', 'country': 'United States', 'postalCode': '123932', 'state': 'Alabama'}, 'contact': {'countryCode': '1', 'number': ' 9382937680'}, 'email': 'sitexLaW0qAv@mailinator.com', 'description': 'This is for testing purpose', 'workspace': []},0.341743 sec
+api/mentor/site?,data=page=1&pageSize=10,1.310769 sec
+api/mentor/site/create,json={'name': 'Site-EblUnghf', 'address': {'addressLine1': 'EblUnghf', 'addressLine2': 'Corner Lane', 'city': 'San Francisco', 'country': 'United States', 'postalCode': '123932', 'state': 'Alabama'}, 'contact': {'countryCode': '1', 'number': ' 9382933413'}, 'email': 'siteEblUnghf@mailinator.com', 'description': 'This is for testing purpose', 'workspace': []},0.862494 sec
+api/mentor/site/fc23f828-825b-4191-a20c-a8f9d4baa0e2,False,0.278786 sec
+api/mentor/site?,data=page=1&pageSize=10&sortBy=name&sortOrder=asc,1.434048 sec
+Skills
+api/mentor/Skill/getAll,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn', 'sortOrder': 'desc'},1.252856 sec
+api/mentor/Skill/getAll,params={'page': '1', 'pageSize': '100', 'sortBy': 'createdOn', 'sortOrder': 'desc'},1.537285 sec
+/api/mentor/Skill/create,json={'skillName': 'Skill-7Oh1CS5t', 'skillDescription': 'new skill', 'assessmentFrequency': 'daily', 'trainingsCount': '0'},1.254949 sec
+api/mentor/Skill/getAll,params={'page': '1', 'pageSize': '10', 'search': 'Skill-7Oh1CS5t', 'sortBy': 'createdOn', 'sortOrder': 'desc'},0.313889 sec
+/api/mentor/Skill/delete,json={'groupIds': ['4b40691b-e8c0-4eb4-938d-f642e3f81b85']},1.183957 sec
+api/mentor/Training/getAll?,False,2.110146 sec
+api/mentor/Skill/create,json={'skillName': 'Skill-37I35QBX', 'skillDescription': 'new skill', 'assessmentFrequency': 'FREQUENCY.DAILY', 'groupContents': [{'contentId': '5b34f22f-bcc2-47c9-9232-faa823f909e2', 'objectType': 'Training', 'level': '1', 'targetLevel': '1', 'entryLevel': '0'}, {'contentId': '4ff00a39-895c-4253-ab34-9e9a4af1128b', 'objectType': 'Training', 'level': 2, 'targetLevel': 2, 'entryLevel': 1}, {'contentId': 'b6415b90-f076-4005-9c2b-d5d83f2016cf', 'objectType': 'Training', 'level': 3, 'targetLevel': 3, 'entryLevel': 2}, {'contentId': '542d7273-fb02-4342-a6f9-382353ce6a95', 'objectType': 'Training', 'level': 4, 'targetLevel': 4, 'entryLevel': 3}, {'contentId': 'd6de85dc-a622-4bd0-8294-ca91f0d94301', 'objectType': 'Training', 'level': 5, 'targetLevel': 5, 'entryLevel': 4}, {'contentId': '618a0f44-29cb-4ad6-9af1-9321e547f116', 'objectType': 'Training', 'level': 6, 'targetLevel': 6, 'entryLevel': 5}, {'contentId': '5f399cb7-9123-46f7-8caa-089649885e2e', 'objectType': 'Training', 'level': 7, 'targetLevel': 7, 'entryLevel': 6}, {'contentId': '760180f9-317f-461f-bc52-2cc1f1212f91', 'objectType': 'Training', 'level': 8, 'targetLevel': 8, 'entryLevel': 7}, {'contentId': 'f808d313-f0de-4f5b-b25c-5fda9c61f03d', 'objectType': 'Training', 'level': 9, 'targetLevel': 9, 'entryLevel': 8}, {'contentId': '2080f375-36c2-486d-bd30-68fb637f043b', 'objectType': 'Training', 'level': 10, 'targetLevel': 10, 'entryLevel': 9}], 'trainingsCount': 10},0.555767 sec
+Training
+/api/mentor/Training/getAll,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn', 'sortOrder': 'desc'},1.381613 sec
+api/mentor/Training/create,json={'trainingName': 'Training-6kOLKskK', 'trainingDescription': 'This is for sample Training'},1.780087 sec
+https://mentor-uat3.cdsvisual.net/api/mentor/Training/getAll,params={'page': '1', 'pageSize': '10', 'search': 'Training-6kOLKskK', 'sortBy': 'createdOn', 'sortOrder': 'desc'},0.979888 sec
+api/mentor/Training/getAll,params={'trainingId': '76a3aad7-54b9-490f-b483-7e5cb18f57d6'},0.987392 sec
+api/mentor/Training/getAll,params={'trainingId': '76a3aad7-54b9-490f-b483-7e5cb18f57d6'},0.448925 sec
+api/mentor/Training/create,json={'trainingName': 'Training-w0jcOJBb', 'trainingDescription': 'This is for sample Training'},1.783611 sec
+api/mentor/Training/delete,json={'groupIds': ['4d1a7768-f973-43e3-9a3b-197aeb69fb1f']},1.150371 sec
+api/mentor/procedures/library/list,params={'page': '1', 'pageSize': '10', 'sortBy': 'modified_at', 'sortOrder': 'desc', 'isPreviousVersionPublished': 'true'},2.573413 sec
+api/mentor/Training/create,json={'trainingName': 'Training-4lRUGugc', 'trainingDescription': 'This is for sample Training'},1.69166 sec
+api/mentor/procedures/library/list,data={'page': '1', 'pageSize': '10', 'sortBy': 'modified_at', 'sortOrder': 'desc', 'isPreviousVersionPublished': 'true'},3.541036 sec
+api/mentor/Training/create,json={'trainingName': 'Training-aEkkMUzI', 'trainingDescription': 'This is sample Training with procedures', 'groupContents': [{'contentId': '9a282206-eec5-4de9-933b-4d1eca510170', 'objectType': 'Procedure'}, {'contentId': 'fc5c0af9-ef53-4033-bd46-148fedb644c7', 'objectType': 'Procedure'}, {'contentId': '2771424b-ee7d-48e3-96c1-9ac538b23afc', 'objectType': 'Procedure'}]},2.106179 sec
+api/mentor/Training/getAll,params={'trainingId': '7c844285-aa79-469c-9eae-aacc74f98237'},0.475053 sec
+api/mentor/Training/create,json={'trainingName': 'Training-67X6AV52', 'trainingDescription': 'This is for sample Training'},1.786475 sec
+api/mentor/Training/getAll?trainingId=fea86f41-ceae-4b8b-91f1-ee019735ca1e,False,0.443492 sec
+api/mentor/procedures/library/list?,data=page=1&pageSize=10&sortBy=modified_at&sortOrder=desc&isPreviousVersionPublished=true,2.971164 sec
+url=api/mentor/training/update?trainingId=fea86f41-ceae-4b8b-91f1-ee019735ca1e,json={'trainingName': 'Edited Training-67X6AV52', 'trainingDescription': 'This is sample Training with procedures', 'groupContents': [{'contentId': '761d9592-c337-40ab-99ad-0fa933eb6467', 'objectType': 'Procedure'}, {'contentId': '5d2c48e3-e075-4896-a1b6-d8a87eaa52f6', 'objectType': 'Procedure'}]},1.803278 sec
+UserManagement
+api/mentor/persona/get,False,0.921525 sec
+api/mentor/user/v2,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn', 'sortOrder': 'desc'},0.973265 sec
+api/mentor/user/v2?,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn', 'sortOrder': 'desc', 'filters[role][]': '2bbf99f7-182a-40ef-9445-d4f286be71c0'},1.598536 sec
+api/mentor/site,params={'page': '1', 'pageSize': '30'},0.807822 sec
+api/mentor/user/v2?,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn', 'sortOrder': 'desc'},1.626728 sec
+api/mentor/user/users,json={'firstName': 'User-Bz459wcU', 'lastName': 'API', 'email': 'userBz459wcU@mailinator.com', 'sites': ['42165a6b-91c7-4803-bf1b-af9a1ee110eb'], 'personaId': '2bbf99f7-182a-40ef-9445-d4f286be71c0', 'isActive': True, 'userMetadata': {'language': 'en', 'timezone': 'Eastern Standard Time'}, 'exclusions': {'workspaces': [], 'privilages': {}}, 'organizationId': '73f7170e-b71c-470f-918f-b3e8186884f5'},1.779137 sec
+api/mentor/user/users/3bd353f2a81146109e40ca094847a981,False,1.45712 sec
+api/mentor/user/v2?,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn', 'sortOrder': 'desc', 'search': 'userBz459wcU@mailinator.com'},1.418437 sec
+api/mentor/user/v2?,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn', 'sortOrder': 'desc'},1.553366 sec
+api/mentor/user/users,json={'firstName': 'User-EIlUYRAI', 'lastName': 'API', 'email': 'userEIlUYRAI@mailinator.com', 'sites': ['42165a6b-91c7-4803-bf1b-af9a1ee110eb'], 'personaId': '2bbf99f7-182a-40ef-9445-d4f286be71c0', 'isActive': True, 'userMetadata': {'language': 'en', 'timezone': 'Eastern Standard Time'}, 'exclusions': {'workspaces': [], 'privilages': {}}, 'organizationId': '73f7170e-b71c-470f-918f-b3e8186884f5'},2.854306 sec
+api/mentor/user/users/0f83d5a55ab04650bb0264d8335de4e1,False,2.551767 sec
+/api/mentor/usergroup,params={'page': '1', 'pageSize': '10', 'sortBy': 'name', 'sortOrder': 'desc'},1.216887 sec
+api/mentor/site,params={'page': '1', 'pageSize': '30'},1.238113 sec
+api/mentor/user/v2,params={'page': '1', 'pageSize': '30', 'sortOrder': 'desc', 'filters[sites][]': '42165a6b-91c7-4803-bf1b-af9a1ee110eb'},7.012526 sec
+api/mentor/user/v2,params={'page': '1', 'pageSize': '30', 'sortOrder': 'desc', 'filters[sites][]': '42165a6b-91c7-4803-bf1b-af9a1ee110eb', 'filters[id][]': '3ed010dcf12e40cb94870f5bebf3c0af'},1.360422 sec
+/api/mentor/usergroup/create,data={'name': 'Team-9P8RY8f7', 'description': 'First Team created through API', 'site': '42165a6b-91c7-4803-bf1b-af9a1ee110eb', 'users': ['3bd353f2a81146109e40ca094847a981', 'a68b2d85f04f4730ad9609eedaadc13e', '3ed010dcf12e40cb94870f5bebf3c0af']},0.655608 sec
+api/mentor/usergroup/f01cf19f-b88b-44b7-8bc3-4333c3c9c27a,False,0.465499 sec
+Workspace
+/api/mentor/workspace,params={'page': '1', 'pageSize': '10', 'sortBy': 'createdOn', 'sortOrder': 'desc'},1.471693 sec
+api/mentor/site,params={'page': '1', 'pageSize': '30'},0.894664 sec
+/api/mentor/procedures/library/tags,params={'pageSize': '1000'},0.798151 sec
+/api/mentor/tags,params={'isSelected': 'true', 'tagId': '', 'name': 'Tag-eR8XJprK', 'organizationId': ''},0.251514 sec
+/api/mentor/workinstructions/getWorkInstructions,params={'tags[]': 'eb17c65f-b69b-40e5-9d94-cd370bad9e12'},0.287919 sec
+/api/mentor/procedures/library/list,params={'sortBy': 'modifiedOn', 'sortOrder': 'desc', 'tags[]': 'eb17c65f-b69b-40e5-9d94-cd370bad9e12'},1.573435 sec
+/api/mentor/procedures/library/list,params={'page': '1', 'pageSize': '1000', 'sortBy': 'modifiedOn', 'sortOrder': 'desc'},3.374484 sec
+/api/mentor/workspace/create,json={'name': 'Workspace-lFODrLSj', 'sites': {'exclusions': [], 'inclusions': ['42165a6b-91c7-4803-bf1b-af9a1ee110eb']}, 'description': '', 'tags': [], 'workInstructions': {'exclusions': [], 'inclusions': []}, 'libraryProcedures': {'exclusions': [], 'inclusions': ['9f00e66f-4f83-4a0e-b7bc-f7394b1d7db1', 'd982719d-a997-4ba4-b496-e8d25c9eafc9', '9772ef40-4526-46ca-8b8f-16364447fdc2']}},0.548719 sec
+/api/mentor/workspace/create,json={'name': 'Workspace-9QjNQGCJ', 'sites': {'exclusions': [], 'inclusions': ['42165a6b-91c7-4803-bf1b-af9a1ee110eb']}, 'description': '', 'tags': [], 'workInstructions': {'exclusions': [], 'inclusions': []}, 'libraryProcedures': {'exclusions': [], 'inclusions': []}},0.987714 sec

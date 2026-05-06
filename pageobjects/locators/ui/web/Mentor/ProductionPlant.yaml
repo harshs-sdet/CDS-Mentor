@@ -1,0 +1,63 @@
+SearchBox : //input[@placeholder='Search...']
+PlantTab: //div[@class="site-setting-navbar"]//a[contains(text(),'Plants')]
+AddNewPlant: //button[@data-testid="production-plant-add-btn"]
+PlantPopUpTitle: //span[@class="dialog-header-title"]
+PlantName: //shared-text[@data-testid="plant-name"]//label
+PlantNameInput: //shared-text[@data-testid="plant-name"]//input
+PlantAddress1Label: //shared-text[@data-testid="plant-address-line-1"]//label
+PlantAddress1Input: //shared-text[@data-testid="plant-address-line-1"]//input
+PlantAddress2Label: //shared-text[@data-testid="plant-address-line-2"]//label
+PlantAddress2Input: //shared-text[@data-testid="plant-address-line-2"]//input
+CountryLabel: //shared-dropdown[@data-testid="plant-country"]//label
+CountryInput: //shared-dropdown[@data-testid="plant-country"]//mat-form-field
+StateLabel: //shared-dropdown[@data-testid="plant-state"]//label
+StateInput: //shared-dropdown[@data-testid="plant-state"]//mat-form-field
+PostalCodeLabel: //shared-text[@data-testid="plant-postal-code"]//label
+PostalCodeInput: //shared-text[@data-testid="plant-postal-code"]//input
+EmailInput: //shared-text[@data-testid="plant-email"]//input
+EmailLabel: //shared-text[@data-testid="plant-email"]//label
+PhoneLabel: //shared-inputdropdown[@data-testid="plant-phone"]//label
+PhoneInput: //shared-inputdropdown[@data-testid="plant-phone"]//input
+CityLabel: //shared-text[@data-testid="plant-city"]//label
+CityInput: //shared-text[@data-testid="plant-city"]//input
+CancelButton: //app-dialog-footer//button[normalize-space()="Cancel"]
+SaveButton: //app-dialog-footer//button[normalize-space()="Save"]
+CrossIcon: //div[@class="header-title-container"]//mat-icon
+MandatoryIcon: (//div[contains(@class,"add-plant-dialog")]//span[contains(concat(' ', normalize-space(@class), ' '), ' star ')])|(span.star)
+OperationSuccessTitle: //div[contains(@class,'toast-title')]
+OperationSuccessMessage:  //div[contains(@class,'toast-message')]
+PlantCodeHeader: //thead//th[contains(@class,'mat-column-plantCode')]
+PlantCodeValue: //tbody//td[contains(@class,'mat-column-plantCode')][1]
+DropdownSearch: //input[@aria-label="dropdown search"]
+SelectValue: //div[@role="listbox"]//mat-option[3]
+LatestPlantEntry: //tbody//tr[1]//td
+LatestPlantEntryDetails:   (//tbody//tr[1]//td)[INDEX]
+ResultRows: //table//tbody//tr
+DeletePlant: (//td[contains(@class,'cdk-column-actions')]//button)[1]
+DeleteMultiplePlants: //button[@data-testid="production-plant-bulk-delete-btn"]
+Crossicon: //select-count-bar[@data-testid="production-plant-select-count"]//button
+ConfirmDelete: //app-dialog-footer//button[normalize-space()="Delete"]
+FirstPlant:  (//div[contains(@class,'mdc-checkbox')]//input[@type="checkbox"])[2]
+SecondPlant:  (//div[contains(@class,'mdc-checkbox')]//input[@type="checkbox"])[3]
+EditPlant: //tbody//tr[1]//td[contains(@class,"name")]
+
+PlantTabSite: //div[@class="tab_container"]//div[contains(text(),'Plant')]
+SEARCH_RESULT: //tbody//tr//td[2]//span
+EditButton: (//shared-breadcrumb/following-sibling::div/button)[1]
+toastContainer: //div[@id="toast-container"]
+NameValidationMessage: //div[contains(@class,'error') and normalize-space()='Maximum 30 characters are allowed']
+Address1ValidationMessage: //div[contains(@class,'error') and normalize-space()='Maximum 30 characters are allowed']
+CityValidationMessage: //div[contains(@class,'error') and normalize-space()='Maximum 30 characters are allowed']
+PostalCodeValidationMessage: //div[contains(@class,'error') and normalize-space()='Maximum 7 characters are allowed']
+PhoneValidationMessage: //div[contains(@class,'error') and normalize-space()='Maximum 15 characters are allowed']
+UserSearch: //input[@placeholder='Search...' and contains(@class,'mat-mdc-input-element')]
+EditUserButton: //button[.//span[normalize-space()='Edit']]
+SearchedUser: (//span[contains(@class,'clickable')])[1]
+PlantCheckbox : (//mat-pseudo-checkbox[contains(@class,'mat-pseudo-checkbox')])[2]
+NextPageButton: //button[normalize-space()='Next']
+DonePlantMapping: //button[normalize-space()='Done']
+PlantBOX: (//mat-select[contains(@class,'mat-mdc-select')])[5]
+PlantSearchBox: //input[@placeholder='Search...' and @aria-label='dropdown search']
+
+PlantCode: //span[contains(@class,'sub-label') and normalize-space()='PL0071']
+PlantName: //span[contains(@class,'option-name') and normalize-space()='Cheryl Mccarty']

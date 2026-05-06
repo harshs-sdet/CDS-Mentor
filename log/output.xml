@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.11.0 on win32)" generated="2026-05-05T12:16:01.180637" rpa="false" schemaversion="5">
+<suite id="s1" name="AuthorScreen" source="C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\tests\ui\Mentor-web\AuthorScreen.robot">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Login To Mentor Application" owner="Login">
+<msg time="2026-05-05T12:16:10.735155" level="FAIL">Variable '${AUTHOR1_EMAIL}' not found.</msg>
+<arg>${AUTHOR1_EMAIL}</arg>
+<arg>${AUTHOR1_PASS}</arg>
+<status status="FAIL" start="2026-05-05T12:16:10.734157" elapsed="0.000998">Variable '${AUTHOR1_EMAIL}' not found.</status>
+</kw>
+<arg>Login To Mentor Application</arg>
+<arg>${AUTHOR1_EMAIL}</arg>
+<arg>${AUTHOR1_PASS}</arg>
+<arg>AND</arg>
+<arg>Set Selenium Speed</arg>
+<arg>0.1</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2026-05-05T12:16:10.732242" elapsed="0.002913">Variable '${AUTHOR1_EMAIL}' not found.</status>
+</kw>
+<test id="s1-t1" name="Verify that added general details of procedure are correctly visible to user in Preview." line="21">
+<tag>CZ-6526</tag>
+<tag>CZ-6718</tag>
+<tag>CZ-6719</tag>
+<tag>CZ-6720</tag>
+<tag>CZ-6752</tag>
+<tag>CZ-6767</tag>
+<tag>CZ-7257</tag>
+<tag>sanity</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.735155" elapsed="0.001000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t2" name="Verify the Search functionality on Preventive Troubleshooting Page" line="35">
+<tag>CZ-6785</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.736155" elapsed="0.001462">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t3" name="Verify added User Inputs are visible in Preview mode" line="48">
+<tag>CZ-6508</tag>
+<tag>CZ-6758</tag>
+<tag>CZ-6760</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.737617" elapsed="0.001257">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t4" name="Verify that user is able to Preview a procedure." line="68">
+<tag>CZ-6751</tag>
+<tag>CZ-6770</tag>
+<tag>Regression</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.738874" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t5" name="Verify added Preventive Troubleshooting are visible in Preview mode" line="86">
+<tag>CZ-6759</tag>
+<tag>sanity</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.740267" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t6" name="Verify that User is able to add draft version of procedure by clicking on 'Add New' button" line="106">
+<tag>CZ-6507</tag>
+<tag>CZ-6551</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.740267" elapsed="0.001443">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t7" name="Verify that user is able to publish the procedure after adding steps in the procedure" line="123">
+<tag>CZ-6509</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.741710" elapsed="0.001154">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t8" name="Verify that an Author can add a new Option in a procedure step" line="139">
+<tag>CZ-6538</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.742864" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t9" name="Verify that the Author can define a troubleshooting entry with all necessary fields" line="149">
+<tag>CZ-6565</tag>
+<tag>CZ-6576</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.743877" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t10" name="Verify that user is able to remove the added PPE" line="159">
+<tag>CZ-6513</tag>
+<tag>CZ-6522</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.744877" elapsed="0.001002">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t11" name="Verify that user is able to add attachments to the step" line="169">
+<tag>CZ-6514</tag>
+<tag>CZ-6515</tag>
+<tag>CZ-6582</tag>
+<tag>sanity</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.745879" elapsed="0.000994">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t12" name="Verify the functionality of Cancel button on the Add New Procedure Page" line="183">
+<tag>CZ-6511</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.746873" elapsed="0.001002">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t13" name="Verify that UI of User Inputs page" line="197">
+<tag>CZ-6553</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.747875" elapsed="0.000999">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t14" name="Verify the functionality of &quot;Add Block&quot; button" line="206">
+<tag>CZ-6554</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.748874" elapsed="0.001002">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t15" name="Verify that user can add any number of options using &quot;+Add options&quot;" line="217">
+<tag>CZ-6557</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.749876" elapsed="0.001001">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t16" name="Verify that user cannot create a user input form without filling the mandatory field" line="227">
+<tag>CZ-6559</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.750877" elapsed="0.000997">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t17" name="Verify that user can Preview the block by clicking on Preview button" line="237">
+<tag>CZ-6560</tag>
+<tag>CZ-6561</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.751874" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t18" name="Verify that &quot;Delete Block&quot; becomes enabled when user adds another block" line="246">
+<tag>CZ-6552</tag>
+<tag>CZ-6556</tag>
+<tag>CZ-6563</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.753324" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t19" name="Verify that the procedure version is correctly updated based on the selected update type (Minor/Major)" line="257">
+<tag>CZ-6528</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.754344" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t20" name="Verify that the CRCO number field enforces a character limit" line="266">
+<tag>CZ-6535</tag>
+<tag>CZ-6536</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.754344" elapsed="0.000991">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t21" name="Verify that the Operator can submit a non-conformance report if an issue is not listed" line="276">
+<tag>CZ-6570</tag>
+<tag>CZ-6575</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.755335" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t22" name="Verify the delete icon functionality against every option" line="283">
+<tag>CZ-6558</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.755335" elapsed="0.000999">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t23" name="Verify the functionality of Cross and Cancel button on Publish pop-up screen" line="295">
+<tag>CZ-6533</tag>
+<tag>CZ-6534</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.756334" elapsed="0.001000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t24" name="Verify that no PPE's are displayed in the PPE section while filing general details of the procedures." line="305">
+<tag>CZ-6518</tag>
+<tag>CZ-6580</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.757334" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t25" name="Verify the functionality of cross icon on instruction box" line="314">
+<tag>CZ-6581</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.757334" elapsed="0.001000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t26" name="Verify new step is added on clicking '+' icon visible on closed general details section" line="322">
+<tag>CZ-6588</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.758334" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t27" name="Verify that data added within the steps is correctly visible to user." line="330">
+<tag>CZ-6510</tag>
+<tag>CZ-6754</tag>
+<tag>CZ-6763</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.759335" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t28" name="Verify added PPE's are visible in Preview mode." line="342">
+<tag>CZ-6755</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.759335" elapsed="0.000998">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t29" name="Verify added BOM/BOT are visible in Preview mode" line="354">
+<tag>CZ-6756</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.760333" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t30" name="Verify that on the top of Preview page, version information and Procedure Name is correct" line="367">
+<tag>CZ-6764</tag>
+<tag>CZ-6765</tag>
+<tag>CZ-7228</tag>
+<tag>CZ-7230</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.761333" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t31" name="Verify functionality of Delete Block button" line="385">
+<tag>CZ-6590</tag>
+<tag>CZ-6769</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.761333" elapsed="0.001004">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t32" name="Verify the functionality of Cancel button on Add instructions page." line="401">
+<tag>CZ-6585</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.762337" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t33" name="Verify that multiple Options can be added to a single step." line="410">
+<tag>CZ-6539</tag>
+<tag>CZ-6708</tag>
+<tag>CZ-6757</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.763334" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t34" name="Verify that data added within the steps is correctly visible to user." line="423">
+<tag>CZ-6753</tag>
+<tag>CZ-6762</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.763334" elapsed="0.001002">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t35" name="Verify that user is able to view added attachment in both Gallery and Grid view in Preview mode" line="436">
+<tag>CZ-6761</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.764336" elapsed="0.000999">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t36" name="Verify that novice only checkbox is marked as checked if a step is marked as Novice only." line="452">
+<tag>CZ-6766</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.765335" elapsed="0.000999">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t37" name="Verify that user is able to group steps." line="468">
+<tag>CZ-6771</tag>
+<tag>CZ-6774</tag>
+<tag>CZ-6780</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.766334" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t38" name="Verify that user is able to edit the name of step group." line="482">
+<tag>CZ-6773</tag>
+<tag>sanity</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.766334" elapsed="0.001000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t39" name="Verify that user is able to make any number of step groups." line="497">
+<tag>CZ-6779</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.768542" elapsed="0.001012">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t40" name="Verify the UI of Add New Procedure Screen." line="515">
+<tag>CZ-6506</tag>
+<tag>CZ-6577</tag>
+<tag>CZ-7092</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.769554" elapsed="0.001001">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t41" name="Verify that user is able to add instructions." line="521">
+<tag>CZ-6578</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.771555" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t42" name="Verify that the Author can edit an existing troubleshooting entry." line="533">
+<tag>CZ-6566</tag>
+<tag>CZ-6574</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.773555" elapsed="0.000999">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t43" name="Verify that the Author can delete an existing troubleshooting entry." line="553">
+<tag>CZ-6567</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.774554" elapsed="0.001002">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t44" name="Verify the system behavior when the Release Note field is left empty" line="572">
+<tag>CZ-6527</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.776569" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t45" name="Verify that user is able to change the language of instructions box from side bar." line="582">
+<tag>CZ-6579</tag>
+<tag>sanity</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.777568" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t46" name="Verify that user is able to access the toolkit while writing instructions for the step." line="595">
+<tag>CZ-6584</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.778568" elapsed="0.001002">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t47" name="Verify that input fields are dynamically displayed based on checkbox selection in the form module." line="604">
+<tag>CZ-6519</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.779570" elapsed="0.000999">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t48" name="Verify that the approval managers and co-authors are correctly displayed in the Publish screen." line="614">
+<tag>CZ-6516</tag>
+<tag>CZ-6529</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.780569" elapsed="0.001000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t49" name="Verify that users can modify the list of approval managers and co-authors before publishing." line="632">
+<tag>CZ-6531</tag>
+<tag>sanity</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.782568" elapsed="0.001001">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t50" name="Verify that user is able to delete a steps" line="646">
+<tag>CZ-6776</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.783569" elapsed="0.001000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t51" name="Verify that user is able to delete steps from a step group." line="654">
+<tag>CZ-6782</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.785568" elapsed="0.001000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t52" name="Verify user is able to zoom/in-zoom/out images in preview mode" line="664">
+<tag>CZ-7225</tag>
+<tag>CZ-7270</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.786568" elapsed="0.001453">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t53" name="Verify that User is Able to Duplicate the Draft Procedure" line="674">
+<tag>CZ-7495</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.788021" elapsed="0.001011">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t54" name="Verify the user is able to delete folder from more option" line="684">
+<tag>CZ-7461</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.791552" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t55" name="Verify that User Is Able To Duplicate The Published Procedure" line="692">
+<tag>CZ-7494</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.792561" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t56" name="Verify the user is able to delete the folder from the list page" line="704">
+<tag>CZ-7462</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.793560" elapsed="0.000000">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<test id="s1-t57" name="Verify The Duplicated procedure should be created inside the folder if it is duplicated there." line="722">
+<tag>CZ-7493</tag>
+<tag>sanity</tag>
+<status status="FAIL" start="2026-05-05T12:16:10.794563" elapsed="0.001004">Parent suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-05-05T12:16:10.796564" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-05-05T12:16:01.186629" elapsed="9.609935">Suite setup failed:
+Variable '${AUTHOR1_EMAIL}' not found.</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="57" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">CZ-6506</stat>
+<stat pass="0" fail="1" skip="0">CZ-6507</stat>
+<stat pass="0" fail="1" skip="0">CZ-6508</stat>
+<stat pass="0" fail="1" skip="0">CZ-6509</stat>
+<stat pass="0" fail="1" skip="0">CZ-6510</stat>
+<stat pass="0" fail="1" skip="0">CZ-6511</stat>
+<stat pass="0" fail="1" skip="0">CZ-6513</stat>
+<stat pass="0" fail="1" skip="0">CZ-6514</stat>
+<stat pass="0" fail="1" skip="0">CZ-6515</stat>
+<stat pass="0" fail="1" skip="0">CZ-6516</stat>
+<stat pass="0" fail="1" skip="0">CZ-6518</stat>
+<stat pass="0" fail="1" skip="0">CZ-6519</stat>
+<stat pass="0" fail="1" skip="0">CZ-6522</stat>
+<stat pass="0" fail="1" skip="0">CZ-6526</stat>
+<stat pass="0" fail="1" skip="0">CZ-6527</stat>
+<stat pass="0" fail="1" skip="0">CZ-6528</stat>
+<stat pass="0" fail="1" skip="0">CZ-6529</stat>
+<stat pass="0" fail="1" skip="0">CZ-6531</stat>
+<stat pass="0" fail="1" skip="0">CZ-6533</stat>
+<stat pass="0" fail="1" skip="0">CZ-6534</stat>
+<stat pass="0" fail="1" skip="0">CZ-6535</stat>
+<stat pass="0" fail="1" skip="0">CZ-6536</stat>
+<stat pass="0" fail="1" skip="0">CZ-6538</stat>
+<stat pass="0" fail="1" skip="0">CZ-6539</stat>
+<stat pass="0" fail="1" skip="0">CZ-6551</stat>
+<stat pass="0" fail="1" skip="0">CZ-6552</stat>
+<stat pass="0" fail="1" skip="0">CZ-6553</stat>
+<stat pass="0" fail="1" skip="0">CZ-6554</stat>
+<stat pass="0" fail="1" skip="0">CZ-6556</stat>
+<stat pass="0" fail="1" skip="0">CZ-6557</stat>
+<stat pass="0" fail="1" skip="0">CZ-6558</stat>
+<stat pass="0" fail="1" skip="0">CZ-6559</stat>
+<stat pass="0" fail="1" skip="0">CZ-6560</stat>
+<stat pass="0" fail="1" skip="0">CZ-6561</stat>
+<stat pass="0" fail="1" skip="0">CZ-6563</stat>
+<stat pass="0" fail="1" skip="0">CZ-6565</stat>
+<stat pass="0" fail="1" skip="0">CZ-6566</stat>
+<stat pass="0" fail="1" skip="0">CZ-6567</stat>
+<stat pass="0" fail="1" skip="0">CZ-6570</stat>
+<stat pass="0" fail="1" skip="0">CZ-6574</stat>
+<stat pass="0" fail="1" skip="0">CZ-6575</stat>
+<stat pass="0" fail="1" skip="0">CZ-6576</stat>
+<stat pass="0" fail="1" skip="0">CZ-6577</stat>
+<stat pass="0" fail="1" skip="0">CZ-6578</stat>
+<stat pass="0" fail="1" skip="0">CZ-6579</stat>
+<stat pass="0" fail="1" skip="0">CZ-6580</stat>
+<stat pass="0" fail="1" skip="0">CZ-6581</stat>
+<stat pass="0" fail="1" skip="0">CZ-6582</stat>
+<stat pass="0" fail="1" skip="0">CZ-6584</stat>
+<stat pass="0" fail="1" skip="0">CZ-6585</stat>
+<stat pass="0" fail="1" skip="0">CZ-6588</stat>
+<stat pass="0" fail="1" skip="0">CZ-6590</stat>
+<stat pass="0" fail="1" skip="0">CZ-6708</stat>
+<stat pass="0" fail="1" skip="0">CZ-6718</stat>
+<stat pass="0" fail="1" skip="0">CZ-6719</stat>
+<stat pass="0" fail="1" skip="0">CZ-6720</stat>
+<stat pass="0" fail="1" skip="0">CZ-6751</stat>
+<stat pass="0" fail="1" skip="0">CZ-6752</stat>
+<stat pass="0" fail="1" skip="0">CZ-6753</stat>
+<stat pass="0" fail="1" skip="0">CZ-6754</stat>
+<stat pass="0" fail="1" skip="0">CZ-6755</stat>
+<stat pass="0" fail="1" skip="0">CZ-6756</stat>
+<stat pass="0" fail="1" skip="0">CZ-6757</stat>
+<stat pass="0" fail="1" skip="0">CZ-6758</stat>
+<stat pass="0" fail="1" skip="0">CZ-6759</stat>
+<stat pass="0" fail="1" skip="0">CZ-6760</stat>
+<stat pass="0" fail="1" skip="0">CZ-6761</stat>
+<stat pass="0" fail="1" skip="0">CZ-6762</stat>
+<stat pass="0" fail="1" skip="0">CZ-6763</stat>
+<stat pass="0" fail="1" skip="0">CZ-6764</stat>
+<stat pass="0" fail="1" skip="0">CZ-6765</stat>
+<stat pass="0" fail="1" skip="0">CZ-6766</stat>
+<stat pass="0" fail="1" skip="0">CZ-6767</stat>
+<stat pass="0" fail="1" skip="0">CZ-6769</stat>
+<stat pass="0" fail="1" skip="0">CZ-6770</stat>
+<stat pass="0" fail="1" skip="0">CZ-6771</stat>
+<stat pass="0" fail="1" skip="0">CZ-6773</stat>
+<stat pass="0" fail="1" skip="0">CZ-6774</stat>
+<stat pass="0" fail="1" skip="0">CZ-6776</stat>
+<stat pass="0" fail="1" skip="0">CZ-6779</stat>
+<stat pass="0" fail="1" skip="0">CZ-6780</stat>
+<stat pass="0" fail="1" skip="0">CZ-6782</stat>
+<stat pass="0" fail="1" skip="0">CZ-6785</stat>
+<stat pass="0" fail="1" skip="0">CZ-7092</stat>
+<stat pass="0" fail="1" skip="0">CZ-7225</stat>
+<stat pass="0" fail="1" skip="0">CZ-7228</stat>
+<stat pass="0" fail="1" skip="0">CZ-7230</stat>
+<stat pass="0" fail="1" skip="0">CZ-7257</stat>
+<stat pass="0" fail="1" skip="0">CZ-7270</stat>
+<stat pass="0" fail="1" skip="0">CZ-7461</stat>
+<stat pass="0" fail="1" skip="0">CZ-7462</stat>
+<stat pass="0" fail="1" skip="0">CZ-7493</stat>
+<stat pass="0" fail="1" skip="0">CZ-7494</stat>
+<stat pass="0" fail="1" skip="0">CZ-7495</stat>
+<stat pass="0" fail="1" skip="0">Regression</stat>
+<stat pass="0" fail="7" skip="0">sanity</stat>
+</tag>
+<suite>
+<stat name="AuthorScreen" id="s1" pass="0" fail="57" skip="0">AuthorScreen</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-05-05T12:16:03.049000" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\tests\ui\Mentor-web\AuthorScreen.robot' on line 3: Processing variable file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\tests\ui\Mentor-web\EmailListener.py' failed: Importing variable file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\tests\ui\Mentor-web\EmailListener.py' failed: ModuleNotFoundError: No module named 'lxml'
+Traceback (most recent call last):
+  File "C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\tests\ui\Mentor-web\EmailListener.py", line 17, in &lt;module&gt;
+    from lxml import etree
+PYTHONPATH:
+  C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\tests\ui\Mentor-web
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32\lib
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\Pythonwin</msg>
+<msg time="2026-05-05T12:16:03.189747" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Procedure\AuthorScreen.resource' on line 3: Importing library 'Browser' failed: ModuleNotFoundError: No module named 'Browser'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32\lib
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\Pythonwin</msg>
+<msg time="2026-05-05T12:16:04.007953" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Procedure\AuthorScreen.resource' on line 7: Replacing variables from setting 'Variables' failed: Variable '${ENV}' not found.</msg>
+<msg time="2026-05-05T12:16:04.031412" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Procedure\AuthorScreen.resource' on line 9: Processing variable file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\locators\ui\web\Mentor\Login.yaml' failed: Using YAML variable files requires PyYAML module to be installed.Typically you can install it by running `pip install pyyaml`.</msg>
+<msg time="2026-05-05T12:16:04.091484" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Common\Common.resource' on line 5: Importing library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32\lib
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\Pythonwin</msg>
+<msg time="2026-05-05T12:16:04.099592" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Common\Common.resource' on line 6: Importing library 'RandomLibrary' failed: ModuleNotFoundError: No module named 'RandomLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32\lib
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\Pythonwin</msg>
+<msg time="2026-05-05T12:16:04.107587" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Common\Common.resource' on line 9: Importing library 'csvLibrary' failed: ModuleNotFoundError: No module named 'csvLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32\lib
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\Pythonwin</msg>
+<msg time="2026-05-05T12:16:10.026579" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Common\Common.resource' on line 14: Library '..\..\..\..\..\..\src\ui\opcoUtils.py' does not exist.</msg>
+<msg time="2026-05-05T12:16:10.045812" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Login\Login.resource' on line 3: Replacing variables from setting 'Variables' failed: Variable '${ENV}' not found.</msg>
+<msg time="2026-05-05T12:16:10.056173" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Login\Login.resource' on line 5: Processing variable file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\locators\ui\web\Mentor\AuthorScreen.yaml' failed: Using YAML variable files requires PyYAML module to be installed.Typically you can install it by running `pip install pyyaml`.</msg>
+<msg time="2026-05-05T12:16:10.067475" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Common\Common.resource' on line 18: Processing variable file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\locators\ui\web\Mentor\Common.yaml' failed: Using YAML variable files requires PyYAML module to be installed.Typically you can install it by running `pip install pyyaml`.</msg>
+<msg time="2026-05-05T12:16:10.076365" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Common\Common.resource' on line 19: Processing variable file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\locators\ui\web\Mentor\ApprovalSignOff.yaml' failed: Using YAML variable files requires PyYAML module to be installed.Typically you can install it by running `pip install pyyaml`.</msg>
+<msg time="2026-05-05T12:16:10.078442" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Common\Common.resource' on line 20: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-05-05T12:16:10.124462" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Approvals\ProcedureApproval.resource' on line 14: Processing variable file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\locators\ui\web\Mentor\ProcedureApproval.yaml' failed: Using YAML variable files requires PyYAML module to be installed.Typically you can install it by running `pip install pyyaml`.</msg>
+<msg time="2026-05-05T12:16:10.125349" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Approvals\ProcedureApproval.resource' on line 15: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-05-05T12:16:10.163084" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Approvals\SignOffApproval.resource' on line 15: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-05-05T12:16:10.243427" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Trainings\Training.resource' on line 7: Replacing variables from setting 'Variables' failed: Variable '${ENV}' not found.</msg>
+<msg time="2026-05-05T12:16:10.254880" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Trainings\Training.resource' on line 8: Processing variable file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\locators\ui\web\Mentor\Teams.yaml' failed: Using YAML variable files requires PyYAML module to be installed.Typically you can install it by running `pip install pyyaml`.</msg>
+<msg time="2026-05-05T12:16:10.290976" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\Teams.resource' on line 4: Library '..\..\..\src\utilities\Common-utils\CommonUtils.py' does not exist.</msg>
+<msg time="2026-05-05T12:16:10.291976" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\Teams.resource' on line 5: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-05-05T12:16:10.297990" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\Teams.resource' on line 9: Resource file '..\..\..\pageobjects\keywords\ui\web\Mentor\Trainings\Training.resource' does not exist.</msg>
+<msg time="2026-05-05T12:16:10.301997" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\Teams.resource' on line 10: Resource file '..\..\..\pageobjects\keywords\ui\web\Mentor\JobManagement\JobManagement.resource' does not exist.</msg>
+<msg time="2026-05-05T12:16:10.306978" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\Teams.resource' on line 11: Resource file '..\..\..\pageobjects\keywords\ui\web\Mentor\SiteManagement\SiteManagement.resource' does not exist.</msg>
+<msg time="2026-05-05T12:16:10.309980" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\Teams.resource' on line 12: Resource file '..\..\..\pageobjects\keywords\ui\web\Mentor\UserManagement\UserManagement.resource' does not exist.</msg>
+<msg time="2026-05-05T12:16:10.315980" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\Teams.resource' on line 13: Resource file '..\..\..\pageobjects\keywords\ui\web\Mentor\Common\Common.resource' does not exist.</msg>
+<msg time="2026-05-05T12:16:10.319978" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\Teams.resource' on line 14: Resource file '..\..\..\pageobjects\keywords\ui\web\Mentor\Procedure\AuthorScreen.resource' does not exist.</msg>
+<msg time="2026-05-05T12:16:10.367805" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\UserManagement.resource' on line 5: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-05-05T12:16:10.379777" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\UserManagement.resource' on line 6: Processing variable file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\locators\ui\web\Mentor\UserManagement.yaml' failed: Using YAML variable files requires PyYAML module to be installed.Typically you can install it by running `pip install pyyaml`.</msg>
+<msg time="2026-05-05T12:16:10.412527" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Workspace\Workspace.resource' on line 5: Replacing variables from setting 'Variables' failed: Variable '${ENV}' not found.</msg>
+<msg time="2026-05-05T12:16:10.425764" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Workspace\Workspace.resource' on line 7: Processing variable file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\locators\ui\web\Mentor\Workspace.yaml' failed: Using YAML variable files requires PyYAML module to be installed.Typically you can install it by running `pip install pyyaml`.</msg>
+<msg time="2026-05-05T12:16:10.558059" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\JobManagement\JobManagement.resource' on line 11: Replacing variables from setting 'Variables' failed: Variable '${ENV}' not found.</msg>
+<msg time="2026-05-05T12:16:10.573449" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\JobManagement\JobManagement.resource' on line 13: Processing variable file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\locators\ui\web\Mentor\JobManagement.yaml' failed: Using YAML variable files requires PyYAML module to be installed.Typically you can install it by running `pip install pyyaml`.</msg>
+<msg time="2026-05-05T12:16:10.582346" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\JobManagement\JobManagement.resource' on line 15: Processing variable file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\testdata\ui\web\Mentor\testdata.yaml' failed: Using YAML variable files requires PyYAML module to be installed.Typically you can install it by running `pip install pyyaml`.</msg>
+<msg time="2026-05-05T12:16:10.594321" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Trainings\Training.resource' on line 14: Processing variable file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\locators\ui\web\Mentor\Procedure.yaml' failed: Using YAML variable files requires PyYAML module to be installed.Typically you can install it by running `pip install pyyaml`.</msg>
+<msg time="2026-05-05T12:16:10.604136" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Trainings\Training.resource' on line 15: Processing variable file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\locators\ui\web\Mentor\Training.yaml' failed: Using YAML variable files requires PyYAML module to be installed.Typically you can install it by running `pip install pyyaml`.</msg>
+<msg time="2026-05-05T12:16:10.652947" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\BOM_BOT\BOM.resource' on line 7: Importing library 'CSVLibrary' failed: ModuleNotFoundError: No module named 'CSVLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib
+  C:\Users\harshvardhan\AppData\Roaming\JetBrains\PyCharmCE2025.2\plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\win32\lib
+  C:\Users\harshvardhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\Pythonwin</msg>
+<msg time="2026-05-05T12:16:10.672262" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\BOM_BOT\BOM.resource' on line 13: Processing variable file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\locators\ui\web\Mentor\BOM_BOT.yaml' failed: Using YAML variable files requires PyYAML module to be installed.Typically you can install it by running `pip install pyyaml`.</msg>
+<msg time="2026-05-05T12:16:10.673171" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\BOM_BOT\BOM.resource' on line 14: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-05-05T12:16:10.707925" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\BOM_BOT\BOT.resource' on line 14: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-05-05T12:16:10.710915" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\tests\ui\Mentor-web\AuthorScreen.robot' on line 7: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-05-05T12:16:10.722152" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\JobManagement\JobManagement.resource' on line 18: Setting variable '${JOB_LIST_PAGE}' failed: Variable '${Url}' not found.</msg>
+<msg time="2026-05-05T12:16:10.723152" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Procedure\AuthorScreen.resource' on line 23: Setting variable '${PROCEDURE_LIST_PAGE}' failed: Variable '${Url}' not found.</msg>
+<msg time="2026-05-05T12:16:10.727245" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\UserManagement\UserManagement.resource' on line 17: Setting variable '${USERS_LIST_PAGE}' failed: Variable '${Url}' not found.</msg>
+<msg time="2026-05-05T12:16:10.728169" level="ERROR">Error in file 'C:\Users\harshvardhan\Downloads\dds-cdsmentor-automation\pageobjects\keywords\ui\web\Mentor\Workspace\Workspace.resource' on line 11: Setting variable '${WORKSPACE_LIST_PAGE}' failed: Variable '${Url}' not found.</msg>
+<msg time="2026-05-05T12:16:10.763334" level="WARN">Multiple tests with name 'Verify that data added within the steps is correctly visible to user.' executed in suite 'AuthorScreen'.</msg>
+</errors>
+</robot>

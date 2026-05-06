@@ -1,0 +1,17 @@
+Administration_icon: //span[normalize-space(text())='Administration']/preceding-sibling::mat-icon[@data-mat-icon-name='gear']
+Administration: //span[normalize-space(text())='Administration']
+Users_icon: //span[normalize-space(text())='User Management']/preceding-sibling::mat-icon[@data-mat-icon-name='users']
+user_mgmt: //div[contains(@class, "nav-wrapper")]//span[text() = 'User Management']
+Users_btn: (//span[contains(text(), 'User')])[2]
+Add_New_User: //div[contains(@class, 'page-heading-container')]//button
+user_name: (//div[contains(@class, 'form-group')]//input)[1]
+user_lastname: (//div[contains(@class, 'form-group')]//input)[2]
+user_email: (//div[contains(@class, 'form-group')]//input)[3]
+Canceluser_button: //footer[contains(@class, "ng-star-inserted")]//button[text() = "Cancel"]
+Nextuser_button: //footer[contains(@class, "ng-star-inserted")]//button[text() = "Next"]
+Select_Site: (//div[contains(@class, "form-group")]//mat-select)[1]
+Selected_Site: //div[contains(@class, "cdk-overlay-pane")]//mat-option[2]
+Select_Role: (//div[contains(@class, "form-group")]//mat-select)[2]
+Done_User: //footer[contains(@class, "ng-star-inserted")]//button[text() = "Done"]
+UserCreated: //span[text()=" replace "]
+Search_User: //search-bar//input

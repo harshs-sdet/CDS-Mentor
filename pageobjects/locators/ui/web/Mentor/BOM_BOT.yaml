@@ -1,0 +1,85 @@
+ADMINISTRATION_OPTION: //mat-tree-node/descendant::span[contains(text(),"Administration")]
+PARTS_AND_TOOLS_OPTION: //mat-tree-node/descendant::span[contains(text(),"Parts & Tools")]
+BOM_OPTION: //mat-tree-node/descendant::span[text()="Bill of Materials"]
+sample_file_download: //span[normalize-space()='Sample Template']
+upload_csv_file: //label[@class="custom-file-upload"]
+BOM_BOT_Attachment_File_Input: //label[@class="custom-file-upload"]/input
+PREVIEW_FILE_UPLOAD: //div[starts-with(@class,'preview-container')]
+FILE_CLOSE_BUTTON: //div[starts-with(@class,'preview-container')]//button
+UPLOAD_BUTTON: //button[normalize-space()='Upload']
+ToasterMessage:  //div[contains(@class, 'toast-message')]
+toastTitle: //div[@id="toast-container"]/descendant::div[contains(@class,'toast-title')]
+toastMessage: //div[@id="toast-container"]/descendant::div[@role="alert"]
+toastContainer: //div[@id="toast-container"]
+ADD_BOM_BUTTON: //button[normalize-space()='Add New']
+NAME_ERROR: //div[@class="error ng-star-inserted"]
+BOM_Delete_button: //span[normalize-space()='replace']/ancestor::tr//button
+BOM_Confirm_delete_button: //button[normalize-space()='Delete']
+BOMNameInTable: //span[text()=" replace "]
+BOM_ADD_BREADCRUMB_LINK: //a[normalize-space()="BOM"]
+ADD_COM_BUTTON: //button[normalize-space()='Add']
+DONE_COM_BUTTON: //button[normalize-space()='Done']
+
+BOM_CHECKBOX: (//input[@type = 'checkbox'])[INDEX]
+upload_file_close_button: //app-dialog-header//mat-icon
+
+
+#UI of Add BOM Page
+BOM_NAME_INPUT: //input[@placeholder="Enter Name"]
+BOM_FIXTURE_INPUT: //input[@placeholder="Enter Supply Chain Number"]
+BOM_SIZE_INPUT: //input[@placeholder="Enter Size (Quantity)"]
+BOM_TYPE_INPUT: //input[@placeholder="Enter Fix/Gauge Type"]
+BOM_UNIT_INPUT: //input[@placeholder="Enter Unit"]
+BOM_DESCRIPTION_INPUT: //textarea[@placeholder="Enter a description..."]
+BOM_CREATE_BUTTON: //button[normalize-space()="Create"]
+BOM_CANCEL_BUTTON: //button[normalize-space()="Cancel"]
+
+#UI of BOM Page 
+BOM_list_table_header: //div[starts-with(@class,"mat-sort-header-content")]
+
+BOM_Search_box: //input[@placeholder="Search..."]
+BOM_Header: //div[contains(text(),"Bill of Materials")]
+bulk_upload_button: //span[contains(text(),'Bulk Upload')]
+bom_export_button: //button[.//span[contains(text(),'Export')]]
+BOM_table: //table
+BOM_Pagination: //div[@class='mat-mdc-paginator-container']
+BOM_pagination_range: //div[@class="mat-mdc-paginator-range-actions"]
+
+#bom_add_procedure_page
+add_bom: //span[@class='dialog-header-title']
+close_icon: //mat-icon[@type='button']
+add_bom_previous_page: (//button[@aria-label= "Previous Page"])[2]
+code_checkbox: (//input[contains(@class,'mdc-checkbox__native-control')])
+add_bom_headers: //div[contains(@class,'mat-sort-header-container') and contains(@class,'mat-focus-indicator')]
+next_page: (//button[contains(@class,'mat-mdc-paginator-navigation-next')]//span[contains(@class,'mat-mdc-button-touch-target')])[2]
+rows_per_page: //div[contains(@id,'mat-paginator-page-size-label')]
+pagination_dropdown: //div[contains(@class,'mat-mdc-paginator-touch-target')]
+add_button_parts: //span[contains(@class,'d-flex') and contains(@class,'align-items-center')]
+cancel_button_bom: //button[@class='secondary mdc-button mdc-button--outlined mat-mdc-outlined-button me-2 mat-unthemed mat-mdc-button-base ng-star-inserted']//span[@class='mat-mdc-button-touch-target']
+general_details_button: //div[@class='option selectable']
+bom_section: //span[normalize-space()='BOM']
+first_bom_entry: //span[@class='mat-mdc-tooltip-trigger clickable']
+bot_section: //span[normalize-space()='BOT']
+
+#bom info in general details
+bom_name_detail: //div[@class='key'][normalize-space()='Name']
+bom_quantity: //div[@class='key'][normalize-space()='Quantity']
+bom_uom: //div[@class='key'][normalize-space()='UoM']
+bom_description: //div[@class='key'][normalize-space()='Description']
+bom_image: //*[@id="BBC_MODAL"]/div/div/mat-dialog-content/div/div[2]
+bom_done: //span[contains(@class,'d-flex align-items-center gap')]
+bom_close: //mat-icon[@type='button']
+
+
+#BOM/BOT/COM COMMON LOCATORS
+PARTS_OPTION_BOM_BOT_COM: //mat-tree-node/descendant::span[text()="replace"]
+PARTS_AND_TOOLS_BREADCRUMB: //a[normalize-space()="replace"]
+BOM_BOT_COM_HEADER: //div[contains(text(),"replace")]
+BOM_RECORD_COUNT: //div[contains(@class,"paginator-range")]/div
+BOM_PAGE_SIZE_SELECT: (//mat-select)[3]|(//div[contains(@class,"mat-mdc-select-arrow-wrapper")])[3]
+#job creation page
+job_creation_next_button_updated: //span[contains(@class,'d-flex align-items-center gap')]
+select_parts_and_tools_in_job_execution: //mat-icon[@data-mat-icon-name='bill-of-tools']
+bom_in_job_execution: //div[@class='bbc-header']//div[@class='view-option active ng-star-inserted']
+com_in_job_execution: //div[@class='bbc-header']//div[3]
+bot_in_job_execution: //div[@class='bbc-header']//div[2]

@@ -1,0 +1,74 @@
+#listing page
+WI_COLUMN_ON_WORKSPACE_LIST_PAGE: //div[normalize-space()='Work Instructions']
+CREATE_NEW_WORKSPACE: xpath:(//app-workspace//button)[1]
+DETAILS_PAGE_CREATE_BUTTON: xpath:(//footer/button)[2]
+SearchWorkspace: //input[contains(@class,'mat-mdc-input-element')]
+FilterWorkspace: //div[contains(@class,'filter-indicator')]
+WorkspaceNameLabel: (//label[contains(@class,"form-control-placeholder")])[1]
+WorkspaceNameInput: //div[@class="form-group"]//input
+WorkspaceDescriptionLable: (//label[contains(@class,"form-control-placeholder")])[2]
+WorkspaceDescriptionInput: //div[@class="form-group"]//textarea
+SuggestedTag: //div[@class="suggest-wrapper"]
+SearchTag: //tag-search-component//input
+AddWorkspaceButton: //div[@class="panel-card"]//span[@class="mdc-button__label"]
+SuggestedTags: //span[contains(@class,"suggest-tags")]
+Count: (//div[@class="view-selector-container"]//div[contains(@class,"option-count")])[1]
+SiteSelection: //section[contains(@class,"body-container")]//span[contains(@class,"mat-mdc-select-value")]
+INPUT_WORKSPACE_NAME: (//input[contains(@class, 'custom-form-control')])[1]
+SITE_DROPDOWN: (//mat-form-field)[3]
+SITE_OPTION_INDEX: xpath:(//div[@role="listbox"]//mat-option)[INDEX]/span
+EXISTING_SITE_OPTION: xpath:(//div[@role="listbox"]//mat-option)/span[contains(text(),'SITE')]
+INPUT_WORKSPACE_DESCRIPTION: //textarea[@rows='10' and @maxlength='200']
+WORKSPACE_TAB: xpath://mat-icon[@data-mat-icon-name="workspace"]//following-sibling::span
+FIRST_WORKSPACE_ON_LIST_PAGE: xpath:(//tbody/tr/td)[2]//span
+WORKSPACE_RECORD_LISTED_ON_LIST_PAGE: //td[contains(@class,'mat-column-name')]//span
+INPUT_SEARCH: //input[@placeholder="Search..."]
+SEARCH_EXISTING_SITE: xpath:(//input[@placeholder="Search..."])[2]
+SEARCHED_WORKSPACE_ON_WORKSPACE_LIST: xpath:(//tbody/tr/td)[2]//span
+DELETE_ICON: xpath:(//mat-icon[@data-mat-icon-name="deleteIcon"])[1]
+DELETE_POPUP: xpath:(//span[contains(text(),'Delete')])[2]
+NO_WORKSPACE_FOUND: xpath:(//td[contains(text(),'Workspace not found')])|(//td[contains(text(),'Site Not Found')])
+LABEL_NAME: xpath:((//tr[@role="row"]/th/div/div)[1])|(//tr//th[@field="name"])
+LABEL_DESC: xpath:((//tr[@role="row"]/th/div/div)[3])|(//tr//th[@field="description"])
+LABEL_TAGS: (//tr//th[@field="tags"])
+LABEL_PROCEDURES: (//tr//th[contains(@class,'mat-column-procedureCount')])
+LABEL_SITE_Workspace: (//tr//th[contains(@class,'mat-column-siteName')])
+LABEL_ACTION_Workspace: (//tr//th[contains(@class,'mat-column-action')])
+All_RECORDS_CHECKBOX: ((//thead[@role="rowgroup"]//input[@type="checkbox"])[2])|((//thead[@role="rowgroup"]//input[@type="checkbox"]))
+ADD_PROCEDURE_TO_WORKSPACE_BUTTON_ON_WORKSPACE_DETAILS_PAGE: xpath:(//search-bar/following-sibling::button/span)[2]
+ADD_PROCEDURES_UNDER_WORKSPACE_BUTTON: xpath:(//app-dialog-footer//button)[2]
+ADD_ALL_PROCEDURES_TO_WORKSPACE_CHECKBOX: (//wi-and-procedure-table//table//th[@role="columnheader"]//input)[2]
+UPDATE_BUTTON: xpath:(//footer//button)[2]
+EDIT_WORKSPACE: xpath:(//shared-breadcrumb/following-sibling::div//button)[1]
+ZERO_RECORDS: xpath://div[contains(text(),'0 of 0')]
+CANCEL_BUTTON_ON_EDIT_WORKSPACE_PAGE: //footer//button[contains(text(),"Cancel")]
+SELECTED_RECORD: xpath://div[contains(text(),'Selected (2)')]
+DELETE_MULTIPLE_RECORD: xpath:(//select-count-bar//following-sibling::button)[2]
+DELETE_MULTIPLE_POPUP: xpath:(//span[contains(text(),'Delete')])[3]
+SELECT_MULTIPLE_RECORD: xpath:(//input[contains(@class,'mdc-checkbox__native-control')])[INDEX]
+PREVIOUS_BUTTON: xpath:(//footer//button)[2]
+BREADCRUMBS_WORKSPACE: xpath://li[contains(@class,'breadcrumb')]/div[contains(text(),'WORKSPACE')]
+LINK_WORKSPACE_PAGE: xpath:(//li[contains(@class,'breadcrumb')]/div)[1]
+WORKSPACE_DETAIL_SAVE_BUTTON: xpath:(//footer//button[contains(@class,"ss-btn-add")])[2]
+VIEW_ALL_TAGS: xpath:(//tag-search-component//div/span)[2]
+INPUT_SEARCH_TAG: xpath:(//input[@placeholder="Search..."])[2]
+SEARCHED_TAG: xpath://div[contains(@class,"tag-items ng-star-inserted")]
+PROCEDURES_WINDOW_ON_NEW_WORKSPACE_SCREEN: xpath:(//app-view-selector//span[@class="option-label"])[3]
+PROCEDURES_WINDOW_ON_ADD_PROCEDURES_SCREEN: xpath:(//app-view-selector//span[@class="option-label"])[4]
+TOTAL_TAG_PROCEDURES: xpath:(//app-view-selector//div[contains(@class,"option-count")])
+TOTAL_ADDED_PROCEDURES: xpath:(//app-view-selector//div[contains(@class,"option-count")])
+PROCEDURE_TAGS_TEXT: //mat-chip//span[contains(@class,'mdc-evolution-chip__text-label')]
+TOTAL_PROCEDURES_COUNT: xpath:(//mat-chip//span[contains(@class,'mdc-evolution-chip__text-label')])[INDEX]
+CLOSE_TAG_PANEL: xpath:(//mat-icon[normalize-space()='close'])[4]
+WORKSPACE_SITE_VALIDATION_TOASTER: xpath://div[@role="alert"  and contains(text(), "Please enter valid information for Site")]
+WORKSPACE_NAME_VALIDATION_TOASTER: xpath://div[@role="alert" and contains(text(), "Please enter valid information for Name")]
+REMOVE_PROCEDURE_TAG: xpath://tag-search-component//mat-icon
+NO_PROCEDURES_ADDED: xpath://tbody/tr[contains(@class,'no-records')]/td
+ALL_SITES_OPTION: (//div[@role="listbox"]//mat-option)/span
+WORKSPACE_FILTER: xpath:(//mat-panel-title)[1]
+OPTION_TAGS_FILTER: xpath:(//div[@role="region"]//label[@class="mdc-label"])[INDEX]
+TAGGED_WORKSPACE_FILTERED_RECORDS: xpath:((//tbody/tr)[INDEX]/td[4]//div[@role="presentation"]//span/span/span)[1]
+FIRST_PROCEDURE_VERSION: xpath:(//span[@class="version-indicator"])[1]
+SEARCHED_PROCEDURE_IN_WORKSPACE: (//span[normalize-space()='PROCEDURENAME']//ancestor::tr/td[contains(@class,'mat-column-select')])[2]
+DONE_BUTTON_IN_ADD_PROCEDURE_IN_WORKSPACE: //mat-dialog-actions//button[2]
+SiteElement: (//tbody//shared-text-cell//span)[2]

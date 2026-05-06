@@ -1,0 +1,69 @@
+#Home Screen Locators
+button_SIGNIN : "//*[@class ='android.widget.Button' and (@text='SIGN IN' or . ='SIGN IN')]"
+img_Settings : "//*[@class = 'android.widget.ImageButton']"
+input_BaseURL : "//*[@class = 'android.widget.EditText' and @index = '0']"
+btn_Save : "//*[@class = 'android.widget.Button' and (@text = 'SAVE' or . = 'SAVE')]"
+btn_MonitoringAgentStatus : "//*[@class='android.widget.Button' and @text='MONITORING AGENT STATUS']"
+img_CancelBtn : "//*[@class='android.widget.ImageButton']"
+txt_ErrorMsg : "//*[@resource-id = 'localAccountForm']/android.view.View/android.widget.TextView"
+
+
+#Login Screen Locators
+input_UserName : "//*[@class = 'android.widget.EditText' and @resource-id = 'signInName']"
+input_Password : "//*[@class = 'android.widget.EditText' and @resource-id = 'password']"
+button_signIn_New : "//*[@class = 'android.widget.Button' and (@text= 'Sign in' or . = 'Sign in') and @resource-id = 'next']"
+Img_btnClose : "//*[@class = 'android.widget.ImageButton' and @resource-id = 'com.android.chrome:id/close_button']"
+
+#Home Screen Locators
+txt_ActiveOrdersScreen : "//*[@class='android.widget.TextView' and @text='ACTIVE ORDERS']"
+btn_HamburgerMenu : "//*[@class= 'android.widget.ImageButton']"
+options_HamburgerMenu : "//*[@class = 'android.widget.TextView' and @text= '${OPTION}'][1]"
+options_SiteConfig_Hamburger : "//*[@class = 'android.widget.TextView' and @text= 'RIG CONFIGURATIONS'][1]"
+txt_ScreenTitle : "//*[@class = 'android.widget.TextView' and (@text = '${Screentitle}')]"
+txt_SiteConfigrationTitle : "//*[@class = 'android.widget.TextView' and (@text = 'RIG CONFIGURATIONS')]"
+
+
+#Dashboard Screen Locators
+btn_Create : "//*[@class='android.widget.Button' and @text='ORDER']"
+
+#CREATE NEW ORDER Screen Locators
+txt_CreateNewOrderPageTitle : "//*[@class='android.widget.TextView' and @text='CREATE NEW ORDER']"
+input_VIN : "//android.widget.EditText"
+input_ControlNumber : "(//android.widget.EditText)[2]"
+btn_BarcodeDevice : "//*[@class='android.widget.Button' and @text='BARCODE DEVICE']"
+dropdown_insuranceProvider : "//*[@class = 'android.widget.TextView' and @resource-id = 'com.dover.vhssmobileclient:id/tvCategory']"
+btn_CREATEORDER : "//*[@class = 'android.widget.Button' and @text = 'CREATE ORDER']"
+btn_CancelCreateOrder : "//*[@class = 'android.widget.Button' and (text() = 'CANCEL')]"
+
+# VERIFY VEHICLE Screen Locators
+txt_VerifyVehiclePageTitle : "//*[@class='android.widget.TextView' and @text='VERIFY VEHICLE']"
+txt_VehicleInfo : "//*[@class='android.widget.TextView' and @text='${VEHICLEINFO}']/following-sibling::android.widget.TextView[1]"
+btn_EditDetails : "//*[@class='android.widget.Button' and @text='EDIT DETAILS']"
+btn_CANCELORDER : "//*[@class='android.widget.Button' and @text='CANCEL ORDER']"
+txt_PopupMsg_CancelOrder : "//android.widget.FrameLayout/android.view.ViewGroup[1]/android.widget.TextView"
+btn_YES_PopupMsg : "//*[@class='android.widget.Button' and @text='YES']"
+input_EditDetails_Mandatory : "//*[@class='android.widget.TextView' and @text='${VEHICLEINFO}']/../../android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText"
+input_AmbientLightValueChange : "//*[@text='Number of slices']/../android.view.ViewGroup[4]/android.widget.EditText"
+btn_EditDetails : "//*[@class='android.widget.Button' and @text='EDIT DETAILS']"
+input_NumberOfSlices : "//*[@text='Number of slices']/../android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.EditText"
+sel_VehicleType : "//*[@resource-id='com.dover.vhssmobileclient:id/tvCategory'][1]"
+sel_NumberOfDoors : "//*[@resource-id='com.dover.vhssmobileclient:id/tvCategory'][2]"
+sel_Color : "//*[@resource-id='com.dover.vhssmobileclient:id/tvCategory'][3]"
+btn_SunRoofMoonRoof : "//*[@class='android.widget.TextView' and @text='Sun roof / Moon roof']"
+txt_WarningMessage : "(//*[@class='android.widget.FrameLayout'])[7]/android.view.ViewGroup/android.widget.TextView"
+sel_algorithm : "//*[@class='android.widget.TextView' and @resource-id='com.dover.vhssmobileclient:id/tvCategory'][4]"
+
+
+
+#Site Configuration
+drpdwn_SelectCatsite : "//*[@resource-id='com.dover.vhssmobileclient:id/tvCategory']"
+option_SelectCatsite : "//*[@resource-id='com.dover.vhssmobileclient:id/tvCategory' and @text='${catsite}']"
+option_SelectCatsite1 : "//*[@resource-id='com.dover.vhssmobileclient:id/tvCategory' and @text='QAVMCatsite3']"
+
+
+
+
+
+
+#Common
+img_Loadingimg : "//*[@class='android.widget.ProgressBar']"

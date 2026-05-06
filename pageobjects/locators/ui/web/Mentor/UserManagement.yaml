@@ -1,0 +1,124 @@
+#Users list page
+
+#First is user second is team
+USER_NAME_LIST_PAGE:  (//td[contains(@class,'mat-column-fullName')]//span)|((//td[contains(@class,'mat-column-name')])//a)
+USER_EMAIL_LIST_PAGE:  (//td[contains(@class,'mat-column-email')]//span)
+USER_COMPANY_LIST_PAGE:  (//td[contains(@class,'mat-column-siteNames')]//span)
+USER_ROLE_LIST_PAGE:  (//td[contains(@class,'mat-column-persona')])
+USER_STATUS_LIST_PAGE:  (//td[contains(@class,'mat-column-status')])
+USER_CREATEDON_LIST_PAGE:  (//td[contains(@class,'mat-column-createdOn')]//app-date-cell)
+User_Management:  (//*[local-name()='svg'][contains(@class,'ng-star-inserted')])[2]
+DASHBOARD_LINK:  xpath://span[.='Dashboard']/..
+left_Navigation_user_management:  xpath://span[.='User Management']
+link_users: xpath://a[.='Users']
+USERS_TAB: xpath://span[.='Users']
+ADD_NEW_BUTTON: xpath://span[.='Add New']
+first_username: xpath:((//tbody/tr)[1]/td)[2]//span
+FIRST_USER_EMAIL_LIST_PAGE: xpath:((//tbody/tr)[1]/td)[3]//span
+ALL_RECORDS_DISPLAYED_AFTER_FILTERS: xpath://td[contains(@class,'mat-column-fullName')]
+first_user_status: xpath:((//tbody/tr)[1]/td)[6]
+DETAILS_PAGE_USER_STATUS: xpath://button[@role="switch"]/following-sibling::label/span
+user_details_status: xpath://label[@for="mat-mdc-slide-toggle-1-button"]/span['STATUS']
+toggle_button: xpath://button[@type="button"]//span[@class="mdc-switch__handle"]
+edit_user: xpath://span[@class="mdc-button__label" and contains(text(),'Edit')]
+verify_edit_user: xpath://shared-breadcrumb/div['Edit User']
+ADD_NEW_USER_NEXT_BUTTON: xpath:(//footer//button[normalize-space()='Next'])
+USERS_DETAILS_PAGE_SKILLS_TAB: //ul[normalize-space()='Skills']
+ADD_NEW_USER_DONE_BUTTON: xpath:((//footer//button[contains(@class,"ss-btn-add")])[3])|(//footer//button[.='Done'])
+input_email: xpath:(//input[@placeholder="Enter Email Id"])| (//input[@placeholder="Enter email address"])
+input_first_name: xpath://input[@placeholder="Enter First Name"]
+input_last_name: xpath://input[@placeholder="Enter Last Name"]
+input_mobile_no: xpath:(//input[@type="tel"])[1]
+input_landline_no: xpath:(//input[@type="tel"])[2]
+input_fax: xpath:(//input[@type="tel"])[3]
+language_select: xpath://label[contains(text(),'Language')]/following-sibling::mat-form-field
+language_option: xpath:(//div[@role="listbox"]/mat-option/span)[3]
+timezone_select: xpath://label[contains(text(),'Time Zone')]/following-sibling::mat-form-field
+timezone_option: xpath:(//div[@role="listbox"]/mat-option/span)[3]
+saved_user_language: xpath:(//mat-select/div//span/span)[4]
+saved_user_timezone: xpath:(//mat-select/div//span/span)[5]
+site_dropdown: xpath://label[contains(text(),'Site')]/following-sibling::mat-form-field
+ADD_NEW_USER_SITE_OPTION: xpath:(//div[@role="listbox"]/mat-option/span)[3]
+role_select: xpath://label[contains(text(),'Role')]/following-sibling::mat-form-field
+LISTED_PERSONA_ROLE: xpath://mat-option
+role_option: xpath:(//div[@role="listbox"]/mat-option/span)[INDEX]
+input_job_title: xpath://input[@placeholder="Enter Job Title"]
+input_department: xpath://input[@placeholder="Enter Department"]
+input_devision: xpath://input[@placeholder="Enter Division"]
+user_search: xpath://input[@placeholder="Search..."]
+searched_user_name: xpath:(//tbody/tr/td)[2]//span
+delete_icon: xpath:(//mat-icon[@data-mat-icon-name="deleteIcon"])[1]
+delete_popup: xpath:(//span[contains(text(),'Delete')])[2]
+no_user_record: xpath://td[contains(text(),'No users found')]
+left_panel_professional: xpath://ul[contains(text(),'Professional Details')]
+left_panel_personal: xpath://ul[contains(text(),'Personal Details')]
+left_panel_workspace: xpath://ul[contains(text(),'Workspace')]
+INVALID_EMAIL_ENTERED: xpath://div[contains(text(), 'valid email')]
+phone_number_validation: xpath://div[contains(text(),'Minimun 10 characters are allowed')]
+user_creation_dates: xpath://app-date-cell
+sort_users_list: xpath:(//tr[@role="row"]/th/div/div)[8]
+users_count: xpath://div[contains(@class,"paginator-range")]/div
+label_name: xpath:(//tr[@role="row"]/th/div/div)[1]
+LABEL_NAME_SORT: xpath:(//tr[@role="row"]/th/div/div)[2]
+label_email: xpath:(//tr[@role="row"]/th/div/div)[3]
+label_site: xpath:(//tr[@role="row"]/th/div/div)[5]
+label_role: xpath:(//tr[@role="row"]/th/div/div)[7]
+label_status: xpath:(//tr[@role="row"]/th/div/div)[9]
+label_createdOn: xpath://div[contains(text(),'Created on')]
+label_action: xpath:(//tr[@role="row"]/th/div/div)[13]
+disabled_site_dropdown: xpath://label[contains(text(),'Site')]/following-sibling::mat-form-field[contains(@class,'mat-form-field-disabled')]
+input_search: xpath://input[@placeholder="Search..."]
+role_filter: xpath:(//mat-panel-title)[2]
+filter_view_more: xpath:(//span[@class="mdc-button__label"])[3]
+option_role_filter: xpath:(//div[@role="region"]//label[@class="mdc-label"])[INDEX]
+status_filter: xpath:(//mat-panel-title)[2]
+status_option: xpath://div[@role="region"]//label[normalize-space()='Active']
+apply_filter: xpath:(//span[contains(text(),'Apply')])
+APPLIED_FILTERS: xpath://span[contains(text(),'Filters')]
+user_record_role: xpath:(//tbody/tr)[INDEX]/td[5]
+user_record_status: xpath:(//tbody/tr)[INDEX]/td[6]
+filter_clear_all: xpath://span[contains(text(),'Clear all')]
+breadcrumbs_username: xpath://li[contains(@class,'breadcrumb')]/div[contains(text(),'USERNAME')]
+link_users_page: xpath:(//li[contains(@class,'breadcrumb')]/div)[1]
+user_count_in_header: xpath://label[@class="page-heading"]
+site_option_workspace: xpath://mat-option//span[contains(text(),'SITE')]
+input_select_role: xpath://mat-option[@role='option'][.//span[contains(normalize-space(.), 'ROLE')]]
+workspace_record: xpath://span[contains(text(),'WORKSPACE')]
+user_persona_selected: xpath://label[contains(text(),'Role')]//following-sibling::mat-form-field//span/span
+selected_users: xpath://div[contains(text(),'Selected (2)')]
+delete_multiple_users: xpath:(//select-count-bar//following-sibling::button)[2]
+CANCEL_THE_RECORDS_DELETION: xpath://span[contains(text(),'Cancel')]
+DELETE_MULTIPLE_POPUP: xpath:(//span[contains(text(),'Delete')])[3]
+SELECT_MULTIPLE_RECORD: xpath:(//input[@type="checkbox"])[INDEX]
+error_in_creating_user: xpath://div[@aria-label="Error in creating user"]
+add_ele: xpath://span[text()='Add']
+SEARCH_ELE: xpath://input[@placeholder="Search..."]
+ADD_WORKSPACE_AGAIN: xpath:(//app-dialog-footer//span[@class="mdc-button__label"])[2]
+ADDED_WORKSPACE: xpath://mat-grid-list//div/span[text()='WORKSPACE']
+FIRST_WORKSPACE: xpath://mat-grid-list//div/span
+DEL_WORKSPACE: xpath:(//button[contains(@class,'delete-button')])[1]
+SEARCHED_WORKSPACE: xpath://span[.='WORKSPACE']/../mat-checkbox
+LEFT_NAV_WORKSPACE_TAB: xpath://mat-tree-node//span[text()='Workspaces']
+WORKS_MAGANEMENT_HEADER: xpath://div[contains(text(),'Workspace Management')]
+WORKS_ASSOCIATES_PROCEDURE: xpath:(//span[.='WORKSPACE']//ancestor::mat-grid-list//button[contains(text(),'Procedure')])
+PROCEDURE_IN_WORKS: xpath://span[contains(text(),'PROCEDURE')]
+PROCEDURES_LIST: xpath:(//app-view-selector//span)[4]
+PROCEDURE_LIST_ITEM: xpath://tbody/tr
+SEARCH_ELE_WORK: xpath:(//input[@placeholder="Search..."])[2]
+SITE_FROM_DETAILS_PAGE: xpath://app-form//mat-select//span/span
+
+
+#User Details Skills tab
+USER_DETAILS_FIRST_SKILL: xpath://td[contains(@class,'mat-column-skillName')]//span
+USER_DETAILS_FIRST_SKILL_CURRENT_LEVEL: //td[contains(@class,'mat-column-currentLevel')]//select
+USER_DETAILS_FIRST_SKILL_TARGET_LEVEL: //td[contains(@class,'mat-column-requiredLevel')]//select
+DELETE_SKILL_ICON_USER_DETAILS: xpath:(//mat-icon[@data-mat-icon-name="deleteIcon"])[1]
+DELETE_SKILL_POPUP_USER_DETAILS: xpath://mat-dialog-actions//button[2]
+
+#user Details skills tab
+DELETE_ICON_USER_DETAILS: xpath:(//mat-icon[@data-mat-icon-name="deleteIcon"])[1]
+DELETE_POPUP_USER_DETAILS: xpath:(//span[contains(text(),'Delete')])[2]
+
+UserWorkspaceTab: //ul[contains(text(),"Workspaces")]
+WorkspaceProcedures: (//button[@class="work-instruction-btn"])[1]
+WorkspaceCount: //button[@class="work-instruction-btn"]
