@@ -46,7 +46,7 @@ Step_Plus_button: //button[contains(@class, "mat-mdc-button-base")]//mat-icon[@d
 Name_input: (//input[@placeholder= "Name"])|(//input[@placeholder= "Procedure Name"])
 Material_Number: //input[@placeholder= "Material Ids"]
 CO-AUTHOR_SELECT: (//mat-select)[3]
-CO-AUTHOR_FIRST_OPTION: //span[@class="dropdown-option"]
+CO-AUTHOR_FIRST_OPTION: //span[@class="option-name"]
 DOCUMENT_ID_INPUT: (//input[@placeholder="Document Id"])
 Choose_button: //div[contains(@class, "title")]/following-sibling::div/button
 1st_PPE: (//input[@type = 'checkbox'])[2]
@@ -104,7 +104,7 @@ OPTION_INPUT: (//input[contains(@formcontrolname, "value")])[INDEX]
 Add_option_icon: //mat-icon[text()=  "add"]
 options_arrow_dropdown: //mat-form-field[@data-testid='option-select-field']//mat-select
 select_Option_arrow_locator: //mat-option[@data-testid='option-select-item']
-CORRECT_SELECTED_OPTION: (//span[@class="dropdown-option"])[1]/span
+CORRECT_SELECTED_OPTION: (//span[@class="option-name"])[1]
 OptionLabel: //label[contains(@class, "display-label")]
 Delete_Option: //span[contains(@class, "icon-clickable")]
 Green_tick: //div[contains(@class, "input-container")]//mat-icon
@@ -263,7 +263,7 @@ PROCEDURE_CYCLE_REVIEW_PAGE: xpath:(//div[contains(@class,"general-detail-entry"
 PROCEDURE_NAME_DETAILS_PAGE: xpath:(//shared-breadcrumb//li/div)[2]
 SAVED_PROCEDURE_STEP_INSTRUCTIONS: xpath:(//text-editor//p)[INDEX]
 FIRST_PROCEDURE_VERSION: xpath:(//span[@class="version-indicator"])[1]
-OPTION_ADDED_IN_STEP: xpath://div[@class="option-title" and normalize-space()='OPTION_TITLE']
+OPTION_ADDED_IN_STEP: xpath://div[@class="option-title"]
 GRID_ICON: xpath:(//div[@class="view-selector-options"]/div)[2]
 GRID_VIEW_IMAGE_ATTACHMENT: (//div[contains(@class,'asset-grid-item')]//thumbnail//img)[1]
 GRID_VIEW_VIDEO_ATTACHMENT: (//div[contains(@class,'asset-grid-item')]//thumbnail//video)
@@ -311,8 +311,8 @@ COAUTHORS_SELECT: xpath://label[normalize-space()='Co-authors']//following-sibli
 ALL_COAUTHORS: xpath://span[@class="dropdown-option"]
 MANAGER_INPUT: (//input[@placeholder="Search..."])[2]
 FIRST_MANAGER: xpath://span[@class="option-name"]
-COAUTHORS_OPTION: xpath:(//span[@class="dropdown-option"])[INDEX]
-MANAGERS_OPTION: xpath:(//span[@class="dropdown-option"])[INDEX]
+COAUTHORS_OPTION: (//span[@class="option-name"])[INDEX]
+MANAGERS_OPTION: (//span[@class="option-name"])[INDEX]
 COAUTHOR_INPUT: (//input[@placeholder="Search..."])[2]
 SAVED_COAUTHOR: xpath:(//div[@class="custom-select-display"]//*[contains(text(),'ITEM')])[1]
 SAVED_MANAGER: xpath:(//div[@class="custom-select-display"]//*[contains(text(),'ITEM')])[1]

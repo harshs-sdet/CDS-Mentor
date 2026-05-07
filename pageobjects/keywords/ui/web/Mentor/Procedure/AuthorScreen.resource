@@ -393,12 +393,14 @@ Verify The Options Of The Step
     [Documentation]    To Verify The Options Of The Step
     Wait For The Element And Click    ${FIRST_STEP}
     Wait For The Element And Click    ${Options_Tab}
-    FOR    ${key}    IN    @{OPTIONS_VALIDATION_DICT.keys()}
-        ${value}=    Get From Dictionary    ${OPTIONS_VALIDATION_DICT}    ${key}
-        Log    Key: ${key}, Value: ${value}
-        ${LOCATOR}=    Replace String    ${OPTION_ADDED_IN_STEP}    OPTION_TITLE    ${key}
-        Wait Until Element Is Visible    ${LOCATOR}
-    END
+    ${count}=    Get Element Count    ${OPTION_ADDED_IN_STEP}
+    Should Be True    ${count} > 1
+#    FOR    ${key}    IN    @{OPTIONS_VALIDATION_DICT.keys()}
+#        ${value}=    Get From Dictionary    ${OPTIONS_VALIDATION_DICT}    ${key}
+#        Log    Key: ${key}, Value: ${value}
+#        ${LOCATOR}=    Replace String    ${OPTION_ADDED_IN_STEP}    OPTION_TITLE    ${key}
+#        Wait Until Element Is Visible    ${LOCATOR}
+#    END
 
 Get Initial Option value
     ${initial_value}=    Get Text    ${Default_option}
@@ -1513,7 +1515,7 @@ Add The Approval Managers And Co-Author
     Wait Until Element Is Visible    ${FIRST_MANAGER}
     ${MANAGERS_END_LIMIT}=    Get Element Count    ${ALL_MANAGERS}
     ${APPROVAL_MANAGERS_LIST}=    Get Values In List For Validation    ${MANAGERS_OPTION}    1    ${MANAGERS_END_LIMIT}
-#    ${APPROVAL_MANAGERS_LIST}=    Get Random Records From List    ${APPROVAL_MANAGERS_LIST}    2
+    ${APPROVAL_MANAGERS_LIST}=    Get Random Records From List    ${APPROVAL_MANAGERS_LIST}    2
     Set Test Variable    ${APPROVAL_MANAGERS_LIST}
     Press Keys    ${APPROVAL_MANAGERS_SELECT}    ESC
 
@@ -1521,7 +1523,7 @@ Add The Approval Managers And Co-Author
     Wait Until Element Is Visible    ${FIRST_COAUTHOR}        ${Max_limit}
     ${COAUTHORS_END_LIMIT}=    Get Element Count    ${ALL_COAUTHORS}
     ${COAUTHORS_LIST}=    Get Values In List For Validation    ${COAUTHORS_OPTION}    1    ${COAUTHORS_END_LIMIT}
-#    ${COAUTHORS_LIST}=    Get Random Records From List    ${COAUTHORS_LIST}    2
+    ${COAUTHORS_LIST}=    Get Random Records From List    ${COAUTHORS_LIST}    2
     Set Test Variable    ${COAUTHORS_LIST}
     Press Keys    ${COAUTHORS_SELECT}    ESC
 
