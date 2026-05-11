@@ -1,0 +1,11 @@
+supplyChainNumber,name,description,quantity,unit,image,col1,col2,col3
+SCN-01,example 1,description for example 1,,boxes,https://picsum.photos/200/300,additional col1,additional col2,additional col3
+SCN-02,COM-Plastic,,100,unit,https://picsum.photos/200/300,additional col1,additional col2,additional col3
+SCN-03,example 1,description for example 1,,boxes,https://picsum.photos/200/300,additional col1,additional col2,additional col3
+SCN-04,COM-Plastic,description for example 1,100,unit,https://picsum.photos/200/300,additional col1,additional col2,additional col3
+SCN-05,example 1,description for example 1,,boxes,https://picsum.photos/200/300,additional col1,additional col2,additional col3
+SCN-06,COM-Plastic,description for example 1,100,unit,https://picsum.photos/200/300,additional col1,additional col2,additional col3
+SCN-07,example 1,description for example 1,,boxes,https://picsum.photos/200/300,additional col1,additional col2,additional col3
+SCN-08,COM-Plastic,description for example 1,100,unit,https://picsum.photos/200/300,additional col1,additional col2,additional col3
+SCN-09,example 1,description for example 1,,boxes,https://picsum.photos/200/300,additional col1,additional col2,additional col3
+SCN-10,COM-Plastic,description for example 1,100,unit,https://picsum.photos/200/300,additional col1,additional col2,additional col3

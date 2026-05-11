@@ -1,0 +1,34 @@
+jobPopUpTitle: New Job Order
+File: Testing.pdf
+MOV_File: Video.mov
+Image_File: Image1_JPG.jpg
+Image2_File: Image_PNG.png
+BROWSER:   Chrome
+CRCO_Input:   CRCO-8F3J2K9LMN47XZ6APQ1B5T8WYCDVHR0EUGS64MXTQZN12KBV
+Preventive_Troubleshooting_Title:     Part of a machine is defective
+Preventive_Troubleshooting_Title2 :    Loose Machine Parts
+PT_POSSIBLE_CAUSE_INPUT:   You may have received a defective piece
+PT_CorrectiveAction_Input:   Drop a mail to the vendor for replacement
+PT_PreventiveAction_Input:    Always check the product while receiving order
+expected_headers_list:
+  - "Name"
+  - "Created by"
+  - "Last Updated"
+  - "Procedures"
+  - "Assigned Users"
+  - "Status"
+  - "Actions"
+successTextExpected: The training has been successfully created.
+successAssignTextExpected: The training has been successfully assigned to selected teams and users.
+TrainingDescription: This is Training description
+OPERATOR1_NAME: QA_devEnv OrgAdmin
+deadline: No Deadline
+expectedMenuButtons:
+  - "Edit"
+  - "Assign"
+  - "Delete"
+trainingNamesInPanelActual:
+  - "Completed"
+  - "In Progress"
+  - "Not Started"
+expectedDeleteText: The selected trainings have been successfully deleted.

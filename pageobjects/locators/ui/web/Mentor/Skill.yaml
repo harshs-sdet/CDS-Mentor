@@ -1,0 +1,228 @@
+skill_icon: //span[normalize-space(text())='Skill Management']/preceding-sibling::mat-icon[@data-mat-icon-name='group']
+skill_mgmt: //div[contains(@class, "nav-wrapper")]//span[text() = 'Skill Management']
+skill_arrow: //span[contains(text(), 'Skill Management')]/parent::*//mat-icon[normalize-space(text()) = 'expand_less']
+skill_btn: //span[contains(text(), 'Skills')]
+skill_profile: //span[contains(text(), 'Skill Profile')]
+Skills_heading: //div[contains(text(), 'Skills')]
+SKILL_NAME_INPUT: //div[contains(@class, 'form-group')]//input
+SKILL_DESCRIPTION_INPUT: //div[contains(@class, 'form-group')]//textarea
+ASSESSMENT_FREQUENCY_SELECT: //div[contains(@class, 'form-group')]//div[contains(@class, 'mat-mdc-select-value')]
+DAILY_FREQUENCY_OPTION: //div[contains(@class, "cdk-overlay-pane")]//mat-option[3]
+FIRST_FREQUENCY_OPTION: //div[contains(@class, "cdk-overlay-pane")]//mat-option[3]
+SKILL_DETAILS_PAGE_ADD_TRAINING_BUTTON: (//div[contains(@class, 'button-container')]//button)|(//span[normalize-space()='Add'])
+BEGINNER_LEVEL_TAB: //span[contains(@class, 'option-label') and text()= "Beginner"]
+INTERMEDIATE_LEVEL_TAB: //span[contains(@class, 'option-label') and text()= "Intermediate"]
+ADVANCE_LEVEL_TAB: //span[contains(@class, 'option-label') and text()= "Advance"]
+EXPERT_LEVEL_TAB: //span[contains(@class, 'option-label') and text()= "Expert"]
+Select_Trainings_header: //div[contains(@class, "header-title-container")]
+ADD_TRAINING_TO_SKILL_FIRST_TRAINING_LISTED: (//div[contains(@class, "mdc-checkbox")]//input)[2]
+ADD_TRAINING_TO_SKILL_SECOND_TRAINING_LISTED: (//div[contains(@class, "mdc-checkbox")]//input)[3]
+ADD_TRAINING_TO_SKILL_THIRD_TRAINING_LISTED: (//div[contains(@class, "mdc-checkbox")]//input)[4]
+ADD_TRAINING_TO_SKILL_FOURTH_TRAINING_LISTED: (//div[contains(@class, "mdc-checkbox")]//input)[5]
+ADD_TRAINING_TO_SKILL_FIFTH_TRAINING_LISTED: (//div[contains(@class, "mdc-checkbox")]//input)[6]
+Cancel_training: (//mat-dialog-actions[contains(@class, "common-dialog-footer")]//button)[1]
+ADD_TRAINING_TO SKILL_DONE_BUTTON: (//mat-dialog-actions[contains(@class, "common-dialog-footer")]//button)[2]
+SKILL_DETAILS_CANCEL_BUTTON: ((//app-dialog-footer//button)[1])|(//button[contains(@class,"ss-btn-add no-fill")])|(//footer[contains(@class, "ng-star-inserted")]//button[1])
+SKILL_DETAILS_CREATE_BUTTON: //footer[contains(@class, "ng-star-inserted")]//button[2]
+TRAININGS_COUNT_ADDED_IN_SKILL: //tbody[contains(@role, "rowgroup")]//td[5]//span
+
+#Skill list page
+SKILL_MANAGEMENT_OPTION: //span[normalize-space()='Skill Management']
+SKILL_OPTION: //mat-tree-node//span[normalize-space()='Skills']
+ADD_NEW_SKILL_BUTTON_LIST_PAGE: //div[@class="toolbar-container"]//button
+INPUT_SEARCH_SKILLS: //input[@placeholder="Search..."]
+FIRST_SKILL_LIST_PAGE: ((//td[contains(@class,'mat-column-name')]//span)[1])
+
+SKILL_LISTING_PAGE_HEADER: //shared-breadcrumb//li/div
+SKILL_LISTING_NAME_HEADER: (//app-skill//thead[@role="rowgroup"]//th/div/div)[1]
+SKILL_LISTING_DESCRIPTION_HEADER: (//app-skill//thead[@role="rowgroup"]//th/div/div)[3]
+SKILL_LISTING_ASSESSMENT_FREQUENCY_HEADER: (//app-skill//thead[@role="rowgroup"]//th/div/div)[5]
+SKILL_LISTING_TRAINING_HEADER: (//app-skill//thead[@role="rowgroup"]//th/div/div)[7]
+SKILL_LISTING_CREATED_BY_HEADER: (//app-skill//thead[@role="rowgroup"]//th/div/div)[9]
+SKILL_LISTING_CREATED_ON_HEADER: (//app-skill//thead[@role="rowgroup"]//th/div/div)[11]
+SKILL_LISTING_ACTIONS_HEADER: (//app-skill//thead[@role="rowgroup"]//th/div/div)[13]
+
+FIRST_SKILL_RECORD_NAME: //td[contains(@class,'mat-column-name')]//span
+FIRST_SKILL_RECORD_DESCRIPTION: //td[contains(@class,'mat-column-description')]//span
+FIRST_SKILL_RECORD_ASSESSMENT_FREQUENCY: //td[contains(@class,'mat-column-assesmentFrequency')]//span
+FIRST_SKILL_RECORD_TRAINING: //td[contains(@class,'mat-column-trainingsCount')]//span
+FIRST_SKILL_RECORD_CREATED_BY: //td[contains(@class,'mat-column-createdBy')]//span[@class="title"]
+FIRST_SKILL_RECORD_CREATED_ON: //td[contains(@class,'mat-column-createdOn')]//app-date-cell
+FIRST_SKILL_RECORD_DELETE_ICON: //td[contains(@class,'mat-column-actions')]/button
+FIRST_SKILL_RECORD_DELETE_POPUP: //mat-dialog-actions//button[2]
+ALL_SKILL_RECORDS_SELECTED: //tbody[@role="rowgroup"]/tr
+
+
+
+
+#Skill Details
+SKILLS_NO_RESULTS_FOUND: //td[normalize-space()='No record found']
+SKILL_EDIT_BUTTON: (//div[@class="header-menubar-buttons"]/button)[1]
+SKILL_DETAILS_ASSIGN_EDIT_BUTTON: //button//span[normalize-space()='Assign']
+SKILL_DETAILS_DIFFICULTY_LEVEL_DROPDOWN: (//mat-dialog-container//mat-select)[1]
+SKILL_DETAILS_DIFFICULTY_LEVEL_DROPDOWN_OPTION: //div[@role="listbox"]//mat-option[normalize-space()='DIFFICULTY']
+SKILL_DETAILS_ASSIGN_SEARCHED_USER: //span[normalize-space()='USERNAME']//ancestor::tr/td[contains(@class,'mat-column-select')]
+SKILL_DETAILS_ASSIGN_CANCEL_BUTTON: (//mat-dialog-actions//button)[1]
+SKILL_DETAILS_ASSIGN_DONE_BUTTON: (//mat-dialog-actions//button)[2]
+SKILL_DETAILS_ASSIGN_DELETE_BUTTON: (//div[@class="header-menubar-buttons"]/button)[3]
+SKILL_DETAILS_ADD_SEARCHED_TRAINING: //span[normalize-space()='TRAINING']//ancestor::tr/td[contains(@class,'mat-column-select')]
+SKILLS_LINK_FROM_BREADCRUMB: //shared-breadcrumb//a
+EMPTY_SKILL_NAME_VALIDATION_TOASTER: //div[@role="alert" and contains(text(), "A skill requires a name before creating.")]
+UNSELECTED_SKILL_FREQUENCY_VALIDATION_TOASTER: //div[@role="alert" and contains(text(), "The frequency of assessment must be specified in order to create a skill.")]
+SKILL_INPUT_FIELD_VALIDATION: //div[contains(text(), "Skill name can't be just special characters or spaces — add some letters or numbers!")]
+SKILL_DETAILS_ERROR_MESSAGE_SPECIAL_CHAR_NOT_ALLOWED: //div[normalize-space()="Skill name can't be just special characters or spaces — add some letters or numbers!"]
+ADDED_TRAININGS_TO_SKILL_AT_LEVEL: //div[@class="selected-btn"]
+TRAININGS_LISTED_SKILL_DETAILS: //div[@class="selected-btn"]
+ADDED_TRAINING_TO_SKILL_LISTED_ON_DETAILS_PAGE: //td[contains(@class,'mat-column-trainingName')]//span
+ADDED_TRAINING_DESCRIPTION_LISTED_ON_DETAILS_PAGE: //td[contains(@class,'mat-column-trainingDescription')]//span
+ADDED_TRAINING_PROCEDURE_COUNT_LISTED_ON_DETAILS_PAGE: //td[contains(@class,'mat-column-procedureCount')]
+ADDED_TRAINING_PROCEDURE_DELETE_ICON: //mat-icon[@data-mat-icon-name="deleteIcon"]
+ADD_TRAINING_TO_SKILL_INPUT_SEARCH: //mat-dialog-content//input[@placeholder="Search..."]
+DEFAULT_IMAGE_ON_SKILL_DETAILS_PAGE: //img[@src="/assets/images/training_creation_background.png"]
+SKILL_TRAINING_DELETE_ICON: //delete-button//mat-icon
+SKILL_TRAINING_DELETE_CONFIRMATION_BUTTON: //span/span[normalize-space()='Delete']
+
+
+#Assign Skill
+ASSIGN_SKILL_USER_TEAM_DIALOG_HEADER: //span[@class="dialog-header-title" and normalize-space()='Assign Skill to Users or Teams']
+ASSIGN_SKILL_TEAMS_TAB: //app-view-selector//span[normalize-space()='Teams']
+ASSIGN_SKILL_USERS_TAB: //app-view-selector//span[normalize-space()='Users']
+ASSIGN_SKILL_TO_SEARCHED_TEAMS: //a[normalize-space()='VALUE']//ancestor::tr/td[contains(@class,'mat-column-select')]
+ASSIGN_SKILL_TO_TEAM_INPUT_SEARCH: //div[@class="user-groups-content"]//input[contains(@placeholder,"Search...")]
+USERS_ASSIGNED_FOR_SKILL: //div[@class="member-name"]
+USERS_ASSIGNED_FOR_SKILL_COUNT: //div[@class="member-title-box"]
+TEAMS_ASSIGNED_FOR_SKILL_COUNT: //div[@class="selected-btn"]
+CLOSE_ICON_ASSIGN_SKILL_TO_USER_WINDOW: (//mat-icon[normalize-space()='close'])[3]
+CLOSE_ICON_ASSIGN_SKILL_TO_TEAM_WINDOW: (//mat-icon[normalize-space()='close'])[3]
+SKILL_DETAILS_ASSIGN_SEARCHED_TEAM: //a[normalize-space()='TEAMNAME']//ancestor::tr/td[contains(@class,'mat-column-select')]
+ASSIGNED_SKILLS_TO_USERS_INPUT_FIELD: //mat-dialog-container//input[@placeholder="Search..."]
+N0_TRAININGS_TOOLTIP: (//div[normalize-space()='No trainings added'])[3]
+
+
+
+#Un assign Skill
+SKILL_DETAILS_UNASSIGN_USERS_ICON: //mat-icon[@data-mat-icon-name="users"]
+SKILL_DETAILS_UNASSIGN_FLYOUT_HEADER: //div[@class="flyout-header"]/span[normalize-space()='Assigned Users']
+SKILL_DETAILS_CLOSE_FLYOUT_BUTTON: //div[@class="flyout-header"]//button
+SKILL_DETAILS_FLYOUT_SEARCH: //div[@class="flyout-content"]//input[@placeholder="Search..."]
+SKILL_DETAILS_SKILL_LEVEL_ASSIGNED_TO_USERS_HEADER: //div[ @class="level-name" and contains(text(),'LEVEL')]
+SKILL_DETAILS_SKILL_LEVEL_ASSIGNED_TO_USERS_HEADER_EXPAND_COLLAPSE_BUTTON: //div[ @class="level-name" and contains(text(),'LEVEL')]//following-sibling::div[@class="level-icons"]
+SKILL_DETAILS_SKILL_ASSIGNED_TO_USERS_NAME: //div[@class="user-name"]
+SKILL_DETAILS_SKILL_ASSIGNED_TO_USERS_PERSONA: //div[@class="user-role"]
+SKILL_DETAILS_SKILL_ASSIGNED_TO_USERS_LEVEL_SELECT: //div[@class="level-dropdown"]/select
+SKILL_DETAILS_SKILL_ASSIGNED_TO_USERS_DELETE_ICON: //div[@class="delete-icon"]
+SKILL_DETAILS_SKILL_ASSIGNED_TO_USERS_DELETE_POPUP_HEADER: //span[@class="dialog-header-title" and normalize-space()='Unassign User']
+SKILL_DETAILS_SKILL_ASSIGNED_TO_USERS_DELETE_POPUP_CLOSE_ICON: //div[@class="header-title-container"]//mat-icon
+SKILL_DETAILS_SKILL_ASSIGNED_TO_USERS_DELETE_POPUP_TEXT: //span[normalize-space()='Are you sure you want to unassign this user from the skill?']
+SKILL_DETAILS_SKILL_ASSIGNED_TO_USERS_DELETE_POPUP_CANCEL_BUTTON: //app-dialog-footer//button[1]
+SKILL_DETAILS_SKILL_ASSIGNED_TO_USERS_DELETE_POPUP_UNASSIGN_BUTTON: //app-dialog-footer//button[2]
+SKILL_DETAILS_NO_USERS_ASSIGNED_TO_SKILL: (//div[normalize-space()='There are currently no users assigned to this skill.'])[1]
+SKILL_DETAILS_SKILL_ASSIGNED_TO_USERS_CHANGE_LEVEL_POPUP_HEADER: //span[@class="dialog-header-title" and normalize-space()='Change Skill Level']
+SKILL_DETAILS_SKILL_ASSIGNED_TO_USERS_CHANGE_LEVEL_POPUP_TEXT: //span[@class="content" and normalize-space()='Are you sure you want to change the assigned level?']
+SKILL_DETAILS_SKILL_ASSIGNED_TO_USERS_CHANGE_LEVEL_POPUP_CANCEL_BUTTON: //mat-dialog-actions//button[1]
+SKILL_DETAILS_SKILL_ASSIGNED_TO_USERS_CHANGE_LEVEL_POPUP_DONE_BUTTON: //mat-dialog-actions//button[2]
+
+
+
+
+
+
+
+
+
+
+#-SKILL PROFILE ###############
+
+#Skill profile list page
+SKILL_PROFILE_TAB: xpath://span[normalize-space()='Skill Profile']
+SKILL_MATRIX_TAB: xpath://span[normalize-space()='Skill Matrix']
+SKILL_MANAGEMENT_TAB:  xpath://span[.='Skill Management']
+FIRST_SKILL_PROFILE: xpath:((//tbody/tr)[1]/td)[2]//span
+INPUT_SP_NAME: xpath://input[@placeholder="Profile Name"]
+INPUT_SP_DESC: xpath://textarea[@placeholder="Profile Description"]
+INPUT_SEARCH: //input[@placeholder="Search..."]
+SEARCHED_SP: xpath:(//tbody/tr/td)[2]//span
+DELETE_ICON_SKILL_PROFILE: xpath:(//mat-icon[@data-mat-icon-name="deleteIcon"])[1]
+DELETE_POPUP_SKILL_PROFILE: xpath:(//span[contains(text(),'Delete')])[2]
+NO_RECORD_FOUND: xpath://td[contains(text(),'No record found')]
+SKILL_PROFILE_LABEL_NAME: xpath:(//tr[@role="row"]/th/div/div)[1]
+SKILL_PROFILE_LABEL_DESC: xpath:(//tr[@role="row"]/th/div/div)[3]
+SKILL_PROFILE_LABEL_SKILLS: xpath:(//tr[@role="row"]/th/div/div)[5]
+SKILL_PROFILE_LABEL_TRAININGS: xpath:(//tr[@role="row"]/th/div/div)[7]
+SKILL_PROFILE_LABEL_CREATED_ON: xpath:(//tr[@role="row"]/th/div/div)[11]
+SKILL_PROFILE_LABEL_ACTION: xpath:(//tr[@role="row"]/th/div/div)[13]
+SKILL_PROFILE_CREATE_BUTTON: xpath:(//footer//button)[2]
+SKILL_PROFILE_CANCEL_BUTTON: xpath:(//footer//button)[1]
+All_RECORDS_CHECKBOX: xpath:(//input[@type="checkbox"])[1]
+SKILLS_ADDED_TO_SP: xpath:((//tbody/tr)[INDEX]//shared-text-cell/span)[1]
+DONE_BUTTON_SP: xpath:(//span[@class="mdc-button__label"])[4]
+SKILL_PROFILE_Add_BUTTON: (//div[@class="create-skill-profile-main-content"]//button)|(//div[@class="main-content-toolbar"]/button)
+ADD_NEW_BUTTON_SKILL_PROFILE: xpath:(//skill-profile-list-page//div/button)[1]
+SKILL_ON_CURRENT_PAGE: xpath://input[@type="checkbox"]
+SKILL_PROFILE_SEARCHED_SKILL: xpath://tr//td//span[contains(text(),'VALUE')]
+LoadingBar: //div[contains(@class,'loading-bar')] | //div[@class='text-center']|//div[@class='container overlay ng-star-inserted']
+UPDATE_BUTTON_SKILL_PROFILE: xpath:(//footer//button)[2]
+EDIT_SKILL_PROFILE: xpath:(//div[@class="header-menubar-buttons"]//button)[1]
+ZERO_RECORDS: xpath://div[contains(text(),'0 of 0')]
+FIRST_SKILL_PROFILE_LIST_PAGE: (//td[contains(@class,'mat-column-name')]//span)[1]
+INPUT_SEARCH_SKILL_PROFILES: //input[@placeholder="Search..."]
+SKILL_PROFILE_DETAILS_ASSIGN_DELETE_BUTTON: (//div[@class="header-menubar-buttons"]/button)[3]
+FIRST_SKILL_PROFILE_RECORD_DELETE_POPUP: //mat-dialog-actions//button[2]
+FIRST_SKILL_PROFILE_SKILLS_COUNT: (//td[contains(@class,'mat-column-skillsCount')]//span)[1]
+FIRST_SKILL_PROFILE_TRAININGS_COUNT: (//td[contains(@class,'mat-column-trainingsCount')]//span)[1]
+
+#SKILL PROFILE DETAILS
+SKILL_ADDED_IN_SKILL_PROFILE_DETAILS_PAGE: //td[contains(@class,'mat-column-name')]
+ASSIGNED_SKILL_PROFILE_TO_USERS_INPUT_FIELD: //mat-dialog-container//input[@placeholder="Search..."]
+SKILL_PROFILE_DETAILS_ASSIGN_SEARCHED_USER: //span[normalize-space()='USERNAME']//ancestor::tr/td[contains(@class,'mat-column-select')]
+SKILL_PROFILE_DETAILS_ASSIGN_CANCEL_BUTTON: (//mat-dialog-actions//button)[1]
+SKILL_PROFILE_DETAILS_ASSIGN_DONE_BUTTON: (//mat-dialog-actions//button)[2]
+ADD_SKILL_TO_SKILL_PROFILE_CHECKBOX: xpath:(//td//input[@type="checkbox" ])
+FIRST_SKILL_TO_ADD_IN_SKILL_PROFILE: xpath:(//td[contains(@class,'mat-column-name')]//span)[1]
+
+
+
+#################My Skill########
+MY_SKILLS_TAB: xpath://span[.='My Skills']
+FIRST_SKILL_IN_MY_SKILLS: xpath:(//td[contains(@class,'mat-column-skillName')]//span)[1]
+FIRST_SKILL_UPGRADE_BUTTON: xpath:(//my-skill-list-button//button)[1]
+MY_SKILL_SKILL_NAME: //td[contains(@class,'cdk-column-skillName')]//span
+MY_SKILL_CURRENT_LEVEL: //td[contains(@class,'cdk-column-currentLevel')]//shared-dropdown-cell
+MY_SKILL_REQUIRED_LEVEL: //td[contains(@class,'cdk-column-requiredLevel')]//shared-dropdown-cell
+MY_SKILL_TRAININGS_REQUIRED: //td[contains(@class,'cdk-column-trainingsRequired')]//span
+MY_SKILL_TRAININGS_STATUS: (//td[contains(@class,'mat-column-status')]//span[@class="progress-title"][1])
+MY_SKILL_TRAININGS_COUNT: (//td[contains(@class,'mat-column-status')]//span[@class="progress-title"][2])
+
+#My Skill Flyout
+MY_SKILL_FLYOUT_TRAININGS: //div[@class="training-name"]
+MY_SKILL_FLYOUT_PROCEDURE_IN_TRAININGS: //div[@class="procedure"]
+MY_SKILL_FLYOUT_TRAININGS_STATUS: //div[@class="status"]/div[1]
+MY_SKILL_FLYOUT_SKILL_NAME: //section[@class="right-panel"]/div[1]
+MY_SKILL_FLYOUT_CURRENT_LEVEL: //span[normalize-space()='Current Level:']//following-sibling::span
+MY_SKILL_FLYOUT_REQUIRED_LEVEL:  //span[contains(text(),'Required Level')]/following-sibling::span
+MY_SKILL_FLYOUT_CROSS_ICON: //ngb-offcanvas-panel//mat-icon[normalize-space()='close']
+MY_SKILL_FLYOUT_APPROVED_TAB: //span[normalize-space()='Approved/Confirmed']
+MY_SKILL_FLYOUT_INPUT_SEARCH: //ngb-offcanvas-panel//input[@placeholder="Search..."]
+MY_SKILL_FLYOUT_START_PROCEDURE_BUTTON: (//button[normalize-space()='Start'])[1]
+MY_SKILL_FLYOUT_START_SPECIFIC_PROCEDURE_BUTTON: //div[normalize-space()='PROCEDURE_NAME']//ancestor::div[@class="header"]//button
+START_AGAIN_SKILL_TRAINING_BUTTON: //button[normalize-space()='Start Again']
+MY_SKILL_FLYOUT_APPROVED_CONFIRMED_BUTTON: //span[normalize-space()='Approved/Confirmed']
+MY_SKILL_TRAINING_FLYOUT_PROCEDURE_NAME: //div[contains(@class,'procedure-name')]
+MY_SKILL_TRAINING_FLYOUT_TRAINING_START: //div[normalize-space()='Start:']//following-sibling::div
+MY_SKILL_TRAINING_FLYOUT_TRAINING_END: //div[normalize-space()='End:']//following-sibling::div
+MY_SKILL_TRAINING_FLYOUT_TRAINING_PROCEDURE_SIGNOFF: //div[.='Sign Off:']//following-sibling::div
+MY_SKILL_TRAINING_FLYOUT_TRAINING_TIME_TAKEN: //div[.='Time Taken:']//following-sibling::div
+MY_SKILL_TRAINING_FLYOUT_TRAINING_PROCEDURE_MANAGER: //div[.='Manager:']//following-sibling::div
+MY_SKILL_TRAINING_FLYOUT_TRAINING_PROCEDURE_STATUS_APPROVED: //div[normalize-space()='Sign Off Status:']//following-sibling::div
+MY_SKILL_TRAINING_FLYOUT_TRAINING_PROCEDURE_EXPAND_BUTTON: //div[@class="action"]//mat-icon
+MY_SKILL_TRAINING_FLYOUT_TRAINING_PROCEDURE_NAME: //div[contains(@class,'procedure-name')]
+MY_SKILL_TRAINING_FLYOUT_CROSS_BUTTON:  //ngb-offcanvas-panel//mat-icon[normalize-space()='close']
+
+#Skill Matrix
+SKILL_MATRIX_RESET_BUTTON: //div[@class="reset-button"]/button
+SKILL_MATRIX_SKILLS_SELECT: (//shared-multiselect-dropdown[@class="Matrix-dropdown"]//mat-select)[3]
+SKILL_MATRIX_SKILLS_OPTION: //span[@class="dropdown-option"]/span
+SKILL_MATRIX_SKILLS_LISTED: //div[@class="columns-header-container"]/div/div
+SKILL_MATRIX_USER_SKILL_STATUS: //div[@class="matrix-content"]/div/div/div
+SKILL_MATRIX_SKILL_MEMBER_COUNT: //div[contains(@class,'member-count')]
+SKILL_MATRIX_SKILL_COMPLETION_PERCENT: //div[contains(@class,'completion-percentage-cell')]

@@ -1,0 +1,12 @@
+SrNo,TestID,Regression,Sanity,Smoke,CycleTag,UserType,LoginData
+1,CZ-6268,N,Y,N,N,,L7
+2,CZ-6269,N,Y,N,N,,L7
+3,CZ-6285,N,Y,N,N,,L7
+4,CZ-6271,N,Y,N,N,,L7
+5,CZ-6272,N,Y,N,N,,L7
+6,CZ-6270,N,Y,N,N,,L7
+7,CZ-6273,N,Y,N,N,,L7
+8,CZ-6275,N,Y,N,N,,L7
+9,CZ-6277,N,Y,N,N,,L7
+10,CZ-6282,N,Y,N,N,,L7
+11,CZ-6283,N,Y,N,N,,L7

@@ -1,0 +1,360 @@
+#Procedure_Library_btn: (//div[contains(@class,"view-selector-container")]//div[contains(@class,"view-option")])[2]
+#list
+ADD_BUTTON_ON_PROCEDURE_LIST_PAGE: //button//span[normalize-space()='Add New']
+THREE_DOTS_ICON_PROCEDURE_LIST: //span//following-sibling::mat-icon[normalize-space()='more_vert']
+DELETE_PROCEDURE_MORE_DROPDOWN: //button//span/span[normalize-space()='Delete']
+DELETE_POPUP_BUTTON: //app-dialog-footer//button[normalize-space()='Delete']
+Breadcrumb link: //div[contains(@class, "create-procedure-header")]//a
+Procedure_Search_Bar: //div[contains(@class, "mat-mdc-form-field-infix")]//input
+Draft_State: //span[contains(@class, "version-indicator") and normalize-space(text()) = "Draft"]
+Publish_state: //span[contains(@class, "version-indicator") and normalize-space(text()) = "Published (Unassigned)"]
+Status_Indicator: //span[contains(@class, "procedure-status-tag")]
+Procedure_menu:  //mat-icon[@data-mat-icon-name="instructions"]
+Procedure_heading: //div[contains(text(), 'Procedure Library')]
+txt_procedure_library: //div[contains(text(), 'Procedure Library')]
+PROCEDURE_OPTION: //div[@role="menuitem"]//span[normalize-space()='Procedure']
+procedure_kebab_menu_icon: //span//following-sibling::mat-icon[normalize-space()='more_vert']
+procedure_delete_option: //span[normalize-space(text())='Delete Procedure']
+confirm_button: //span[@class='d-flex align-items-center gap-2']
+ACTIONS_COLUMN_ON_PROCEDURES_LIST_PAGE: //th//div//div[normalize-space()='Actions']
+
+#listing
+AUTHOR_SCREEN_HEADER_PROCEDURE_NAME: //th[contains(@class,'mat-column-name')]/div/div[normalize-space()='Procedure Name']
+AUTHOR_SCREEN_FIRST_COLUMN: (//th[@role="columnheader"])[2]
+AUTHOR_SCREEN_FIRST_RESIZER_ELEMENT: (//th[@role="columnheader"]//div[contains(@class,'column-resizer')])[1]
+AUTHOR_SCREEN_COLUMNIZER_FLYOUT_STATUS_CHECKBOX: //div[@class="flyout-content"]//div[normalize-space()='Status']//preceding-sibling::mat-checkbox//input[@type="checkbox"]
+AUTHOR_SCREEN_COLUMNIZER_FLYOUT_DOCUMENT_ID_CHECKBOX: //div[@class="flyout-content"]//div[normalize-space()='Document Id']//preceding-sibling::mat-checkbox//input[@type="checkbox"]
+AUTHOR_SCREEN_COLUMNIZER_FLYOUT_PROCEDURE_NAME_CHECKBOX: //div[@class="flyout-content"]//div[normalize-space()='Procedure Name']//preceding-sibling::mat-checkbox//input[@type="checkbox"]
+AUTHOR_SCREEN_COLUMNIZER_FLYOUT_ICON: //mat-icon[@data-mat-icon-name="columnizer"]
+AUTHOR_SCREEN_COLUMNIZER_FLYOUT_CLOSE_BUTTON: //div[@class="flyout-header"]//button
+AUTHOR_SCREEN_DISPLAYED_TABLE_HEADERS: //thead//th[@role="columnheader"]//div[contains(@class,'mat-sort-header-content')]
+AUTHOR_SCREEN_PROCEDURE_ACTIONS_THREE_DOTS: (//procedure-action-dropdown//button//mat-icon)[1]
+AUTHOR_SCREEN_PROCEDURE_PROCEDURE_DUPLICATE_OPTION: //span//span[normalize-space()='Duplicate Procedure']
+AUTHOR_SCREEN_PROCEDURE_DUPLICATE_POPUP_CONFIRM_BUTTON: (//mat-dialog-actions//button//span[normalize-space()='Confirm'])[1]
+AUTHOR_SCREEN_PROCEDURE_NOTIFICATION_ICON: (//section[@class="header"]//mat-icon[@data-mat-icon-name="bell-icon"])
+AUTHOR_SCREEN_PROCEDURE_NOTIFICATION_FLYOUT_HEADER: //div[@class="notification-container"]//h4[normalize-space()='Notification']
+
+#Folder
+FOLDER_OPTION:  //div[@role="menuitem" and normalize-space()='Folder']
+FOLDER_NAME_INPUT:  //input[@placeholder="Name"]
+CREATE_FOLDER_BUTTON:  //app-dialog-footer//button[normalize-space()='Create']
+
+#General Details
+GENERAL_DETAILS_SECTION: //div[contains(@class, "option selectable")]
+Step_Plus_button: //button[contains(@class, "mat-mdc-button-base")]//mat-icon[@data-mat-icon-name= "big-plus"]
+#Name_input: //input[@placeholder= "Procedure Name"]
+Name_input: (//input[@placeholder= "Name"])|(//input[@placeholder= "Procedure Name"])  #Changed
+Material_Number: //input[@placeholder= "Material Ids"]
+CO-AUTHOR_SELECT: (//mat-select)[3]
+CO-AUTHOR_FIRST_OPTION: //span[@class="dropdown-option"]
+DOCUMENT_ID_INPUT: (//input[@placeholder="Document Id"])
+Choose_button: //div[contains(@class, "title")]/following-sibling::div/button
+1st_PPE: (//input[@type = 'checkbox'])[2]
+2nd_PPE: (//input[@type = "checkbox"])[3]
+3rd_PPE: (//input[@type = "checkbox"])[4]
+PPE_Search_Bar: //mat-dialog-container//input[@placeholder="Search..."]
+BOM_Search_bar: //mat-dialog-container//input[@placeholder="Search..."]
+BOM_SEARCH_CHECK: //mat-dialog-container//span[contains(normalize-space(),'replace')]
+Searched_BOM: //tbody//td//mat-checkbox//input[@type = "checkbox"]
+Searched_PPE: //tbody//td//mat-checkbox//input[@type = "checkbox"]
+Cancel_PPE: //span[@class = "mdc-button__label" and normalize-space()='Cancel']
+Add_PPE: //span[@class = "mdc-button__label" and normalize-space()='Add']
+Cross_PPE: //div[@class = "header-title-container"]//mat-icon
+Cycle_hour: //div[@class = "cycle-time-wrapper"]//form//div[normalize-space()='Hours']//following-sibling::input
+Cycle_minute: //div[@class = "cycle-time-wrapper"]//form//div[normalize-space()='Minutes']//following-sibling::input
+Cycle_second: //div[@class = "cycle-time-wrapper"]//form//div[normalize-space()='Seconds']//following-sibling::input
+Sign-off_Manager: //label[normalize-space()='Sign Off Managers']//following-sibling::mat-form-field
+#//label[text() = " Signoff Manager(s)"]/following-sibling::mat-select
+Co-Author: //label[text() = " Co Authors"]/following-sibling::mat-select
+Sign-off_Manager_checkbox: //mat-pseudo-checkbox[contains(@class, 'mat-pseudo-checkbox')]
+Sign-off_Manager_search: //input[@aria-label="dropdown search"]
+Approval_search: //input[@aria-label="dropdown search"]
+CoAuthors_search: //input[@aria-label="dropdown search"]
+
+#Step
+Step_Name: //div[contains(@class, "form-group")]//input
+Instruction_Editor: (//text-editor//p)
+INSTRUCTION_EDITOR_LIST: (//text-editor//li)
+STEP_INSTRUCTION_EDITOR: //text-editor//p[contains(text(),'PROCEDURE_INSTRUCTION')]
+Plus_Attachment: //div[contains(@class, "attachment-editor-toolbar-item")]/mat-icon
+Image_Attachment: //div[contains(@class, "mat-mdc-menu-item")]//span[normalize-space()='Image']
+Video_Attachment: //div[contains(@class, "mat-mdc-menu-item")]//span[normalize-space()='Video']
+PDF_Attachment: //div[contains(@class, "mat-mdc-menu-item")]//span[normalize-space()='PDF']
+#Do not use OR with locators create new locator
+Attachment_File_Input: //div[@class="custom-file-upload"]/input
+Done_Btn: //mat-dialog-actions[contains(@class, "common-dialog-footer")]//button[normalize-space()='Done']
+video_thumbnail: //div[contains(@class, "thumbnail-container")]//video
+img_thumbnail: //div[contains(@class, "thumbnail-container")]//img
+remove_attachment: //mat-icon[@data-mat-icon-name="circle-close"]
+thumbnail_attachment: //div[contains(@class, "attachment-editor-toolbar")]//thumbnail
+close_instructions: //mat-icon[@svgicon='close']
+
+#Options
+Options_Tab: //span[contains(@class, "option-label") and text() = "Options"]
+ATTACHMENT_TAB: //span[contains(@class, "option-label") and normalize-space()= "Instruction & Attachment"]
+Create_Btn: //div[contains(@class, "available-options-box")]//span[@class="mdc-button__label"]
+Create_NewOption_Heading: //span[contains(@class, "dialog-header-title")]
+Search_Bar: //div[contains(@class, "search-box")]//input
+INPUT_OPTION_TITLE: //input[contains(@formcontrolname, "title")]
+#Add_option: (//mat-icon[@role="img" and contains(@class,'plus-button')])[2]
+Add_option: //div[@formarrayname="options"]//following-sibling::button
+Save_Option_Btn: //mat-dialog-container//span[contains(@class, "mdc-button__label") and normalize-space()='Save']
+Cancel_Option_Btn: //mat-dialog-container//span[contains(@class, "mdc-button__label") and normalize-space()='Cancel']
+OPTION_INPUT: (//input[contains(@formcontrolname, "value")])[INDEX]
+Add_option_icon: //mat-icon[text()=  "add"]
+select_Option_arrow_locator: //div[@class="question"]//following-sibling::div//div[contains(@class,'mat-mdc-select-arrow-wrapper')]
+CORRECT_SELECTED_OPTION: (//span[@class="dropdown-option"])[1]/span
+OptionLabel: //label[contains(@class, "display-label")]
+Delete_Option: //span[contains(@class, "icon-clickable")]
+Green_tick: //div[contains(@class, "input-container")]//mat-icon
+
+#Preventive Troubleshooting
+Preventive_Troubleshooting_tab: //span[contains(@class, "option-label") and text() = "Preventive Troubleshooting"]
+Add_New_Label: //span[contains(@class, "dialog-header-title")]
+Add_Preventive_Troubleshoot: //div[@class="header-buttons"]//span[contains(@class, "mdc-button__label") and normalize-space()='Add']
+Add_Another_Preventive_Troubleshoot: //div[@class="header-buttons"]//span[contains(@class, "mdc-button__label") and normalize-space()='Add']
+PT_Title: //label[contains(text(),'Title')]//following-sibling::input
+LOCATOR_PT_PossibleCause: //label[contains(text(),'Possible Cause')]//following-sibling::textarea
+LOCATOR_PT_CORRECTIVE_ACTION: //label[contains(text(),'Corrective Action')]//following-sibling::textarea
+LOCATOR_PT_PREVENTIVE_ACTION: //label[contains(text(),'Preventive Action')]//following-sibling::textarea
+Save_PT_Btn: //mat-dialog-actions[contains(@class, "common-dialog-footer")]//button[normalize-space()='Save']
+Cancel_PT_Btn: //mat-dialog-actions[contains(@class, "common-dialog-footer")]//button[normalize-space()='Cancel']
+Added_PT_Entry: //div[contains(@class, "titleContainer")]
+PT_SearchBox: //div[contains(@class, "search-placeholder")]//input
+ArrowKey: //mat-icon[text()=" expand_more"]
+PT_EntryName: //span[text()="replace"]
+SearchedEntry: //div[contains(@class, "titleContainer")]
+PT_IssueBox: //div[contains(@class, "issue-box-selected")]
+PT_PossibleInput: //div[contains(@class,"troubleshoot-answer-conatainer")]//span[1]
+DELETE_PREVENTIVE_TROUBLESHOOT_ENTRY_ICON: //div[@class="title-icons-container"]//mat-icon[@svgicon="deleteIcon"]
+
+#User Input:
+User_Input_tab: //span[contains(@class, "option-label") and text() = "User Input"]
+StepName: //span[contains(@class, "step-label")]
+CycleTime: //div[contains(@class, "cycle-time-wrapper")]
+Block_Name: //input[contains(@placeholder, "Block Name")]
+BLOCK_LABEL: //div[@formarrayname="inputFields"]
+Block_Title: //input[contains(@placeholder, "Title")]
+Hint: //input[contains(@placeholder, "Hint")]
+Required: //mat-checkbox[@formcontrolname="required"]//input[contains(@type, "checkbox")]
+Show_step_start: //mat-checkbox[@formcontrolname="showAtStart"]//input[contains(@type, "checkbox")]
+Add_Block: (//div[contains(@class, "header-container-buttons")]//button)[normalize-space()='Add Block']
+Preview: (//div[contains(@class, "header-container-buttons")]//button)[normalize-space()='Preview']
+Save: (//div[contains(@class, "header-container-buttons")]//button)[normalize-space()='Save']
+User_Input_Type: //label[normalize-space()='Type']//following-sibling::mat-form-field
+USER_INPUT_SEARCH: //input[@placeholder="Search..." and @aria-label="dropdown search"]
+Dropdown_type: //div[@role="listbox"]/mat-option[normalize-space()='Dropdown']
+Text_type: //span[contains(@class, "mdc-list-item__primary-text") and normalize-space(text())= "Text"]
+Radio_type: //span[contains(@class, "mdc-list-item__primary-text") and normalize-space(text())= "Radio"]
+Option_Name: //input[contains(@placeholder, "Option Name")]
+Add_option_hyperlink: //span[contains(@class, "mdc-button__label") and text() = " + Add Option "]
+Cancel_Preview: //mat-dialog-actions[contains(@class, "common-dialog-footer")]//button[normalize-space()='Close']
+Delete_Block: //button[contains(@class, "deleteBlock")]
+OptionDelete_icon: (//div[@formarrayname="options"]//mat-icon[@svgicon="deleteIcon"])[3]
+PlusIcon: //div[contains(@class, "add-input-field-container")]
+UserInput_Block: //div[contains(@class,"input-block-container")]
+UserInput_Box: //div[contains(@class, "mb-4 vertical-bar-box_full")]
+Error_message: //div[contains(@class, "error")]
+
+
+
+Cancel_Procedure: //footer//button[normalize-space()= "Cancel"]
+Save_as_Draft: //footer/button[contains(text(),'Save as Draft')]
+Publish Procedure: //button[normalize-space()= "Publish"]
+
+#Publish Procedure
+Publish_Label: //span[contains(@class, "dialog-header-title")]
+CRCO_Number: //*[contains(@id,"cdk-overlay")]//input[contains(@data-testid, "shared-text-input")]
+minor_version: //input[@type = "radio" and @value = "minor"]
+major_version: //input[@type = "radio" and @value = "major"]
+Release_Note: //label[contains(@class, "form-control-placeholder")]/following-sibling::textarea
+Publish_button: (//app-dialog-footer//span[normalize-space()='Approve and Publish'])[1]|(//app-dialog-footer//button[normalize-space()='Publish'])|(//button[contains(@class,"mat-mdc-button-disabled")])
+CANCEL_PUBLISH_PROCEDURE_BUTTON: //mat-dialog-container//button[normalize-space()='Cancel']
+PUBLISH_PROCEDURE: //button[normalize-space()='Publish']
+Version_Value: //div[contains(@class, "version-label-value")]
+Cross_Publish_Window: //div[contains(@class, "header-title-container")]//mat-icon
+CRCO_Error: //div[contains(@class, "error")]
+Publish_Cancel_button: //mat-dialog-actions[contains(@class, "common-dialog-footer")]//button[1]
+
+#PPE
+Added_PPE1: (//div[contains(@class, "ppe-item")])[1]
+delete_PPE1: (//div[contains(@class, "ppe-item")])[1]//mat-icon
+Added_PPE2: (//div[contains(@class, "ppe-item")])[2]
+delete_PPE2: (//div[contains(@class, "ppe-item")])[2]//mat-icon
+Added_PPE3: (//div[contains(@class, "ppe-item")])[3]
+delete_PPE3: (//div[contains(@class, "ppe-item")])[1]//mat-icon
+Added_PPE4: (//div[contains(@class, "ppe-item")])[4]
+delete_PPE4: (//div[contains(@class, "ppe-item")])[1]//mat-icon
+PPE_List: //div[contains(@class, "ppe-list-body")]
+No_PPE_List: //div[contains(@class, "no-records")]
+Delete_PPE: //div[@class='item-action']
+No_PPE_Message: //div[contains(text(), 'No PPE selected')]
+ProcedureName: //span[text()=" replace "]
+SearchedProcedure: //span[contains(@class, "mat-mdc-tooltip-trigger clickable")]
+
+#Preview
+More_Option: //tbody[contains(@role, 'rowgroup')]//tr//mat-icon[normalize-space(text())='more_vert']
+Preview_Option: //button[@role="menuitem" and normalize-space(.)='Preview']
+Preview_Title: //li//div[contains(@class, "text")]
+Preview_GeneralDetails: //span[contains(@class, "option-label") and text() = "General Details"]
+Preview_BOM: //span[contains(@class, "option-label") and text() = "Bill of Materials"]
+Preview_BOT: //span[contains(@class, "option-label") and text() = "Bill of Tools"]
+Preview_PPE: //span[contains(@class, "option-label") and text() = "PPE"]
+Instruction_Icon: //div[contains(@class, "sidebar-tab")]//mat-icon[contains(@data-mat-icon-name, "book-01")]
+PROCEDURE_PREVIEW_THREE_DOTS: //mat-icon[normalize-space()='more_vert']
+Troubleshoot_Icon: //mat-icon[contains(@data-mat-icon-name, "troubleshoot")]
+Modal_Header: //span[contains(@class, "dialog-header-title")]
+User_Input_Icon: //div[contains(@class, "sidebar-tab")]//mat-icon[contains(@data-mat-icon-name, "file-question-02")]
+InstructionLibrary_Icon: //div[contains(@class, "tree-node")]//mat-icon[contains(@data-mat-icon-name, "instructions")]
+PROCEDURE_PREVIEW_BOT: //span[@class="option-label" and normalize-space()='BOT']
+PROCEDURE_PREVIEW_BOM: //span[@class="option-label" and normalize-space()='BOM']
+
+StepName_Field: //span[@class="step-label"]
+Option_Name2: (//input[contains(@placeholder, "Option Name")])[2]
+details_collapse_btn: //div[@class='step-viewer-collapse-button']
+INPUT_SEARCH: //input[contains(@placeholder,"Search...")]
+ENTER_OPTION: //input[@aria-label="dropdown search"]
+ENTER_CORRECT_OPTION: //input[@aria-label="dropdown search"]
+NO_PROCEDURE_RECORD: xpath://td[contains(text(),'No Procedure Found')]
+FIRST_PROCEDURE: xpath:(//tbody/tr/td)[2]//span
+FIRST_FOLDER: xpath:(//tbody/tr/td)[2]//span
+PROCEDURES_LISTED_ON_LIST_PAGE: //td[contains(@class,'mat-column-name')]//span
+SECOND_PROCEDURE: xpath:((//tbody/tr/td)[2]//span)[2]
+EDIT_PROCEDURE: xpath:(//shared-breadcrumb/following-sibling::div//button)[1]
+RELEASE_NOTE_TEXTAREA: xpath://textarea[@maxlength="200"]
+PROCEDURE_CYCLE_COUNT: xpath:((//div[@class="general-detail-entry ng-star-inserted"])[7]/span)[2]
+SAVED_STEPS_INSTRUCTIONS: xpath:(//div[@class="text-editor-container"]//p)[INDEX]
+STEPS_IN_PROCEDURES_PREVIEW: xpath:((//div[@class="general-detail-entry ng-star-inserted"])[2]/span)[2]
+All_PPE: xpath://thead[@role="rowgroup"]//input[@type="checkbox"]
+All_TOOLS_RECORD: xpath://thead[@role="rowgroup"]//input[@type="checkbox"]
+STEP_PPES: xpath:(//tbody[@role="rowgroup"]//shared-text-cell)[INDEX]
+ADDED_PPES_PREVIEW_PAGE: //ppe-equipment//div/span[contains(text(),'PPE')]
+PPE_TAB: xpath://span[.='PPE']
+PARTS_TOOLS_TAB: xpath://app-view-selector//span[.='Parts & Tools']
+STEP_BOM_TAB: xpath:(//div[@class="view-selector-container"])[3]/div[1]
+PREVIEW_PROCEDURE_BOM_TAB: xpath:(//div[@class="view-selector-container"])[2]//div[2]
+PREVIEW_PROCEDURE_BOT_TAB: xpath:(//div[@class="view-selector-container"])[2]//div[3]
+STEP_BOT_TAB: xpath:(//div[@class="view-selector-container"])[3]/div[2]
+STEP_COM_TAB: xpath:(//div[@class="view-selector-container"])[3]/div[3]
+STEP_TOOLS_ADD_NEW_BUTTON: //span[normalize-space()='Add New']
+ADDED_BOM_TO_STEP: xpath:(//tbody[@role="rowgroup"]/tr)[INDEX]/td[2]
+ADDED_BOT_TO_STEP: xpath:(//tbody[@role="rowgroup"]/tr)[INDEX]/td[2]
+ADDED_COM_TO_STEP: xpath:(//tbody[@role="rowgroup"]/tr)[INDEX]/td[2]
+ADD_PARTS&TOOLS_TO_STEP: xpath:(//span[@class = "mdc-button__label"])[4]
+BOM_IN_GENERAL_DETAILS: xpath://span[contains(text(),'VALUE')]
+BOT_IN_GENERAL_DETAILS: xpath://span[contains(text(),'VALUE')]
+PROCEDURE_NAME_REVIEW_PAGE: xpath://div[contains(text(),'NAME_VERSION')]
+LINK_PROCEDURE_PAGE: xpath:(//li[contains(@class,'breadcrumb')]/div)[1]
+RELEASE_RADIO_BUTTON: xpath://input[@type="radio" and @value='RELEASE_TYPE']
+PROCEDURE_VERSION_PREVIEW_PAGE: xpath://div[contains(text(),"PROCEDURE_VERSION")]
+DELETE_BLOCK_FROM_USER_INPUT: xpath:(//div[@formarrayname="inputBlocks"]/div//button)[1]
+FIRST_STEP: xpath://div[contains(@class,'step-title')]
+FIRST_STEP_SELECTED: (//div[contains(@class,'step-title')]//ancestor::mat-tree-node)[1]
+SECOND_STEP: xpath:(//div[contains(@class,'step-title')])[2]
+SECOND_STEP_SELECTED: (//div[contains(@class,'step-title')]//ancestor::mat-tree-node)[2]
+CLOSE_STEP_INSTRUCTION: xpath://mat-icon[@svgicon="close"]
+USER_INPUT_SUBMIT_BUTTON: xpath:(//app-dialog-footer//button)[2]
+MATERIAL_NUMBER_REVIEW_PAGE: //span[contains(@class,"material")]
+DOCUMENT_ID_REVIEW_PAGE: xpath:(//div[contains(@class,"general-detail-entry")])[3]/span[2]
+ZERO_TIME_PROCEDURE_CYCLE_REVIEW_PAGE: xpath:(//div[contains(@class,"general-detail-entry")])[5]/span[.='0s']
+PROCEDURE_CYCLE_REVIEW_PAGE: xpath:(//div[contains(@class,"general-detail-entry")])[5]/span[2]
+PROCEDURE_NAME_DETAILS_PAGE: xpath:(//shared-breadcrumb//li/div)[2]
+SAVED_PROCEDURE_STEP_INSTRUCTIONS: xpath:(//text-editor//p)[INDEX]
+FIRST_PROCEDURE_VERSION: xpath:(//span[@class="version-indicator"])[1]
+OPTION_ADDED_IN_STEP: xpath://div[@class="question" and normalize-space()='OPTION_TITLE']
+GRID_ICON: xpath:(//div[@class="view-selector-options"]/div)[2]
+GRID_VIEW_IMAGE_ATTACHMENT: (//div[contains(@class,'asset-grid-item')]//thumbnail//img)[1]
+GRID_VIEW_VIDEO_ATTACHMENT: (//div[contains(@class,'asset-grid-item')]//thumbnail//video)
+NOVICE_CHECKBOX:  //div[@class="mdc-checkbox"]//input
+FIRST_STEPS_GROUP: xpath:(//mat-tree-node[contains(@class,'group-node')])[1]
+SECOND_STEP_GROUP: xpath:(//mat-tree-node[contains(@class,'group-node')])[2]
+CREATE_STEPS_GROUP: xpath://button[@role="menuitem"]//span[contains(text(),'Group')]
+EDIT_STEP_GROUP_ICON: xpath:(//mat-tree-node[contains(@class,'group-node')])[1]//button
+INPUT_GROUP_NAME: xpath://input[@placeholder="Group name"]
+UPDATED_STEP_GROUP: xpath://span[contains(text(),'GROUP_NAME')]
+OPTION_UNGROUP_STEPS: xpath:(//button[@role="menuitem"]//span[.='Ungroup'])[1]
+EXPAND_STEPS: xpath:((//mat-tree-node[contains(@class,'group-node')])/div/mat-icon[2])[1]
+SECOND_GROUP_EXPAND_STEPS: xpath:((//mat-tree-node[contains(@class,'group-node')])/div/mat-icon[2])[2]
+STEP_ADDED_IN_GROUP: xpath://mat-tree-node/div[@class="option-content"]
+DELETE_STEP_ADDED_IN_GROUP: //button[contains(@class,'step-group-menu-item')]//span/span[normalize-space()='Delete']
+DeleteStep: //button[contains(@class,"delete-step-button")]
+DELETE_STEP_POPUP: xpath://mat-dialog-actions//button[2]
+TOTAL_STEP_GROUPS: xpath:(//mat-tree-node[contains(@class,'group-node')])
+STEPS_ADDED_IN_GROUP: xpath://span[normalize-space()='Group (1 items)'][1]
+EXPAND_INSTRUCTION_ICON: xpath:(//div[@class="options"])[1]/div/button[1]
+EXPANDED_INSTRUCTION_EDITOR: xpath:(//text-editor//p)[2]
+SAVE_INSTRUCTION_BUTTON: xpath://app-dialog-footer//button[2]
+SAVED_INSTRUCTION: xpath:(//text-editor//p)[1]
+PROCEDURE_TAB: xpath:(//mat-tree-node)[2]//span
+PREVENTIVE_TROUBLESHOOTING_EXPAND_BUTTON: xpath:(//div[@class="titleContainer"]/div)[2]/div[3]
+PREVENTIVE_TROUBLESHOOTING_DELETE_BUTTON: xpath:(//div[@class="titleContainer"]/div)[2]/div[2]
+PREVENTIVE_TROUBLESHOOTING_EDIT_BUTTON: xpath:(//div[@class="titleContainer"]/div)[2]/div[1]
+SAVED_PREVENTIVE_TROUBLESHOOTING_TITLE: xpath:(//div[@class="titleContainer"]/div)[1]/span
+SAVED_PREVENTIVE_TROUBLESHOOTING_POSSIBLE_CAUSE: xpath://div[@class="troubleshoot-answer-conatainer"][1]
+SAVED_PREVENTIVE_TROUBLESHOOTING_CORRECTIVE_ACTION: xpath://div[@class="troubleshoot-answer-conatainer"][2]
+SAVED_PREVENTIVE_TROUBLESHOOTING_PREVENTIVE_ACTION: xpath://div[@class="troubleshoot-answer-conatainer"][3]
+RELEASE_NOTE_VALIDATION_MESSAGE: xpath://div[normalize-space()='Release Notes is required']
+INSTRUCTION_LANGUAGE_SELECT: xpath://div[@class="instructions-editor-header"]//mat-select
+INPUT_INSTRUCTION_LANGUAGE: xpath:(//div[@role="listbox"]/mat-option)[1]//input[@placeholder="Search..."]
+INSTRUCTION_LANGUAGE_OPTION: xpath:(//div[@role="listbox"]/mat-option)[2]/span
+INSTRUCTION_BOLD_BUTTON: xpath:(//div[contains(@class,'toolbar')])[3]/button[1]
+INSTRUCTION_ITALIC_BUTTON: xpath:(//div[contains(@class,'toolbar')])[3]/button[2]
+INSTRUCTION_UNDERLINE_BUTTON: xpath:(//div[contains(@class,'toolbar')])[3]/button[3]
+INSTRUCTION_ORDERED_BUTTON: xpath:(//div[contains(@class,'toolbar')])[3]/button[7]
+INSTRUCTION_UNORDERED_BUTTON: xpath:(//div[contains(@class,'toolbar')])[3]/button[8]
+INSTRUCTION_UNCHECKED_BUTTON: xpath:(//div[contains(@class,'toolbar')])[3]/button[9]
+APPROVAL_MANAGERS_SELECT: xpath:(//mat-select)[5]
+ALL_MANAGERS: xpath://span[@class="dropdown-option"]
+COAUTHORS_SELECT: xpath://label[normalize-space()='Co-authors']//following-sibling::mat-form-field//mat-select
+ALL_COAUTHORS: xpath://span[@class="dropdown-option"]
+MANAGER_INPUT: (//input[@placeholder="Search..."])[2]
+FIRST_MANAGER: xpath://span[@class="option-name"]
+COAUTHORS_OPTION: xpath:(//span[@class="dropdown-option"])[INDEX]
+MANAGERS_OPTION: xpath:(//span[@class="dropdown-option"])[INDEX]
+COAUTHOR_INPUT: (//input[@placeholder="Search..."])[2]
+SAVED_COAUTHOR: xpath:(//div[@class="custom-select-display"]//*[contains(text(),'ITEM')])[1]
+SAVED_MANAGER: xpath:(//div[@class="custom-select-display"]//*[contains(text(),'ITEM')])[1]
+FIRST_COAUTHOR: xpath://span[@class="option-name"]
+CHANGE_LINK: xpath:(//span[@class="change-link"])[1]
+TEXT_VALIDATION_VALUE: xpath://input[@placeholder="Validation Value"]
+OPTIONS_LABEL: xpath://app-procedure-user-input//div[@formarrayname="options"]//label
+OPTIONS_INPUT_FIELD: xpath://app-procedure-user-input//div[@formarrayname="options"]//input
+OPTION_DELETE_BUTTON: xpath://app-procedure-user-input//div[@formarrayname="options"]//button
+RADIO_OPTION_ADD_BUTTON: xpath://app-procedure-user-input//div[@formarrayname="options"]/../button
+VALIDATION_DROPDOWN: xpath://mat-select//span[.='Select Validation']
+INPUT_MIN_VALUE: xpath://input[@placeholder="Min Value"]
+INPUT_MAX_VALUE: xpath://input[@placeholder="Max Value"]
+OPTION_ADD_BUTTON: xpath://span[normalize-space()='Add']
+FIRST_INPUT_TYPE: //mat-option[3]
+ADDED_PROCEDURE_STEP: xpath:(//div[contains(@class,"step-title")])[INDEX]
+USE_INPUT_IN_START_OF_JOB: xpath:(//div[@formarrayname='inputBlocks']//input[@type='checkbox'])[1]
+SIGNOFF_MANAGER_SELECT: xpath:(//mat-select)[4]
+SIGNOFF_MANAGER_INPUT: xpath:(//input[@placeholder="Search..."])[2]
+FIRST_SIGNOFF_MANAGER: xpath://span[@class="option-name"]
+CHECKBOX_COUNT: xpath://tbody//mat-checkbox
+FIRST_MANAGER_EMAIL: ((//span[@class="dropdown-option"])[1]//span)[2]
+
+#Procedure Details
+SKILLS_TAB_PROCEDURE_DETAILS: //span[@class="option-label" and normalize-space()='Skills & Trainings']
+PROCEDURE_DETAILS_CHOOSE_SKILL_BUTTON: (//span[normalize-space()='Choose'])[1]
+PROCEDURE_DETAILS_CHOOSE_SKILL_LISTED: //span[normalize-space()='SKILL_NAME']/ancestor::tr//mat-checkbox
+PROCEDURE_DETAILS_DONE_BUTTON: //app-dialog-footer//button[2]
+FIRST_STEP_TO_UNGROUP: (//div[contains(@class,"step-title")])[1]
+FIRST_GROUP_TO_UNGROUP: (//div[contains(@class,"step-title")])[1]
+EXPAND_ATTACHMENTS_PROCEDURE_DETAILS_PAGE: xpath:(//div[@class="asset-container"]//mat-icon[@data-mat-icon-name="arrow-expand-01"])[1]
+EXPANDED_WINDOW_ATTACHED_IMAGE: xpath://div[@class="zoom-container"]/img
+EXPANDED_WINDOW_ATTACHMENT_ZOOMIN_BUTTON: xpath://button[@class="zoom-icon-img"]/mat-icon[normalize-space()='add']
+EXPANDED_WINDOW_ATTACHMENT_ZOOMOUT_BUTTON: xpath://button[@class="zoom-icon-img"]/mat-icon[normalize-space()='remove']
+DETAILS_PAGE_RIGHT_NAVIGATION_BUTTON: xpath://div[@class="navigation right"]/mat-icon
+DETAILS_PAGE_LEFT_NAVIGATION_BUTTON: xpath://div[@class="navigation left"]/mat-icon
+EXPANDED_WINDOW_RIGHT_NAVIGATION_BUTTON: xpath://mat-dialog-container//div[contains(@class,'navigation right')]/mat-icon
+EXPANDED_WINDOW_LEFT_NAVIGATION_BUTTON: //mat-dialog-container//div[contains(@class,'navigation left')]/mat-icon
+ADDED_PPE_DELETE_ICON: //mat-icon[@data-mat-icon-name="deleteIcon"]
+ADDED_IMAGE_DELETE_ICON: //mat-icon[@data-mat-icon-name="delete-new"]
+
+ProcedureActionIcon: (//procedure-action-dropdown//button)[1]
+DuplicateProcedure: //span[contains(text(),"Duplicate")]
+ConfirmDuplicate: //button[contains(@class,"actionable")]
+DuplicateInProgressText: //span[contains(text(),"duplicated")]
+StatusTag: (//span[contains(@class, "procedure-status-tag")])[1]
+ButtonSpinner: //button[contains(@class,"actionable")]//mat-spinner

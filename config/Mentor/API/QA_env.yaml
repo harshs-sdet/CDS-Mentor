@@ -1,0 +1,10 @@
+BASE_URL:       https://mentor-qa.cdsvisual.net
+BASE_URL2:       https://vfm-qa.cdsvisual.net
+ProcedureId:    1bedc91b-23b1-4493-a351-999e040beace   #7d84ffe5-024f-4066-8752-714dcf7e784c
+FolderID:    43eaf07a-838e-440f-a4ab-14d7f47eccb5
+ProcedureToDelete:    d513efec-14ea-4e87-a2fc-40affb3513a8
+detailsProcedureId:     11673c3a-62c5-40b2-82fc-2654935899ef
+WI_ID:           0d58df2e-3efa-4c30-a9a4-3bd2e5263860
+AUTH_TOKEN:
+AUTH_TOKEN_SiteAdm:
+AUTH_TOKEN_OrgAdm:

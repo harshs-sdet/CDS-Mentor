@@ -1,0 +1,83 @@
+left_sidebar_rect: (//*[local-name()='svg'][contains(@class,'ng-star-inserted')])[4]
+INPUT_SITE_NAME: (//input[contains(@class, 'custom-form-control')])[1]
+INPUT_ADDRESS_LINE1: (//input[contains(@class, 'custom-form-control')])[2]
+INPUT_ADDRESS_LINE2: (//input[contains(@class, 'custom-form-control')])[3]
+#Country_select: (//select[contains(@class, 'form-control')])[1]
+COUNTRY_DROPDOWN: //label[contains(normalize-space(),'Country')]/following-sibling::mat-form-field//div[contains(@class,'mat-mdc-select-arrow')]
+COUNTRY_OPTION: ((//div[@role="listbox"]//mat-option)[INDEX]/span)
+STATE_DROPDOWN: (//label[contains(normalize-space(), 'State')]/following-sibling::mat-form-field//div[contains(@class,'mat-mdc-select-arrow')])[1]
+STATE_OPTION: ((//div[@role="listbox"]//mat-option)[INDEX]/span)
+City_select: (//select[contains(@class, 'form-control')])[3]
+INPUT_POSTAL_CODE: (//input[@type='text'])[5]
+PhoneNumber_SelectDropdown: //select[@class='ng-valid ng-touched ng-dirty']
+Country_Dropdowncode: //div[@class="input-with-dropdown"]
+INPUT_PHONE_NUMBER: //input[@type='tel']
+INPUT_DESCRIPTION: //textarea[@rows='10' and @maxlength='200']
+NEXT_BUTTON_SITE_DETAILS_PAGE: //button[normalize-space()='Next']
+NEW_SITE_WINDOW_DONE_BUTTON: xpath:(//footer//button[contains(@class,"ss-btn-add")])[3]
+UPLOAD_BUTTON: //div[contains(@class, 'upload-placeholder')]
+CountryDropdown_Path: //div[@class="input-with-dropdown"]//select
+SITE_COUNT_XPATH: //label[contains(@class, "page-heading")]
+txt_spantxt_genericstart:  "//span[text()='"
+txt_spantxt_genericend:  "']"
+INPUT_CITY: (//shared-text)[4]//input
+INPUT_SITE_EMAIL: (//shared-text)[6]//input
+SITE_TAB: xpath://span[.='Site Management']
+FIRST_SITE: xpath:(//tbody/tr/td)[2]//span
+INPUT_SEARCH: //input[@placeholder="Search..."]
+SEARCHED_SITE: xpath:(//tbody/tr/td)[2]//span
+DELETE_ICON: xpath:(//mat-icon[@data-mat-icon-name="deleteIcon"])[1]
+DELETE_POPUP: xpath:(//span[contains(text(),'Delete')])[2]
+NO_SITE_FOUND: xpath:(//td[contains(text(),'Workspace not found')])|(//td[contains(text(),'Site Not Found')])
+LABEL_NAME: xpath:(//tr[@role="row"]/th/div/div)[1]
+LABEL_DESC: xpath:(//tr[@role="row"]/th/div/div)[3]
+LABEL_SKILLS: xpath:(//tr[@role="row"]/th/div/div)[4]
+LABEL_TRAININGS: xpath:(//tr[@role="row"]/th/div/div)[5]
+LABEL_CREATED_ON: xpath:(//tr[@role="row"]/th/div/div)[6]
+LABEL_ACTION: xpath:(//tr[@role="row"]/th/div/div)[8]
+All_RECORDS_CHECKBOX: xpath:(//thead//input[@type="checkbox"])[2]
+Add_BUTTON: xpath:(//app-view-selector//following-sibling::div//button/span)[2]
+ADD_NEW_BUTTON: xpath://span[.='Add New']
+UPDATE_BUTTON: xpath:(//footer//button)[2]
+EDIT_SITE: xpath:(//shared-breadcrumb/following-sibling::div/button)[1]
+ZERO_RECORDS: xpath://div[contains(text(),'0 of 0')]
+SAVED_SITE_COUNTRY: xpath:(//div[contains(@id, 'select')])[3]/span/span
+SAVED_SITE_STATE: xpath:(//div[contains(@id, 'select')])[4]/span/span
+CANCEL_BUTTON: xpath:((//app-dialog-footer//button)[1])|(//button[contains(@class,"ss-btn-add no-fill")])
+SELECTED_RECORD: xpath://div[contains(text(),'Selected (2)')]
+DELETE_MULTIPLE_RECORD: xpath:(//select-count-bar//following-sibling::button)[2]
+DELETE_MULTIPLE_POPUP: xpath:(//span[contains(text(),'Delete')])[3]
+SELECT_MULTIPLE_RECORD: xpath:(//input[contains(@class,'mdc-checkbox__native-control')])[INDEX]
+PREVIOUS_BUTTON: xpath:(//footer//button)[2]
+INVALID_EMAIL_ENTERED: xpath://div[contains(text(), 'valid email')]
+BREADCRUMBS_SITE: xpath://li[contains(@class,'breadcrumb')]/div[contains(text(),'SITE')]
+LINK_SITE_PAGE: xpath:(//li[contains(@class,'breadcrumb')]/div)[1]
+NO_WORKSPACES: xpath://div[contains(@class,'no-workspace-wrapper')]
+ASSOCIATED_WORKSPACE: xpath://mat-grid-list//mat-grid-tile//span[contains(text(),'WORKSPACE')]
+WORKSPACES_UNDER_SITE_DETAILS: xpath:(//div[@class="tab_container"]/div)[2]
+ALL_SITE_NAMES: xpath:(//tr)[INDEX]/td[2]//span
+DELETE_WORKSPACE_FROM_SITE: xpath://mat-icon[@data-mat-icon-name="deleteIcon"]
+WORKSPACE_PROCEDURE: xpath:((//app-workspace-list//button)[5])|((//app-workspace-list//button[contains(text(),"Procedure")]))
+WORKSPACE_PROCEDURE_LIST_WINDOW: xpath://span[.='Procedure Library']
+SITE_DETAILS_INSIDE_PAGINATION_NEXT_PAGE: xpath:(//button[@aria-label="Next page"])[1]
+SITE_DETAILS_INSIDE_PAGE_SIZE_SELECT: (//div[contains(@class,'mat-mdc-paginator-touch-target')])[1]
+SITE_DETAILS_INSIDE_RECORDS_COUNT: xpath:(//div[contains(@class,"paginator-range")]/div)[1]
+CANCEL_ADDING_PROCEDURES_TO_SITE_ON_SITE_DETAILS: xpath:(//app-dialog-footer//button)[1]
+NO_WORKSPACES_IN_SITE: xpath://h2[@class="no-workspace-title"]
+ADD_WORKSPACES_LINK_IN_SITE: xpath://h3[contains(@class,'add-workspace')]
+NEW_CREATED_SITE: xpath://span[contains(text(),"SITE")]
+USERS_COUNT_IN_SITE: xpath:(//tbody/tr)[2]/td[5]
+Toaster: //div[contains(@id, "toast-container")]
+
+
+
+#Sorting Listing
+SITE_HEADER_NAME: //th[contains(@class,'cdk-column-name ')]/div/div
+SITE_HEADER_CREATED_ON: //th[contains(@class,'cdk-column-createdOn')]/div/div
+SITE_HEADER_WORKSPACES: (//th[contains(@class,'cdk-column-workspaceCount')]/div/div)[1]
+SITE_HEADER_ASSIGNED_USERS: (//th[contains(@class,'cdk-column-usersCount')]/div/div)[1]
+SITE_NAME_LOCATOR: //td[contains(@class,'mat-column-name')]//span
+SITE_CREATED_ON: //td[contains(@class,'mat-column-createdOn')]//app-date-cell
+SITE_WORKSPACES_COUNT: //td[contains(@class,'cdk-column-workspaceCount')]
+SITE_ASSIGNED_USERS_COUNT: //td[contains(@class,'cdk-column-usersCount')]
+

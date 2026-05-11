@@ -1,0 +1,184 @@
+#credentials
+Url:        https://mentor-uat3.cdsvisual.net
+Browser:        chrome
+
+#UAT Automation Quality Manager
+QA_MANAGER_EMAIL:  uatautoquma@mailinator.com
+QA_MANAGER__PASS:  qwertyuiop12@A
+#UAT Automation Expert Ope...
+EXPERT_OPERATOR_EMAIL:  uatautoexop@mailinator.com
+EXPERT_OPERATOR_PASS:  qwertyuiop12@A
+#UAT Automation Supervisor...
+SUPERVISOR_EMAIL:  uatautosupervis@mailinator.com
+SUPERVISOR_PASS:  qwertyuiop12@A
+#UAT Automation Operator 2...
+OPERATOR1_EMAIL:  uatautooperator@mailinator.com
+OPERATOR1_PASS:  qwertyuiop12@A
+#UAT Automation Operator
+OPERATOR2_EMAIL:  uatautoperator2@mailinator.com
+OPERATOR2_PASS:  qwertyuiop12@A
+#UAT Automation Author 3
+AUTHOR3_EMAIL:  uatautoauthor3@mailinator.com
+AUTHOR3_PASS:  qwertyuiop12@A
+#UAT Automation Author 2
+AUTHOR2_EMAIL:  uatautoauthor2@mailinator.com
+AUTHOR2_PASS:  qwertyuiop12@A
+#UAT Automation Author 1
+AUTHOR1_EMAIL:  uatautoauthor1@mailinator.com
+AUTHOR1_PASS:  qwertyuiop12@A
+#Automation Site Admin
+SITE_ADMIN_EMAIL:  uatautositeadm@mailinator.com
+SITE_ADMIN_PASS:  qwertyuiop12@A
+#Automation Org Admin
+ORG_ADMIN_EMAIL:  uatautoorgad@mailinator.com
+ORG_ADMIN_PASS:  qwertyuiop12@A
+#New Different Site Site Admin (Need to Create)
+SiteAdminSite2: siteadmUATsite@mailinator.com
+SiteAdminSite2Pass: qwertyuiop12@A
+
+#Org 2- Automation Org 2
+#UAT Automation Quality Manager
+QA_MANAGER_EMAIL_ORG2:  uatautoquma@mailinator.com
+QA_MANAGER__PASS_ORG2:  qwertyuiop12@A
+#UAT Automation Expert Ope...
+EXPERT_OPERATOR_EMAIL_ORG2:  uatautoexop@mailinator.com
+EXPERT_OPERATOR_PASS_ORG2:  qwertyuiop12@A
+#UAT Automation Supervisor...
+SUPERVISOR_EMAIL_ORG2:  uatautosupervis@mailinator.com
+SUPERVISOR_PASS_ORG2:  qwertyuiop12@A
+#UAT Automation Operator 2...
+OPERATOR1_EMAIL_ORG2:  uatautoperator2@mailinator.com
+OPERATOR1_PASS_ORG2:  qwertyuiop12@A
+#UAT Automation Operator
+OPERATOR2_EMAIL_ORG2:  uatautooperator@mailinator.com
+OPERATOR2_PASS_ORG2:  qwertyuiop12@A
+#UAT Automation Author 3
+AUTHOR3_EMAIL_ORG2:  uatautoauthor3@mailinator.com
+AUTHOR3_PASS_ORG2:  qwertyuiop12@A
+#UAT Automation Author 2
+AUTHOR2_EMAIL_ORG2:  uatautoauthor2@mailinator.com
+AUTHOR2_PASS_ORG2:  qwertyuiop12@A
+#UAT Automation Author 1
+AUTHOR1_EMAIL_ORG2:  uatautoauthor1@mailinator.com
+AUTHOR1_PASS_ORG2:  qwertyuiop12@A
+#Automation Site Admin
+SITE_ADMIN_EMAIL_ORG2:  uatautositeadm@mailinator.com
+SITE_ADMIN_PASS_ORG2:  qwertyuiop12@A
+#Automation Org Admin
+ORG_ADMIN_EMAIL_ORG2:  uatautoorgad@mailinator.com
+ORG_ADMIN_PASS_ORG2:  qwertyuiop12@A
+
+
+
+
+#New Site Admin
+SiteAdminNew: uatautositeadm2@mailinator.com
+SiteAdminNewPass: qwertyuiop12@A
+#AuthorEmail:   customauthor3.1@mailinator.com
+#Author2Email: customauthor2@mailinator.com
+OrgAdmin:   superuseruat@mailinator.com
+OrgAdminPass:   qwertyuiop12@A
+SiteAdmin:  sideadmn1709@mailinator.com
+SiteAdminPass:  qwertyuiop12@A
+#SiteAdmin2:  poojasiteadm@mailinator.com
+#SiteAdmin2Pass:  qwertyuiop12@A
+OrgAdmin2:   regorg2208@mailinator.com
+OrgAdminPass2:   qwertyuiop12@A
+GENERIC_PASSWORD:   qwertyuiop12@A
+#AuthorPass:    qwertyuiop12@A
+AuthorA:  authoruser22@mailinator.com
+Author3:  nsinghauthor@mailinator.com
+Author3Pass:   qwertyuiop12@Aa
+Author4:  deepak_author@mailinator.com
+Author4Pass:   qwertyuiop12@A
+AuthorAPass:  qwertyuiop12@A
+NewPassword: qwertyuiop12@A
+#OperatorEmail:  operator3.1@mailinator.com
+#OperatorPass:  qwertyuiop12@A
+Operator2Email: customoperator2@mailinator.com
+Operator2Pass: qwertyuiop12@A
+STANDARD_OPERATOR:  operator_pooja@mailinator.com
+STANDARD_OPERATOR_PASS:  qwertyuiop12@A
+SupervisorEmail:  uat.supervisor@mailinator.com
+SupervisorPass:  qwertyuiop12@A
+CrossSiteUser: authorpooja21@mailinator.com
+
+MaxTime: 60s
+Time_120s:     120s
+Time_15s:   15s
+WorkspaceName: Demo Workspace
+WorkspaceDescription: For Automation Purpose
+# Static Data (Need to change)
+Address1:   44/1 Bharat Apartment
+Address2:   4C 5th Main Road Jayanagar
+CountryValue:   " India "
+State_value:    " Karnataka "
+City_value:    Bangalore
+Post_code: 290876
+EmailId: minewauthor@mailinator.com
+Country_code: +91
+Phone_number: 8767567890
+description_text: This is for Dg Site.
+Tag: Abc
+TD_SERIAL_NUMBER:  TESTSR1234
+TestMatNo:  MAT001-WbE4ZK2J
+TestJobName:  TESTJOB
+NCR_affected_partnamne:  Bolts
+NCR_affected_quantity:  5
+NCR_description_text:  Part is cracked and unusable.
+
+FirstNameTrainer:      SDETAuthor
+LastNameTrainer:       Testing
+FirstNameTrainee:      robotTrainee
+LastNameTrainee:       Testing
+SuccessText:    Mentor is open in another window.
+LinkText:       Embed Procedure Link
+ProcedureText:  Procedure Link
+Text:           You can use this procedure without any password
+MailBox_URL:     https://www.mailinator.com/
+NewFirstName: Roger
+NewLastName: Federer
+OrgName: TestJulOrg
+AssignedTrainerName: SDETTrainer Testing
+MentorSupport: mentor-support@cdsvisual.com
+OrgOwnEmail: neworganization12@gmail.com
+ProcedureApprovalAuthorEmail: author2sep@mailinator.com
+SignOffApprovalAuthorEmail: author2sep@mailinator.com
+FromEmail: dd-noreply@dovercorp.com
+MaxTime_180s: 180s
+#url: "https://mentor-uat3.cdsvisual.net/"
+contact_us: "https://cdsvisual.com/contact"
+#workspace
+#data: {"displayName":"DemoWS3","workSpaceId":"wsdemoorg02220230509111232","createdBy":"test abc","generalConfig":{"displayName":"DemoWS3"},"uiConfig":{"sameConfigForAllProducts":False,"singleLayerBom":True},"searchBarConfig":{"searchTypeSerialNumber":True,"includeProductVersion":True,"includeSearchMethod":True},"searchResultViewConfig":{"defaultView":"cardView","listView":False,"cardView":True,"twodView":True,"threedView":True},"styleSheetConfig":{"styleTemplate":None},"pdpConfig":{"imageSourceUrl":"/products/parts","imageCountPerPage":"21","enableAddToCart":True,"enableAddToQuote":True,"includeAdditionalPDF":True,"url":"/product/parts","label":"20"},"ecomIntegrationConfig":{"integratedApplication":"salesforce","intershop_url":None,"intershop_context_uri":None,"intershop_default_customer_number":None,"intershop_default_username":None,"salesforce_login_url":None,"salesforce_url":None,"salesforce_context_uri":None,"salesforce_user":None,"salesforce_password":None,"salesforce_client_id":None,"salesforce_client_secret":None,"salesforce_default_customer_number":None,"salesforce_default_username":None,"operation_product_detail":None,"operation_product_exist":None,"operation_product_callbacks":None}}
+UserGroupTo_Search: Demo User Group 1
+Max_limit : 60s
+MaxLimit: 30s
+ExistingProcedure:
+OPERATOR2_NAME: UAT Automation Operator 2
+OPERATOR1_NAME: UAT Automation Operator
+#Author 1 is not visible in the skill matrix user dropdown, need to revert once the issue is fixed
+AUTHOR1_NAME:    UAT Automation Author 1
+#AUTHOR1_NAME:    UAT Automation Author 2
+AUTHOR2_NAME:    UAT Automation Author 2
+AUTHOR3_NAME:    UAT Automation Author 3
+ORG_ADMIN_NAME: Automation Org Admin
+SITE_ADMIN_NAME: Auto Site Admin
+RED:    rgba(228, 0, 43, 1)
+ORANGE:    rgba(241, 92, 47, 1)
+RGB_ORANGE:    rgb(241, 92, 47)
+GRAY:    rgba(204, 204, 204, 1)
+RGB_GRAY:    rgb(0, 143, 49)
+GREEN:    rgba(242, 242, 242, 1)
+MY_TRAINING_GREEN:    rgba(0, 143, 49, 1)
+RGB_GREEN:    rgb(0, 143, 49)
+PROCEDURE_COMPLETION_GREEN:    rgba(118, 173, 53, 1)
+MATRIX_IN_PROGRESS:    rgba(244, 125, 89, 1)
+MATRIX_COMPLETED:    rgba(136, 194, 63, 1)
+MATRIX_COMPLETED_LIGHT:    rgba(231, 243, 217, 1)
+LIGHT_RED:    rgba(255, 83, 86, 1)
+SELECTED_RECORDS_COLOR:    rgba(207, 229, 255, 1)
+NORMAL_IMAGE_ATTR:    'transform: scale(1) translate(0px, 0px); cursor: grab;'
+ZOOMED_IN_IMAGE_ATTR:    'transform: scale(1.2) translate(0px, 0px); cursor: grab;'
+
+TD_SITE_NAME: Automation Site UAT
+DELETED_USER_EMAIL:  deleted_user@mailinator.com

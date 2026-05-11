@@ -1,0 +1,368 @@
+#Job Listing
+JOB_FILTERS_DUEDATE_SELECT: //mat-panel-title[normalize-space()='Due Date']//ancestor::mat-expansion-panel//button[@aria-label="Open calendar"]
+JOB_FILTERS_COMPLETED_ON_DATE_SELECT: //mat-panel-title[normalize-space()='Completed On']//ancestor::mat-expansion-panel//button[@aria-label="Open calendar"]
+AddJob: //div[@class="action-wrapper"]//span[@class="mdc-button__label"]
+JobHeading: //div[contains(text(),'Job Orders')]
+JobMenu: //mat-icon[@data-mat-icon-name="job-order"]
+JOB_LISTING_THREE_DOTS: //button[@aria-haspopup="menu"]
+DELETE_RECORD_ICON_JOB_LISTING_PAGE: //span/span[normalize-space()='Delete']
+# Serial Number Pop up
+
+INPUT_JOB_ID: //input[@placeholder="Job Id"]
+CancelJob: ((//mat-dialog-actions//button)[1])|((//footer//button)[1])
+NextButton: //footer//button[2]
+JOB_CREATION_NEXT_BUTTON: //footer/button[2]
+changeBtn: //span[contains(@class,"change-btn")]
+MaterialNumberField: //label[normalize-space()='Material Id']
+MaterialNo: //input[@placeholder="Material Id"]
+DoneButton: //footer//button[3]
+JOB_CREATION_DONE_BUTTON: //footer/button[3]
+closeIcon: //mat-icon[@type='button' and contains(text(), 'close')]
+
+#Job Details
+JobName: //input[@placeholder="Job Name"]
+JobNext_Done: (//footer//button)[2]
+CANCEL_JOB_BUTTON_DETAILS_PAGE: (//footer//button)[1]
+CANCEL_JOB_BUTTON_ON_WELCOME_SCREEN: //button//span[normalize-space()='Cancel']
+AddProcedureToJob: (//div[@class="container"]//div[@class="btn-wrapper"]//button)
+AddProcedure: (//app-dialog-footer//span[@class="mdc-button__label"])[2]
+btn_create: //footer/button[3]
+btn_cancel: //button[contains(text(), 'Cancel')]
+btn_previous:  //button[contains(text(), 'Previous')]
+SelectProcedure:  (//input[@type='checkbox'])[2]
+ToasterMessage:  //div[contains(@class, 'toast-message')]
+SerialNoDisabled:  //input[@placeholder="Job Id"]
+JobNameDisabled:  //input[@placeholder="Job Name"]
+MateriaDisabled:  //input[@placeholder="Material Id"]
+ProductionPlantDisabled:  //input[@placeholder="Production Plant"]
+PONoDisabled:  //input[@placeholder="Purchase Order Number"]
+BatchNumberDisabled:  //input[@placeholder="Batch Number"]
+VersionDisabled:  //input[@placeholder="Version"]
+SalesOrderNoDisabled:  //input[@placeholder="Sales Order Number"]
+OrderTypeDisabled:  //input[@placeholder="Order Type"]
+MRPControllerDisabled:  //input[@placeholder="MRP Controller"]
+StorageLocationDisabled:  //input[@placeholder="Storage Location"]
+QuantityDisabled:  //input[@placeholder="Quantity"]
+header_jobName:  //div[contains(@class, 'text') and contains(@class, 'ng-star-inserted')]
+ASSIGN_JOB_TO_USER_DETAILS_PAGE_SELECT:  //assign-details//form//mat-select//span
+ASSIGN_JOB_TO_USER_OPTION:  //mat-option//span[normalize-space()='USERNAME']
+REMOVE_PROCEDURE_FROM_JOB: //mat-icon[@data-mat-icon-name="deleteIcon"]
+REMOVE_PROCEDURE_FROM_JOB_DELETE_BUTTON: //button//span/span[normalize-space()='Delete']
+
+#Job execution
+JobID_generic_start:  "//span[contains(text(), 'SERNo-"
+JobID_generic_end:  "')]"
+txt_procedure: //div[text()='Procedure ']
+proc_name: //td[contains(@class, 'cdk-column-name')]//span
+START_JOB_BUTTON_WELCOME_SCREEN: (//span[normalize-space()='Start'])[1]
+START_BUTTON: (//div[@class="header-action-items-wrapper"]//button)[2]
+SampleJobStart:  "//span[contains(text(), '"
+step_timer: //div[@class='timer-container']/div[@class='timer']
+pause_button: //span[contains(text(), 'Pause')]
+paused_timer: //span[contains(text(), 'Paused')]/../../../..//div[contains(@class, 'timer')]
+resume_button: //span[contains(text(), 'Resume')]
+total_cycle_time: //div[@class='total-time']
+btn_fail: //icon-button[@icon='close']
+EXPERT_OPERATOR_TOGGLE_BUTTON: //button[@role="switch"]
+EXPERT_MODE_LABEL: //label[normalize-space()='Expert Mode']
+JOB_EXECUTION_NOVICE_STEP: (//div[contains(@class,'step-name')])[4]
+
+
+#NCR Report
+txt_ncr: //span[contains(text(), 'Non conformance report')]
+defective_Part_no: //mat-dialog-content[@id="NcrDialogContent"]//input[@type='text']
+affected_quantity: //mat-dialog-content[@id="NcrDialogContent"]//input[@type='number']
+ncr_description:  //mat-dialog-content[@id="NcrDialogContent"]//textarea[contains(@class, 'custom-form-control')]
+ncr_done_btn: //app-dialog-footer[@id="ncr-footer"]//span[contains(text(), 'Done')]
+ncr_cancel_btn: //app-dialog-footer[@id="ncr-footer"]//span[contains(text(), 'Cancel')]
+ncr_submitted_msg: //div[contains(text(), 'The NCR report has been successfully recorded.')]
+
+btn_delete_job: //button//span[contains(text(), 'Delete')]
+NO_JOBS_FOUND: //td[contains(text(), 'No Jobs Found')]
+
+#select date
+DueDateCalendar: //div[text()='Due Date']/../..//span[@class='row-flex']
+btn_next_month: //button[@aria-label='Next month']
+DateGenericStart:  "//span[normalize-space(.)='"
+DateGenericEnd:  "' and contains(@class, 'mat-calendar-body-cell-content')]"
+dueDate: (//div[contains(@class, 'date-font')])[2]
+FinishButton: //div[@class="actions"]//button//span[contains(text(),"Finish")]
+# FinishPopUp: //mat-dialog-container//button//span/span[contains(normalize-space(),'Finish')]
+FinishPopUP: //mat-dialog-actions//button[contains(@class,'actionable')]    #Changed
+Check: //icon-button[@icon='check']
+DUE_DATE_SELECT: (//assign-details//div[@class="date-font"]//following-sibling::span//mat-icon)[2]
+SELECTED_DUE_DATE: //span[contains(@class,'mat-calendar-body-today')]
+CURRENT_DAY_DATE: //span[contains(@class,'mat-calendar-body-today')]/..
+PREVIOUS_DAY: //button[@aria-label="DATE"]
+FIRST_JOB: (//tbody/tr/td)[2]//span
+DELETE_JOB: //mat-icon[@svgicon='deleteIcon'][1]
+CANCEL_DELETE_JOB_BUTTON: //mat-dialog-actions/button[1]
+DELETE_JOB_POPUP_BUTTON: //mat-dialog-actions/button[2]
+DELETE_POPUP_CONFIRMATION_MESSAGE: //mat-dialog-content//span[@class="msg-font-light"]
+DELETE_POPUP_JOB_ID: //mat-dialog-content//div[@class="item-wrapper"]/span
+DELETE_POPUP_WARNING_MESSAGE: //mat-dialog-content//span[@class="alert-font"]
+JOB_LIST_PAGE_SIZE_SELECT: (//mat-select)[4]
+#JOB_QUANTITY_INPUT: (//input)[12]
+STORAGE_LOCATION_INPUT: //input[@placeholder="Storage Location"]
+MRP_CONTROLLER_INPUT: //input[@placeholder="MRP Controller"]
+ORDER_TYPE_INPUT: //input[@placeholder="Order Type"]
+SALES_ORDER_NUMBER_INPUT: //input[@placeholder="Sales Order Number"]
+VERSION_JOB_INPUT: //input[@placeholder="Version"]
+BATCH_NUMBER_INPUT: //input[@placeholder="Batch Number"]
+PO_NUMBER_INPUT: //input[@placeholder="Purchase Order Number"]
+PRODUCT_PLANT_INPUT: //input[@placeholder="Production Plant"]
+JOB_NAME_INPUT: //input[@placeholder="Job Name"]
+EDIT_JOB_BUTTON: (//shared-breadcrumb/../div//button)[1]
+HEADER_JOBS_COUNT: //shared-breadcrumb//li//div
+JOB_PROGRESS_STATUS: ((//progress-status)[1]//span[@class="progress-title"])[1]
+JOB_COMPLETION_STATUS: ((//progress-status)[1]//span[@class="progress-title"])[2]
+ADDED_PROCEDURE_STEP_IN_JOB: (//div[contains(@class,"name-container")])[INDEX]
+USER_OPTION_POPUP_HEADER: //app-dialog-header//span[normalize-space()='Select the below options to proceed']
+USER_OPTION_POPUP_PROCEDURE_NAME: //div[@class="option-group-title"]
+USER_OPTION_POPUP_OPTION_TITLE: (//shared-dropdown)[2]//div/label
+USER_OPTION_POPUP_OPTION_DROPDOWN: //mat-dialog-content//following-sibling::mat-select
+OPTION_LIST_VALUES_IN_USER_OPTION_POPUP: //mat-option
+CHOOSE_LATER_BUTTON_IN_USER_OPTION_POPUP: //div[@class='job-options-button-container']/button[1]
+DONE_BUTTON_IN_USER_OPTION_POPUP: //div[@class="job-options-button-container"]/button[2]
+FIRST_OPTION_IN_USER_OPTION_POPUP_DROPDOWN: //mat-option[3]
+ALL_OPTION_IN_USER_OPTION_POPUP_DROPDOWN: //mat-option[INDEX]
+INCORRECT_OPTION_IN_USER_OPTION_POPUP_DROPDOWN: (//mat-option/span[not(contains(., 'OPTION'))])[3]
+HEADER_IN_USER_INPUT_POPUP: //span[contains(@class="dialog-header-title" and normalize-space()='User Input')]
+BLOCK_NAME_IN_USER_INPUT_POPUP: //div[@class="option-group-title"]
+BLOCK_TITLE_IN_USER_INPUT_POPUP: (//shared-dropdown)[2]//div/label
+DROPDOWN_IN_USER_INPUT_POPUP: //mat-dialog-content//following-sibling::mat-select
+DROPDOWN_OPTIONS_IN_USER_INPUT_POPUP: //mat-option
+FIRST_DROPDOWN_OPTION_IN_USER_INPUT_POPUP: //mat-option[3]
+All_DROPDOWN_OPTIONS_IN_USER_INPUT_POPUP: //mat-option[INDEX]
+CLOSE_BUTTON_IN_USER_INPUT_POPUP: //mat-dialog-actions//button[1]
+DONE_BUTTON_IN_USER_INPUT_POPUP: (//mat-dialog-actions//button[2])|(//div[@class="job-options-button-container"]//button[2])
+STEPS_ADDED_IN_JOB: //div[@class="name-container"]
+STEP_TO_BE_HIDDEN: //div[@class="name-container"]//div[normalize-space()='New Step 3']
+CLOSE_OPTION_SELECT_POPUP: (//div[@class="job-options-button-container"]/button[1])|((//mat-icon[normalize-space()='close'])[3])
+USER_OPTION_CHOOSE_LATER_BUTTON: (//div[@class="job-options-button-container"]/button[1])
+USER_INPUT_CLOSE_BUTTON: ((//mat-icon[normalize-space()='close'])[3])
+CLOSE_FINISH_POPUP: //app-dialog-header//mat-icon
+OPTION_SELECT_BUTTON: (//icon-button)[1]
+STEP_NAME_IN_JOB_EXECUTION: //div[@class="main-content"]//div[@class="info-container"]
+STEP_BOOK_ICON_IN_JOB_EXECUTION: //div[contains(@class,'right-sidebar-container')]//mat-icon[@data-mat-icon-name="book-01"]
+PROCEDURE_COMMENT_ICON_IN_JOB_EXECUTION: //div[contains(@class,'right-sidebar-container')]//mat-icon[@data-mat-icon-name="message-square"]
+STEP_VIEW_SELECTOR_IN_JOB_EXECUTION: //div[@class="view-selector-options"]
+STEP_INSTRUCTION_EDITOR_IN_JOB_EXECUTION: (//text-editor//p)
+EXPANDED_STEP_INSTRUCTION_EDITOR_IN_JOB_EXECUTION: (//text-editor//p)[2]
+STEP_INSTRUCTION_EXPAND_ICON_IN_JOB_EXECUTION: //div[@class="instructions-editor-container"]//mat-icon[@data-mat-icon-name="arrow-expand-01"]
+CLOSE_EXPANDED_STEP_INSTRUCTION_EDITOR: //app-dialog-header//mat-icon
+JOB_WELCOME_SCREEN_HEADER: //span[@class="dialog-header-title"]
+JOB_NAME_IN_WELCOME_SCREEN: //span[@class="dialog-header-title"]
+PROCEDURE_SECTION_TITLE_IN_WELCOME_SCREEN: (//mat-dialog-content//span[@class="title"])[1]
+PROCEDURE_SECTION_DESC_IN_WELCOME_SCREEN: (//mat-dialog-content//span[@class="description"])[1]
+PROCEDURE_NAME_IN_WELCOME_SCREEN: (//mat-dialog-content//div[contains(@class,'procedure-content-wrapper')]//span)[1]
+PROCEDURE_VERSION_IN_WELCOME_SCREEN: (//mat-dialog-content//div[contains(@class,'procedure-content-wrapper')]//span)[2]
+PROCEDURE_PUBLISHED_BY_TEXT_IN_WELCOME_SCREEN: (//mat-dialog-content//div[contains(@class,'procedure-content-wrapper')]//span)[3]
+PROCEDURE_PUBLISHER_LOGO_IN_WELCOME_SCREEN: (//mat-dialog-content//div[contains(@class,'procedure-content-wrapper')]//span)[4]
+PROCEDURE_PUBLISHER_NAME_IN_WELCOME_SCREEN: (//mat-dialog-content//div[contains(@class,'procedure-content-wrapper')]//span)[5]
+WELCOME_SCREEN_PPE_SECTION_TITLE: (//mat-dialog-content//span[@class="title"])[2]
+WELCOME_SCREEN_PPE_SECTION_DESC: (//mat-dialog-content//span[@class="description"])[2]
+WELCOME_SCREEN_PPE_SECTION_CANCEL_BUTTON: //app-dialog-footer//button[1]
+FIRST_PPE_ADDED_IN_JOB: (//mat-dialog-content//span[@class="description"])[2]
+SECOND_PPE_ADDED_IN_JOB: (//mat-dialog-content//span[@class="description"])[2]
+THIRD_PPE_ADDED_IN_JOB: (//mat-dialog-content//span[@class="description"])[2]
+FOURTH_PPE_ADDED_IN_JOB: (//mat-dialog-content//span[@class="description"])[2]
+PPE_ITEM_ADDED_IN_JOB: //div[@class="image-wrapper"]//following-sibling::div[contains(text(),'PPE')]
+PROCEDURE_ADDED_IN_JOB_WELCOME_SCREEN: (//span[@class="black-font" and normalize-space()='PROCEDURE_NAME'])
+NO_PPE_ADDED_IN_JOB: (//img[@class="ppe-img"])[1]
+TOTAL_JOBS_PIE_CHART: (//ngx-charts-pie-chart)[1]
+COMPLETED_STATUS_PIE_CHART: (//ngx-charts-pie-chart)[2]
+COMPLETED_STATUS_LATE_JOBS: (//ngx-charts-pie-chart)[2]
+COMPLETED_STATUS_PIE_ONTIME_JOBS: //span[@class="legend-font" and contains(text(),'Late')]
+COMPLETED_STATUS_PIE_LATE_JOBS: //span[@class="legend-font" and contains(text(),'On time')]
+TOTAL_JOBS_HEADER: //span[@class="header" and normalize-space()='Total Jobs']
+TOTAL_JOBS_PIE_CHART_COMPLETED_JOB: //span[@class="legend-font" and contains(text(),'Completed')]
+TOTAL_JOBS_PIE_CHART_INPROGRESS_JOBS: //span[@class="legend-font" and contains(text(),'In Progress')]
+TOTAL_JOBS_PIE_CHART_NOT_STARTED: //span[@class="legend-font" and contains(text(),'Not Started')]
+TOTAL_JOBS_PIE_CHART_PAUSED: //span[@class="legend-font" and contains(text(),'Paused')]
+TOTAL_JOBS_PIE_CHART_FAILED: //span[@class="legend-font" and contains(text(),'Failed')]
+TOTAL_JOBS_PIE_CHART_COLOR_FOR_COMPLETED_JOB: //span[@class="legend-font" and contains(text(),'Completed')]/../span[1]
+TOTAL_JOBS_PIE_CHART_COLOR_FOR_INPROGRESS_JOBS: //span[@class="legend-font" and contains(text(),'In Progress')]/../span[1]
+TOTAL_JOBS_PIE_CHART_COLOR_FOR_NOT_STARTED: //span[@class="legend-font" and contains(text(),'Not Started')]/../span[1]
+TOTAL_JOBS_PIE_CHART_COLOR_FOR_PAUSED: //span[@class="legend-font" and contains(text(),'Paused')]/../span[1]
+TOTAL_JOBS_PIE_CHART_COLOR_FOR_FAILED: //span[@class="legend-font" and contains(text(),'Failed')]/../span[1]
+TOTAL_JOBS_PIE_CHART_COLOR_FOR_ON_TIME: //span[@class="legend-font" and contains(text(),'On')]/../span[1]
+TOTAL_JOBS_PIE_CHART_COLOR_FOR_LATE: //span[@class="legend-font" and contains(text(),'Late')]/../span[1]
+FPY_CHART_CARD: (//div[contains(@class,'chart-card')])[4]
+PROGRESS_BAR: //div[@class="status-bar"][1]
+NEW_GROUP_IN_JOB_EXECUTION: //mat-tree-node[contains(text(),'New Group')]
+NEW_GROUP_EXPAND_BUTTON_IN_JOB_EXECUTION: //mat-tree-node[contains(text(),'New Group')]/button
+CUMULATIVE_TIME: (//td[contains(@class,'estimatedTime')])[1]
+UPDATED_PROCEDURE_ADDED_IN_JOB: (//div[contains(@class,'procedure-content-wrapper')])/div/span[normalize-space()='VALUE']
+UPDATED_PROCEDURE_VERSION__ADDED_IN_JOB: //span[normalize-space()='Ver:VALUE']
+UPDATED_PROCEDURE_AUTHOR__ADDED_IN_JOB: (//div[contains(@class,'procedure-content-wrapper')])[INDEX]//span[@class="publish-by-font"]
+TAKEN_TIME: (//td[contains(@class,'timeTaken')])[1]
+FIRST_PROCEDURE_TAKEN_TIME: (//span[@class="time spent"])[1]
+SECOND_PROCEDURE_TAKEN_TIME: (//span[@class="time spent"])[2]
+NEW_JOB_ADD_PROCEDURE_SCREEN_NO_PROCEDURES: //tr[contains(@class,'no-records')]/td
+PROCEDURE_LISTED_IN_NEW_JOB_ADD_PROCEDURE_SCREEN: //tr[@role="row"]/td[1]
+ALL_PROCEDURE_LISTED_IN_NEW_JOB_ADD_PROCEDURE_SCREEN: (//tr[@role="row"]/td[1])[INDEX]
+NEW_JOB_ADD_PROCEDURE_SCREEN_MATERIAL_NUMBER_`TOOLTIP: //mat-tooltip-component/div/div
+NEW_JOB_ADD_PROCEDURE_SCREEN_ALL_PROCEDURE_EMT_TIME: //td[contains(@class,'mat-column-estimatedTime')]//shared-text-cell/span
+NEW_JOB_ADD_PROCEDURE_SCREEN_ALL_RECORDS_PROCEDURE_EMT_TIME: (//td[contains(@class,'mat-column-estimatedTime')]//shared-text-cell/span)[INDEX]
+NEW_JOB_ADD_PROCEDURE_SCREEN_FIRST_RECORD_NAME: (//td[contains(@class,'cdk-column-name')]//shared-text-cell/span)[1]
+NEW_JOB_ADD_PROCEDURE_SCREEN_FIRST_RECORD_VERSION: (//td[contains(@class,'mat-column-version')]//shared-text-cell/span)[1]
+NEW_JOB_ADD_PROCEDURE_SCREEN_FIRST_RECORD_EMT_TIME: (//td[contains(@class,'mat-column-estimatedTime')]//shared-text-cell/span)[1]
+NEW_JOB_ADD_PROCEDURE_SCREEN_FIRST_RECORD_MAT_NUMBER: (//td[contains(@class,'mat-column-material')]//shared-text-cell/span)[1]
+NEW_JOB_ADD_PROCEDURE_SCREEN_LABEL_NAME: ((//app-table)[2]//div[contains(@class,'mat-sort-header-content')])[1]
+NEW_JOB_ADD_PROCEDURE_SCREEN_LABEL_VERSION: ((//app-table)[2]//div[contains(@class,'mat-sort-header-content')])[2]
+NEW_JOB_ADD_PROCEDURE_SCREEN_LABEL_EMT_TIME: ((//app-table)[2]//div[contains(@class,'mat-sort-header-content')])[3]
+NEW_JOB_ADD_PROCEDURE_SCREEN_LABEL_MATERIAL: ((//app-table)[2]//div[contains(@class,'mat-sort-header-content')])[4]
+NEW_JOB_ADD_PROCEDURE_SCREEN_DELETE_ICON: //mat-icon[@data-mat-icon-name="deleteIcon"]/..
+NEW_JOB_ADD_PROCEDURE_SCREEN_POPUP_DELETE_BUTTON: (//app-dialog-footer//button)[2]
+NEW_JOB_ADD_PROCEDURE_SCREEN_PAGE_SIZE_SELECT: //div[contains(@class,'mat-mdc-paginator-touch-target')]
+NEW_JOB_ADD_PROCEDURE_SCREEN_CROSS_ICON: //app-dialog-header//mat-icon
+NEW_JOB_ADD_PROCEDURE_SCREEN_CANCEL_BUTTON: (//mat-dialog-actions/button)[1]
+ERROR_MESSAGE_JOB_NAME_REQUIRED: //div[normalize-space()='Job Name is required']
+ERROR_MESSAGE_MINIMUM_VALUE: //div[normalize-space()='Minimum value should be 0']
+ERROR_MESSAGE_MINIMUM_TWO_CHAR_ALLOWED: //div[normalize-space()='Minimum 2 characters are allowed']
+ERROR_MESSAGE_SPECIAL_CHAR_NOT_ALLOWED: //div[normalize-space()='Job name can include letters, numbers, spaces, and dashes (not only spaces/dashes).']
+JOB_BOM_TAB: //span[@class="option-label" and normalize-space()='Bill of Materials']
+ALL_BOM_ADDED_IN_JOB: //td[contains(@class,'userNameLink')]//span
+BOM_ADDED_IN_JOB: (//td[contains(@class,'userNameLink')]//span)[INDEX]
+JOB_BOT_TAB: //span[@class="option-label" and normalize-space()='Bill of Tools']
+ALL_BOT_ADDED_IN_JOB: //td[contains(@class,'userNameLink')]//span
+BOT_ADDED_IN_JOB: (//td[contains(@class,'userNameLink')]//span)[INDEX]
+JOB_ORDER_HEADER_JOB_ID: //th[contains(@class,'cdk-column-jobId ')]/div/div
+JOB_ORDER_HEADER_JOB_NAME: //th[contains(@class,'cdk-column-jobName')]/div/div
+JOB_ORDER_HEADER_ASSIGNED_TO: //th[contains(@class,'cdk-column-assignedTo')]/div/div
+JOB_ORDER_HEADER_MATERIAL: //th[contains(@class,'cdk-column-material ')]/div/div
+JOB_ORDER_HEADER_DUE_DATE: //th[contains(@class,'cdk-column-dueDate')]/div/div
+JOB_ORDER_HEADER_CYCLE_TIME: //th[contains(@class,'cdk-column-estimatedTime')]/div/div
+JOB_ORDER_HEADER_TIME_TAKEN: //th[contains(@class,'cdk-column-timeTaken')]/div/div
+FIRST_JOB_TIME_TAKEN: (//td[contains(@class,'cdk-column-timeTaken')])[1]
+JOB_ORDER_HEADER_COMPLETED_ON: //th[contains(@class,'cdk-column-completedOn')]/div/div
+JOB_ORDER_HEADER_STATUS: //th[contains(@class,'cdk-column-status')]/div/div
+JOB_ORDER_HEADER_ACTIONS: //th[contains(@class,'cdk-column-action')]/div/div
+JOB_ORDER_PAGE_LINK: //shared-breadcrumb//a
+
+#Job Execution
+JOB_EXECUTION_PAGE_JOB_NAME: //shared-breadcrumb//div[contains(@class,'text')]
+JOB_EXECUTION_STEP_FAIL_BUTTON: (//icon-button[@icon="close"])[1]
+JOB_EXECUTION_EXPAND_PROCEDURE: (//div[@class="step-container"]//mat-icon[contains(@class,'mat-ligature-font')])[1]
+JOB_EXECUTION_EXPAND_SECOND_PROCEDURE: (//div[@class="step-container"]//mat-icon[contains(@class,'mat-ligature-font')])[2]
+JOB_EXECUTION_EXPERT_MODE_TOGGLE: //slider-toogle[@label="EXPERT_MODE"]
+#Job Execution Reset
+JOB_EXECUTION_RESET_STEP_BUTTON: //icon-button[@icon="arrow-refresh-01"]
+JOB_EXECUTION_RESET_POPUP_BUTTON: (//app-dialog-footer//button)[2]
+RESET_STEP_IN_JOB_EXECUTION: //div[@class="reset-btn"]
+USER_INPUT_RESET_SELECT: //span[normalize-space()='Select']
+JOB_EXECUTION_PROCEDURE_STEP_RESET_EXPAND: //button[@aria-label="Toggle PROCEDURE"]
+JOB_EXECUTION_PROCEDURE_RESET_LABEL: //div[@class="step-header-title" and normalize-space()='PROCEDURE']
+JOB_EXECUTION_PROCEDURE_STEP_RESET_LABEL: //mat-dialog-container//div[@class="name-container"]
+JOB_EXECUTION_PROCEDURE_STEP_GROUP_RESET_LABEL: //div[contains(@class,'step-group-name')]
+PROCEDURE_DISPLAYED_ON_JOB_EXECUTION_SCREEN: //div[contains(@class,'step-header-title')]
+JOB_EXECUTION_PROCEDURE_STEP_GROUP_RESET_CHECK: //mat-icon[@data-mat-icon-name="check"]
+
+GENERIC_EXPANDED: //mat-icon[normalize-space()='expand_more']
+GENERIC_SHRINKED: //mat-icon[normalize-space()='chevron_right']
+
+#JOB_EXECUTION_RESET_POPUP_PROCEDURE_STEP_CHECK: //mat-dialog-container//mat-icon[@data-mat-icon-name="check"]
+JOB_EXECUTION_LEFT_PANEL_PROCEDURE_EXPAND_BUTTON: //div[@class="step-container"]//button
+JOB_EXECUTION_LEFT_PANEL_PROCEDURE_STEP_UPDATED_CHECK: //div[normalize-space()='PROCEDURE']//ancestor::div[@class="step-container"]//mat-icon[@data-mat-icon-name="check"]
+
+JOB_EXECUTION_CYCLE_TIME: //div[@class="total-time"]
+JOB_EXECUTION_TIMER_CYCLE_TIME: //div[@class="timer"]
+PAUSE_BUTTON:  //span[contains(text(), 'Pause')]
+PAUSE_EXECUTION_DIALOG_HEADER:  //span[@class="dialog-header-title" and normalize-space()='Paused']
+PAUSE_EXECUTION_DIALOG_TIMER:  //mat-dialog-content//div[@class="timer"]
+PAUSE_EXECUTION_BACK_TO_JOB_ORDER_BUTTON:  (//mat-dialog-actions//button)[1]
+PAUSE_EXECUTION_RESUME_BUTTON:  (//mat-dialog-actions//button)[2]
+FINISH_BUTTON_HEADER:  //div[@class="actions"]/button[2]
+PROCEDURE_ADDED_IN_JOB_EXECUTION: //div[normalize-space()='PROCEDURE_NAME']
+STEP_VIEWER_COLLAPSE_BUTTON: //div[@class="step-viewer-collapse-button"]
+FIRST_STEP_IN_JOB: (//div[contains(@class,"name-container")])[1]
+ALL_STEPS_IN_JOB: (//div[contains(@class,"name-container")])
+JOB_EXECUTION_COMPLETED_STEPS: //mat-icon[@data-mat-icon-name="check"]
+JOB_EXECUTION_FAILED_STEPS: //span[@class="close icon"]//mat-icon[@data-mat-icon-name="close"]
+JOB_EXECUTION_UNEXECUTED_STEPS: //span[@class="icon"]//mat-icon[contains(@class,'mat-icon-no-color')]
+FIRST_BOM_NAME: (//td[contains(@class,'cdk-column-name')]//span)[1]
+FIRST_BOM_DESCRIPTION: (//td[contains(@class,'cdk-column-description')]//span)[1]
+FIRST_BOM_QUANTITY: (//td[contains(@class,'cdk-column-quantity')]//span)[1]
+FIRST_BOM_UoM: (//td[contains(@class,'cdk-column-uom')]//span)[1]
+FIRST_BOM_ITEM: (//td[contains(@class,'userNameLink ')]//span)[1]
+FIRST_BOM_MODAL_HEADER_TITLE: //span[@class="dialog-header-title"]
+FIRST_BOM_MODAL_NAME_KEY: //div[.='Name']
+FIRST_BOM_MODAL_QUANTITY_KEY: //div[.='Quantity']
+FIRST_BOM_MODAL_UOM_KEY: //div[.='UoM']
+FIRST_BOM_MODAL_DESC_KEY: //div[.='Description']
+FIRST_BOM_MODAL_NAME_VALUE: (//div[@class="value"])[1]
+FIRST_BOM_MODAL_QUANTITY_VALUE: (//div[@class="value"])[2]
+FIRST_BOM_MODAL_UOM_VALUE: (//div[@class="value"])[3]
+FIRST_BOM_MODAL_DESC_VALUE: (//div[@class="value"])[4]
+FIRST_BOM_MODAL_IMG: //div[@class="image-container"]/img
+FIRST_BOM_MODAL_DONE_BUTTON: //app-dialog-footer//button
+FIRST_BOT_NAME: (//td[contains(@class,'cdk-column-name')]//span)[1]
+FIRST_BOT_DESCRIPTION: (//td[contains(@class,'cdk-column-description')]//span)[1]
+FIRST_BOT_QUANTITY: (//td[contains(@class,'cdk-column-quantity')]//span)[1]
+FIRST_BOT_UoM: (//td[contains(@class,'cdk-column-uom')]//span)[1]
+FIRST_BOT_ITEM: (//td[contains(@class,'userNameLink ')]//span)[1]
+FIRST_BOT_MODAL_HEADER_TITLE: //span[@class="dialog-header-title"]
+FIRST_BOT_MODAL_NAME_KEY: //div[.='Name']
+FIRST_BOT_MODAL_QUANTITY_KEY: //div[.='Quantity']
+FIRST_BOT_MODAL_UOM_KEY: //div[.='UoM']
+FIRST_BOT_MODAL_DESC_KEY: //div[.='Description']
+FIRST_BOT_MODAL_NAME_VALUE: (//div[@class="value"])[1]
+FIRST_BOT_MODAL_QUANTITY_VALUE: (//div[@class="value"])[2]
+FIRST_BOT_MODAL_UOM_VALUE: (//div[@class="value"])[3]
+FIRST_BOT_MODAL_DESC_VALUE: (//div[@class="value"])[4]
+FIRST_BOT_MODAL_IMG: //div[@class="image-container"]/img
+FIRST_BOT_MODAL_DONE_BUTTON: //app-dialog-footer//button
+COMMENT_INPUT: //form//textarea
+COMMENT_CANCEL_BUTTON: (//div[@class="form"]//div[@class="action-container"]/button)[1]
+COMMENT_CREATE_BUTTON: (//div[@class="form"]//div[@class="action-container"]/button)[2]
+COMMENT_CROSS_ICON: //div[@class="header-title-container"]//mat-icon
+COMMENT_REPLY_BUTTON: (//mat-icon[.='reply'])[1]
+COMMENT_EXPAND: //section[@class="thread-container"]/div/mat-icon
+COMMENT_TEXT: (//div[@class="first-comment"])[1]
+SECOND_COMMENT_TEXT: (//div[@class="first-comment"])[2]
+COMMENTER_PROFILE_LOGO: (//div[@class="thread"]//div[@class="avatar"])[1]
+COMMENTER_NAME: (//div[@class="thread"]//div[@class="name"])[1]
+COMMENT_DATE: (//div[@class="thread"]//div[@class="date"])[1]
+REPLY_TEXT: //div[@class="comment-description"]
+REPLY_PROFILE_LOGO: //div[@class="thread"]//div[contains(@class,'comment-container')]//div[@class="small-avatar"]
+REPLY_NAME: //div[@class="thread"]//div[contains(@class,'comment-container')]//div[@class="name"]
+REPLY_DATE: //div[@class="thread"]//div[contains(@class,'comment-container')]//div[@class="date"]
+TROUBLESHO0T_HEADER: //span[@class="dialog-header-title" and normalize-space()='Troubleshoot']
+POSSIBLE_CAUSE_TITLE: //div[normalize-space()='Possible Cause']
+CORRECTIVE_ACTION_TITLE: //div[normalize-space()='Possible Cause']
+PREVENTIVE_ACTION_TITLE: //div[normalize-space()='Possible Cause']
+TROUBLESHO0T_LISTED_ISSUE: //div[contains(@class,'issue-box-conatainer')]
+TROUBLESHO0T_CANCEL_BUTTON: (//mat-dialog-actions//button)[1]
+TROUBLESHO0T_SUBMIT_REPORT: (//mat-dialog-actions//button)[2]
+TROUBLESHO0T_POSSIBLE_CAUSE_VALUE: (//div[@class="action-response-conatainer"])[1]
+TROUBLESHO0T_CORRECTIVE_ACTION_VALUE: (//div[@class="action-response-conatainer"])[2]
+TROUBLESHO0T_PREVENTIVE_ACTION_VALUE: (//div[@class="action-response-conatainer"])[3]
+TROUBLESHO0T_ICON: //mat-icon[@data-mat-icon-name="troubleshoot"]
+MATERIAL_FILTER_PANEL: //mat-panel-title[normalize-space()='Material']
+DUEDATE_FILTER_PANEL: //mat-panel-title[normalize-space()='Due Date']
+ASSIGNEDTO_FILTER_PANEL: //mat-panel-title[normalize-space()='Assigned to']
+COMPLETED_ON_FILTER_PANEL: //mat-panel-title[normalize-space()='Completed On']
+STATUS_FILTER_PANEL: //mat-panel-title[normalize-space()='Status']
+MATERIAL_NUMBER_FILTER_OPTION: (//mat-panel-title[normalize-space()='Material']//ancestor::mat-expansion-panel//search-bar//following-sibling::div//input[@type="checkbox"])[1]
+MATERIAL_FILTER_MORE_BUTTON: //mat-panel-title[normalize-space()='Material']//ancestor::mat-expansion-panel//span[normalize-space()='Show More']
+RECORDS_ON_CURRENT_PAGE: //td[contains(@class,'mat-column-material')]
+ALL_MATERIAL_NUMBERS_ON_CURRENT_PAGE: (//td[contains(@class,'mat-column-material')]//span)[INDEX]
+ALL_STATUS_ON_CURRENT_PAGE: (//td[contains(@class,'mat-column-status')]//span[1])[INDEX]
+STATUS_FILTER_OPTION: //mat-checkbox//label[normalize-space()='STATUS']
+DUE_DATE_FILTER_TODAY_DATE: (//span[contains(@class,'calendar-body-today')])[1]
+DUE_DATE_FILTER_TODAY_LOCATOR: (//span[normalize-space()='TODAY'])[1]
+DUE_DATE_FILTER_TOMORROW_LOCATOR: (//span[normalize-space()='TOMORROW'])[1]
+COMPLETED_ON_DATE_FILTER_TODAY_DATE: (//span[contains(@class,'calendar-body-today')])[2]
+COMPLETED_ON_DATE_FILTER_TODAY_LOCATOR: //span[normalize-space()='TODAY']
+COMPLETED_ON_DATE_FILTER_YESTERDAY_LOCATOR: //span[normalize-space()='YESTERDAY']
+ALL_COMPLETED_ON_DATES_ON_CURRENT_PAGE: (//td[contains(@class,'mat-column-completedOn')]//app-date-cell)[INDEX]
+ALL_DUE_DATES_ON_CURRENT_PAGE: (//td[contains(@class,'mat-column-dueDate')]//app-date-cell)[INDEX]
+ASSIGNED_TO_FILTER_OPTION: //mat-checkbox//label[normalize-space()='ASSIGNED_TO']
+ALL_ASSIGNED_TO_ON_CURRENT_PAGE: (//td[contains(@class,'mat-column-assignedTo')]//span)[INDEX]
+JOB_TAKEN_TIME: //span[@class="time spent"]
+NCR_POPUP_CROSS_BUTTON: (//div[@class="header-title-container"]//mat-icon)[2]
+CHECKBOX_COUNT: xpath://tbody//mat-checkbox
+VALIDATE_CORRECT_NUMBER: xpath://div[contains(@class,'step-info')]
+RIGHT_JOB_RIGHT_SKILL_MESSAGE: xpath://div[normalize-space()="This Job Can't be executed by this operator."]
+RIGHT_JOB_RIGHT_SKILL_REQUIRED_TRAINING_NAME: xpath://span[@class="skill-name"]

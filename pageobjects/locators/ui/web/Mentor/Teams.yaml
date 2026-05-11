@@ -1,0 +1,90 @@
+UserGroup_button: //div[contains(@class, 'submenu-item') and contains(@class, 'ng-star-inserted')][2]
+TEAMS_LIST_PAGE_ADD_NEW_BUTTON: //div[@class="page-heading-container"]//button
+Cancel_Button:  ((//app-dialog-footer//button)[1])|(//button[contains(@class,"ss-btn-add no-fill")])
+Name_Field:  (//input[@type='text' and contains(@class, 'custom-form-control') and @floatinglabel='false'])[1]
+Select_Site: //div[contains(@id,"mat-select-value-21")]
+Select_SiteDropdown: //div[contains(@class, 'form-group')]//select
+ADD_USERS_TO_TEAM_BUTTON:  xpath://span[normalize-space()='Add']
+AddUser_Text: //span[@class="dialog-header-title"]
+Select_Checkbox:   (//input[contains(@class, "mdc-checkbox__native-control")])[2]
+Add_SelectedUser: (//button[contains(@class, 'mdc-button') and contains(@class, 'mat-mdc-button') and contains(@class, 'mdc-button--unelevated')])[2] 
+NEXT_BUTTON_TEAMS_DETAILS_PAGE:  (//footer//button[.='Next'])|(//button[contains(@class, "ss-btn-add ng-star")])|((//footer//button)[2])
+WorkspaceFilter_Icon: //mat-icon[@class='mat-icon notranslate large mat-icon-no-color']//*[name()='svg']
+ADD_WORKSPACE_TO_TEAM_DETAILS_PAGE:  //span[normalize-space()='Add'][1]
+Search_field: //input[@type='text' and contains(@class, 'mat-mdc-input-element')]
+FeatureCountText: //label[contains(@class, "page-heading")]
+Workspace_checkbox: (//input[@class = "mdc-checkbox__native-control"])[2]
+Delete_usergroup: (//mat-icon[@class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"])[5]
+#Teams_delete_popup_button: //span[@class = "d-flex align-items-center gap-2"]
+TeamsCard_Name: (//a[text()="replace"])[1]
+#TeamsDeleteCard_Name: (//a[text()="replace"])[1]/ancestor::td//following-sibling::td//delete-button//button
+Selected_button: //div[@class = "selected-btn ng-star-inserted"]
+Delete_button: //button[contains(@class, 'ss-btn-delete')]//span[contains(text(), 'Delete')]
+cross_icon: (//div[@class="search-bar ng-star-inserted"]//span[contains(@class, 'mat-mdc-button-touch-target')])[1]
+Delete_checkboxes: //input[@type = "checkbox" and @class = "mdc-checkbox__native-control"]
+pop-up_Window:
+Delete_confirmation_button:
+RowsPerPage: //div[contains(@class,"mat-mdc-paginator-container")]//div[contains(@class,"mat-mdc-select-arrow-wrapper")]
+Selected_Count_Btn: //div[contains(@class, "selected-btn")]
+Header_checkbox: //input[@id='mat-mdc-checkbox-1-input']
+UG_Previous_btn: //button[@aria-label= "Previous page"]
+UG_Next_btn: //button[@aria-label= "Next page"]
+ItemPerPage_count: (//span[contains(@class, "mat-mdc-select-value-text")])[4]
+20RowsPerPage: (//mat-option[contains(@role, "option")])[2]
+Filter icon: //div[@class='d-flex gap-1 align-items-center filter-indicator']
+clear_all: //div[contains(@class, "selection-indicator")]//button
+Apply_button: //div[contains(@class, "filter-footer")]//button[2]
+Status_dropdown: //span[contains(@class, "mat-content")]
+Arrow_key_UG: //span[contains(@class, "mat-expansion-indicator")]
+Active_checkbox: (//div[@class="flyout-content"]//input)[1]
+Inactive_Checkbox: (//div[@class="flyout-content"]//input)[2]
+Applied_Filter: //div[@data-testid= "filter-button"]
+First_UG_Entry: (//table[@role="table"]//a)[1]
+UG_Breadcrumb: //a[@class=  "link"]
+UG_Name_Breadcrumb: //div[@class="text ng-star-inserted"]//parent::li
+Site_Btn:  (//*[local-name()='svg'][contains(@class,'ng-star-inserted')])[4]
+UserIcon: //div[@class="tree-node level-3"]
+TeamIcon: //span[text()="Teams"]
+User_Management:  //mat-icon[@data-mat-icon-name="users"]
+Administration:  //mat-icon[@data-mat-icon-name="gear"]
+teams_tab:  xpath://span[normalize-space()='Teams']
+first_team_user_count:  xpath:((//tbody[@role="rowgroup"]/tr)[1]/td)[4]
+NEWLY_CREATED_TEAM_USER_COUNT:  xpath://a[normalize-space()='TEAM_NAME']/../..//following-sibling::td[contains(@class,'mat-column-usersCount')]
+new_team:  xpath://tbody[@role="rowgroup"]//a[contains(text(),'TEAMNAME')]
+all_users:  xpath:(//input[contains(@class,'mdc-checkbox__native-control')])[1]
+add_users_to_team:  xpath:(//mat-dialog-actions/button)[2]
+USER_GROUP_SITE_DROPDOWN: xpath://label[contains(text(),'Site')]/following-sibling::mat-form-field
+USER_GROUP_SITE_FIRST_OPTION: xpath://div[@role="listbox"]//mat-option[3]
+input_site: xpath:(//input[@placeholder="Search..."])[2]
+site_option: //mat-option//span[contains(text(),'Automation')]
+DIFFERENT_SITE_OPTION: xpath:(//mat-option/span[not(contains(text(), 'SITE'))])[3]
+INPUT_TEAM_NAME: xpath://input[@placeholder="Enter Name"]
+INPUT_TEAM_DESCP: //input[@placeholder="Description"]
+ADD_ELE: xpath://span[text()='Add']
+ADD_NEW_TEAM: xpath://button[text()='Add New']
+SAVE_BUTTON_TEAMS_DETAILS_PAGE: xpath:((//footer//button)[3])|(//button[@class='ss-btn-add ng-star-inserted'])
+users_count: xpath://div[contains(@class,"paginator-range")]/div
+TEAM_ADD_USER_SEARCHED_RESULT: xpath://shared-text-cell/span[contains(text(),'USER_EMAIL')]
+TEAM_RECORD_LISTED_ON_LIST_PAGE: //td[contains(@class,'mat-column-name')]//a
+FIRST_USER_IN_TEAM: xpath:(//td//shared-text-cell//span)[1]
+SEARCHED_USER_IN_TEAM: xpath://span[normalize-space()='USERNAME']//ancestor::tr/td[contains(@class,'mat-column-select')]
+ADD_USER_TO_TEAM_CHECKBOX:  xpath:(//input[@type="checkbox"])[2]
+FIRST_TEAM_LIST_PAGE: //user-group-name-link/a
+FIRST_TEAM_STATUS_LIST_PAGE: //td[contains(@class,'mat-column-status')]//span
+#Teams Details
+
+DELETE_ICON_TEAMS_DETAILS: xpath:(//mat-icon[@data-mat-icon-name="deleteIcon"])[1]
+DELETE_POPUP_TEAMS_DETAILS: xpath:(//span[contains(text(),'Delete')])[2]
+NO_RECORD_FOUND: xpath://td[contains(text(),'No record found')]
+NO_WORKSPACES_TITLE_IN_TEAMS: xpath://h2[@class="no-workspace-title"]
+ADD_WORKSPACES_TITLE_IN_TEAMS_DETAILS: xpath://h3[normalize-space()='Add workspace']
+SEARCHED_WORKSPACE_IN_TEAMS_DETAILS: (//mat-dialog-container//mat-grid-tile)[1]//span
+SEARCHED_WORKSPACE_CHECKBOX_IN_TEAMS_DETAILS: (//mat-dialog-container//mat-grid-tile)[1]//mat-checkbox
+WORKSPACE_LISTED_ON_TEAMS_DETAILS_PAGE: //mat-grid-list//div/span
+TEAMS_COUNT_FROM_PAGE_HEADING: //label[@class="page-heading"]
+TEAMS_DETAIL_WORKSPACE_PAGE_PROCEDURE_BUTTON: //button[@class="work-instruction-btn"]
+TEAMS_DETAIL_WORKSPACE_PROCEDURE_LISTED_IN_POPUP: //div[@class="icon-cell-container"]//span
+ADD_WORKSPACE_DONE_BUTTON: //mat-dialog-actions//button[2]
+TOGGLE_BUTTON_TEAMS_DETAILS_PAGE: //mat-slide-toggle
+TOGGLE_BUTTON_UPDATED_TEXT: //mat-slide-toggle//label/span
+PREVIOUS_BUTTON_TEAMS_DETAILS_PAGE: //footer//button[2]

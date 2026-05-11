@@ -1,0 +1,306 @@
+navbar_dashboard: //mat-icon[@data-mat-icon-name="dashboard"]/ancestor::mat-tree-node
+TRAINING_MANAGEMENT_OPTION: //mat-tree-node/descendant::span[contains(text(),"Training Management")]
+TRAINING_OPTION: //mat-tree-node/descendant::span[text()="Training"]
+MY_TRAININGS_BUTTON_ON_TRAININGS_LIST_PAGE: //button//span[normalize-space()='My Trainings']
+TRAINING_MATRIX_OPTION: //mat-tree-node/descendant::span[text()="Training Matrix"]
+MY_TRAININGS_BUTTON: //span[contains(text(),"My Trainings")]/parent::button
+header_training_page: //div[contains(text(),"Trainings")]
+training_page_search: //input[@placeholder="Search..."]
+add_new_training_btn: //span[contains(text(),"Add New")]
+list_table_header: //div[contains(@class,"mat-sort-header-content")]
+training_pagination: (//div[contains(@class,"mat-mdc-paginator-page-size")])[1]
+training_pagination_range: //div[@class="mat-mdc-paginator-range-actions"]
+training_header_checkbox: //th[contains(@class,'mat-column-select')]//div[@class="mdc-checkbox"]
+createTrainingHeading: //div[contains(text(),"Create New Training")]
+createTrainingName: //div[@class="create-training-left-panel"]/descendant::label[contains(text(),"Name")]
+CREATE_TRAINING_NAME_INPUT:  //input[@data-testid='shared-text-input']
+createButton: (//footer/button)[2]
+cancelButton_Training: //footer/button[contains(text(),"Cancel")]
+#cancelButton: //footer/button[1]
+toastMessageBox: //div[@id="toast-container"]
+toastMessageText: //div[@id="toast-container"]/descendant::div[@role="alert"]
+LIST_OF_TRAINING_NAMES: //div[@class="training-name-wrapper"]/span
+descriptionField: //label[contains(text(),"Description")]/following-sibling::textarea
+training_procedure_btn: //span[contains(text(),'Add Procedure')]/parent::button
+#Add Procedure to training
+ADD_PROCEDURE_TO_TRAINING_FIRST_PROCEDURE_NAME: //app-add-procedure-table//td[contains(@class,"cdk-column-name")]/descendant::span
+ADD_PROCEDURE_TO_TRAINING_FIRST_PROCEDURE_CHECKBOX: (//app-add-procedure-table//td[contains(@class,'mat-column-select')]//input)[1]
+ALL_ADD_PROCEDURE_TO_TRAINING_FIRST_PROCEDURE_CHECKBOX: //div[contains(@class,'add-procedure-quiz-modal')]/descendant::td/descendant::input
+ADD_PROCEDURE_TO_TRAINING_WINDOW_HEADER: //span[@class="dialog-header-title"]
+ADD_PROCEDURE_TO_TRAINING_WINDOW_PROCEDURE_TAB: (//span[@class="option-label" and normalize-space()='Procedures'])
+ADD_PROCEDURE_TO_TRAINING_INPUT_SEARCH: //input[@placeholder="Search..."]
+ADD_PROCEDURE_TO_TRAINING_HEADER_NAME: //app-add-procedure-table//div/div[normalize-space()='Name']
+ADD_PROCEDURE_TO_TRAINING_HEADER_VERSION: (//app-add-procedure-table//div/div[normalize-space()='Version'])
+ADD_PROCEDURE_TO_TRAINING_HEADER_UPDATEDBY: (//app-add-procedure-table//div/div[normalize-space()='Updated By'])
+ADD_PROCEDURE_TO_TRAINING_CANCEL_BUTTON: (//app-dialog-footer//button[normalize-space()='Cancel'])
+ADD_PROCEDURE_TO_TRAINING_DONE_BUTTON: (//app-dialog-footer//button[normalize-space()='Done'])
+ADD_PROCEDURE_TO_TRAINING_CLEAR_ALL_BUTTON: //div[@class="clear-All-text"]
+ADD_PROCEDURE_TO_TRAINING_MODAL_DELETE_BUTTON: //button[@class="delete-svg"]
+ADD_PROCEDURE_TO_TRAINING_MODAL_ADDED_PROCEDURE: //td[contains(@class,'mat-column-name')]//span
+ADD_PROCEDURE_TO_TRAINING_MODAL_LISTED_PROCEDURE: //td[contains(@class,'mat-column-name')]//span
+ADD_PROCEDURE_TO_TRAINING_MODAL_COUNT_OF_ADDED_PROCEDURE: //div[@class="right-panel"]//div[@class="procedure-title-box"]
+ADD_ALL_PROCEDURE_TO_TRAINING_MODAL_CHECKBOX: //app-add-procedure-table//thead//input
+ADD_ALL_PROCEDURE_TO_TRAINING_MODAL_SELECTED_RECORDS: (//mat-dialog-content//tbody)/tr[1]
+#Assign users
+ASSIGN_USERS_TO_TRAINING_TEAMS_TAB: //span[normalize-space()='Teams']
+ASSIGN_USERS_TO_TRAINING_MODAL_ALL_MEMBERS_CHECKBOX: //app-assign-members//thead//mat-checkbox//input
+ASSIGN_USERS_TO_TRAINING_MODAL_ALL_MEMBERS_SELECTED_RECORDS: (//app-assign-members//tbody//tr)[1]
+ASSIGN_USERS_TO_TRAINING_MODAL_ALL_MEMBERS_COUNT_SELECTED_RECORDS: //div[@class="member-title-box"]
+ASSIGN_USERS_TO_TRAINING_MODAL_ALL_TEAMS_CHECKBOX: //app-assign-teams//thead//mat-checkbox//input
+ASSIGN_USERS_TO_TRAINING_MODAL_PARTICULAR_TEAMS_CHECKBOX: //app-assign-teams//tbody//mat-checkbox
+ASSIGN_USERS_TO_TRAINING_MODAL_ALL_TEAMS_SELECTED_RECORDS: (//app-assign-teams//tbody/tr)[1]
+ASSIGN_USERS_TO_TRAINING_MODAL_ALL_TEAMS_COUNT_SELECTED_RECORDS: //div[@class="selected-btn"]
+ASSIGN_USERS_TO_TRAINING_MODAL_CROSS_ICON: //app-dialog-header//mat-icon
+ASSIGN_USERS_TO_TRAINING_MODAL_CANCEL_BUTTON: //mat-dialog-actions//button[normalize-space()='Cancel']
+ASSIGNED_TEAMS_PAGE_SIZE_LOCATOR: //app-assign-teams//mat-paginator//mat-select//div[contains(@class,'mat-mdc-select-arrow-wrapper')]
+ASSIGN_TRAINING_TO_SEARCHED_TEAMS: //a[normalize-space()='VALUE']//ancestor::tr/td[contains(@class,'mat-column-select')]
+ASSIGN_TRAINING_TO_TEAM_INPUT_SEARCH: //div[@class="user-groups-content"]//input[contains(@placeholder,"Search...")]
+TEAMS_ASSIGNED_FOR_TRAINING_COUNT: //div[@class="selected-btn"]
+
+#End
+all_procedure_confirm: (//th/descendant::input)[1]
+all_procedure_selected: //div[contains(@class,'add-procedure-quiz-modal')]/descendant::td/descendant::input[contains(@class,'selected')]
+procedureSelectDone: //span[contains(text(),'Done')]/ancestor::button
+ASSIGN_TRAINING_DONE_BUTTON: //span[contains(text(),'Done')]/ancestor::button
+ASSIGN_PROCEDURE_DONE_BUTTON: //span[contains(text(),'Done')]/ancestor::button
+PROCEDURE_SELECT_CANCEL_BUTTON: //span[contains(text(),'Cancel')]/ancestor::button
+trainingMenuButtons: //div[@class="menubar-buttons"]/descendant::span[@class="mdc-button__label"]   #Might have changed
+assignBtn: //span[contains(text(),"Assign")]/parent::button
+assignSearchInput: //app-assign-members//search-bar//input
+completed_users_count: //span[@class="content"]
+trainingsLink: //a[text()="Trainings"]
+right_arrow_icon: (//mat-icon[contains(@class,'chevron material-icons')])[1]
+FLYOUT_PROFILE_ICON: //div[@class="sidebar-nav"]/div
+flyout_panel: //div[contains(@class,'flyout-panel') and contains(@class,'open')]
+trainingsInFlyout: //span[@class="legend-font"]
+flyout_header: //div[@class="flyout-header"]/span
+flyout_search: //div[@class="flyout-container"]/descendant::input[@placeholder="Search..."]
+flyout_procedure_dd: //div[@class="flyout-container"]/descendant::mat-select[contains(@class,'mat-mdc-select')]
+selected_flyout_proc: //div[@class="flyout-container"]/descendant::mat-select/descendant::span[contains(@class,'min-line')]
+flyout_pieChart: //*[name()='svg']/*[contains(@class,"pie-chart")]
+flyout_list_ops: //div/descendant::div[@class="user-name"]
+flyout_list_status: //div/descendant::div[@class="user-status"]
+flyout_no_deadline: //div[contains(text(),'No Deadline')]
+flyout_view_details: //div[@class="view-details-link"]
+flyout_dd_option: //span[contains(text(),'Test PPE')]/ancestor::mat-option[contains(@class,'item--selected')]
+flyout_cross_button: //div[@class="flyout-container"]/descendant::button
+pieChartValueFlyout: //div[@class="center-text"]
+editTrainingBtn: //span[contains(text(),'Edit')]/ancestor::button
+training_update_btn: //footer/button[contains(text(),'Update')]
+procedures_trainings_page: //tr/td[1]/descendant::span
+dropdownListProcedures: //div[@class="cdk-overlay-pane"]/descendant::span
+all_procedures_option: //div[@class="cdk-overlay-pane"]/descendant::span[contains(text(),"All Procedures")]
+all_trainings_list_checkbox: //tr/td[1]/descendant::input
+delete_training_button: //span[contains(text(),'Delete')]/parent::button
+conf_modal_delete: //*[@id="DELETE_CONFIRMATION"]/descendant::button[normalize-space()='Delete']
+conf_modal: //*[@id="DELETE_CONFIRMATION"]
+single_checkbox: (//tr/td[1])[1]
+deadline_checkbox: //div[@class="date-display-section"]/following-sibling::div/descendant::input
+deadline_calendar: //mat-icon[@data-mat-icon-name="calendar"]
+calendarModal: //mat-calendar
+list_calendar_date: //button[contains(@class,'mat-calendar-body')]
+date_display: //div[@class="date-display-section"]/input
+deadline_date_flyout: (//div[@class="date-view-details-section"])[1]
+selected_proc_header: //div[@class="procedure-title-box"]
+selected_check_name: //input[contains(@class,'selected')]/ancestor::tr/td[2]/descendant::span
+sel_proc_header_list: //div[@class="procedures-display-section"]/descendant::div[contains(@class,'procedure-name')]
+PROCEDURE_ADDED_IN_TRAINING: //td[contains(@class,'mat-column-name')]/shared-text-cell/span
+FIRST_PROCEDURE_DELETE_BUTTON_IN_TRAINING: (//delete-button)[1]
+DELETE_MULTIPLE_PROCEDURE_RECORD: //div[@class="menubar-buttons"]//button[normalize-space()='Delete']
+DELETE_MULTIPLE_PROCEDURE_POPUP: //mat-dialog-actions//span[contains(text(),'Delete')]
+TRAINING_USER: xpath://span[normalize-space()='TRAINING_USER']/ancestor::tr//mat-checkbox
+FIRST_OPERATOR: (//tbody)[2]//span[not(contains(string(.), 'TRAINING_USER'))]/ancestor::tr//mat-checkbox
+SECOND_OPERATOR: (//tbody)[2]//span[not(contains(string(.), 'TRAINING_USER'))]/ancestor::tr//mat-checkbox
+TRAINING_ASSIGNED_TO_OPERATOR_NAME: (//tbody)[2]//span[not(contains(string(.), 'TRAINING_USER'))]
+FLYOUT_ASSIGNED_OPERATOR_NAME: //div[@class="user-name"]
+FLYOUT_ASSIGNED_OPERATOR_STATUS: //div[@class="user-status"]
+FLYOUT_ASSIGNED_OPERATOR_DATE: //div[@class="date-view-details-section"]
+FLYOUT_ASSIGNED_OPERATOR_DETAILS: //div[@class="date-view-details-section"]//div[@class="view-details-link"]
+OPEN_FLYOUT_USERS_ICON: //mat-icon[@data-mat-icon-name="users"]
+CLOSE_TRAINING_FLYOUT_BUTTON: //div[@class="flyout-header"]/button
+INPUT_SEARCH_FLYOUT: //input[contains(@placeholder,"Search...")]
+FLYOUT_TRAINING_NAME: //div[@class="flyout-header"]/span
+FLYOUT_TRAINING_PROCEDURE_DROPDOWN: //div[@class="flyout-container"]//mat-select
+FLYOUT_TRAINING_INFO_HEADING: //div[@class="info-section"]//div[@class="header"]
+FLYOUT_TRAINING_COMPLETED_COUNT: //div[@class="info-section"]//span[@class="legend-font" and contains(text(),'Completed')]
+FLYOUT_TRAINING_NOT_STARTED_COUNT: //div[@class="info-section"]//span[@class="legend-font" and contains(text(),'Not Started')]
+FLYOUT_TRAINING_IN_PROGRESS_COUNT: //div[@class="info-section"]//span[@class="legend-font" and contains(text(),'In Progress')]
+FLYOUT_TRAINING_COMPLETED_COLOR: //div[@class="info-section"]//span[@class="legend-font" and contains(text(),'Completed')]//preceding-sibling::span
+FLYOUT_TRAINING_NOT_STARTED_COLOR: //div[@class="info-section"]//span[@class="legend-font" and contains(text(),'Not Started')]//preceding-sibling::span
+FLYOUT_TRAINING_IN_PROGRESS_COLOR: //div[@class="info-section"]//span[@class="legend-font" and contains(text(),'In Progress')]//preceding-sibling::span
+FLYOUT_TRAINING_PROCEDURE_PIE_CHART: //ngx-charts-pie-chart
+FLYOUT_TRAINING_PROCEDURE_PIE_CHART_COUNT: //div[@class="center-text"]
+FLYOUT_TRAINING_PROCEDURE_DEADLINE: //div[@class="date-view-details-section"]
+LEFT_NAVIGATION_MY_TRAINING_TAB: //app-navbar//span[text()='My Trainings']
+FIRST_TRAINING: (//span[contains(@class,'training-name')])[1]
+FIRST_TRAINING_SEARCHED: (//span[contains(@class,'training-name') and normalize-space()='TRAINING_NAME_UPDATE'])[1]
+MY_TRAINING_FLYOUT: //div[@class="flyout-container"]
+#Training Matrix
+TRAINING_MATRIX_HEADING: //li//div[normalize-space()='Training Matrix']
+TRAINING_MATRIX_TEAMS_HEADING: //label[normalize-space()='Teams']
+TRAINING_MATRIX_TEAMS_DROPDOWN: //label[normalize-space()='Teams']//following-sibling::mat-form-field//mat-select
+TRAINING_MATRIX_DROPDOWN_SEARCH_INPUT: //input[@placeholder="Search..."]
+TRAINING_MATRIX_DROPDOWN_TEAMS_FIRST_OPTION: (//mat-option//span[@class="dropdown-option"]/span)[1]
+TRAINING_MATRIX_USERS_HEADING: //label[normalize-space()='Users']
+TRAINING_MATRIX_USERS_DROPDOWN:  //label[normalize-space()='Users']//following-sibling::mat-form-field//mat-select
+TRAINING_MATRIX_DROPDOWN_USERS_FIRST_OPTION: (//span[@class="dropdown-option"]/span)[1]
+TRAINING_MATRIX_DROPDOWN_USERS_FIRST_OPTION_TRAINING_MATRIX: (//span[@class="dropdown-option"]/span[normalize-space()='NAME'])[1]
+TRAINING_MATRIX_TRAINING_HEADING: //label[normalize-space()='Trainings']
+TRAINING_MATRIX_TRAINING_DROPDOWN: //label[normalize-space()='Trainings']//following-sibling::mat-form-field//mat-select
+TRAINING_MATRIX_DROPDOWN_TRAINING_FIRST_OPTION: (//span[@class="dropdown-option"]/span)[1]
+TRAINING_MATRIX_RESET_BUTTON: //div[@class="reset-button"]/button
+MATRIX_LEGEND_NOT_STARTED_TEXT: //div[@class="matrix-legend"]/div[normalize-space()='Not Started']
+MATRIX_LEGEND_NOT_STARTED_COLOR: //div[@class="matrix-legend"]/div[normalize-space()='Not Started']/div
+MATRIX_LEGEND_IN_PROGRESS_TEXT: //div[@class="matrix-legend"]/div[normalize-space()='In Progress']
+MATRIX_LEGEND_IN_PROGRESS_COLOR: //div[@class="matrix-legend"]/div[normalize-space()='In Progress']/div
+MATRIX_LEGEND_NEAR_TO_EXPIRE_TEXT: //div[@class="matrix-legend"]/div[normalize-space()='Near to expire']
+MATRIX_LEGEND_NEAR_TO_EXPIRE_COLOR: //div[@class="matrix-legend"]/div[normalize-space()='Near to expire']/div
+MATRIX_LEGEND_COMPLETED_TEXT: //div[@class="matrix-legend"]/div[normalize-space()='Completed']
+MATRIX_LEGEND_COMPLETED_COLOR: //div[@class="matrix-legend"]/div[normalize-space()='Completed']/div
+MATRIX_LEGEND_EXPIRED_TEXT: //div[@class="matrix-legend"]/div[normalize-space()='Expired']
+MATRIX_LEGEND_EXPIRED_COLOR: //div[@class="matrix-legend"]/div[normalize-space()='Expired']/div
+MATRIX_FIRST_USER: (//div[@class="row-header-container"]/div)[1]
+MATRIX_SECOND_USER: (//div[@class="row-header-container"]/div)[2]
+MATRIX_MEMBERS_LABEL: //div[@class="static-row-header-container"]/div/div[normalize-space()='Members']
+MATRIX_TRAINING_COMPLETION_LABEL: //div[@class="static-row-header-container"]/div/div[normalize-space()='Training Completion']
+MATRIX_TRAINING_COMPLETED_TILE: (//div[@class="static-columns-header-container"]/div/div[normalize-space()='Complete'])
+MATRIX_TRAINING_%AGE_TILE: (//div[@class="static-columns-header-container"]/div/div[normalize-space()='%age'])
+USER_COMPLETED_TRAINING_COUNT: //div[contains(@class,'completed-training-count')]
+USER_COMPLETED_TRAINING_%AGE: //div[contains(@class,'completed-training-percentage')]
+MATRIX_TRAININGS: //div[@class="columns-header-container"]/div/div
+MATRIX_TRAININGS_STATUS_USER1: (//div[@class="matrix-content"]/div)[1]//div/div
+MATRIX_TRAINING_USER: //div[@class="row-header-container"]/div
+MATRIX_TRAININGS_STATUS_USER2: (//div[@class="matrix-content"]/div)[2]//div/div
+MATRIX_TRAININGS_COMPLETION_%AGE: //div[contains(@class,'completion-percentage-cell')]
+#Training Listing
+TRAINING_HEADER_NAME: //th[contains(@class,'cdk-column-trainingName ')]/div/div
+TRAINING_HEADER_CREATED_BY: //th[contains(@class,'cdk-column-createdBy')]/div/div
+TRAINING_HEADER_UPDATED_BY: //th[contains(@class,'cdk-column-modifiedOn')]/div/div
+TRAINING_HEADER_PROCEDURES: //th[contains(@class,'cdk-column-procedureCount')]/div/div
+TRAINING_HEADER_ASSIGNED_USERS: //th[contains(@class,'cdk-column-assignedUserCount')]/div/div
+TRAINING_NAME_LOCATOR: //span[contains(@class,'training-name')]
+TRAINING_CREATED_BY: //td[contains(@class,'cdk-column-createdBy')]//span[@class="title"]
+TRAINING_LAST_UPDATED: //td[contains(@class,'mat-column-modifiedOn')]//app-date-cell
+TRAINING_PROCEDURES_COUNT: //td[contains(@class,'cdk-column-procedureCount')]
+TRAINING_ASSIGNED_USERS_COUNT: //td[contains(@class,'cdk-column-assignedUserCount')]
+TRAINING_STATUS_PROGRESS_TITLE: (//progress-status//span[@class="progress-title"])[1]
+TRAINING_STATUS_PROGRESS_USERS_COUNT: (//progress-status//span[@class="progress-title"])[2]
+TRAINING_STATUS_PROGRESS_BAR: //div[@class="status-bar"]
+TRAINING_STATUS_PROGRESS_BAR_COLOR: //div[@class="status-bar"]/div
+TRAINING_DELETE_ICON: //mat-icon[@data-mat-icon-name="deleteIcon"]
+ALL_TRAINING_CHECKBOX: (//mat-checkbox)[1]
+ALL_TRAINING_SELECTED_RECORDS: (//tbody)/tr[1]
+ALL_TRAINING_SELECTED_RECORDS_COUNT: //div[@class="selected-btn"]
+MY_TRAINING_STATUS_FILTER: //mat-panel-title[normalize-space()='Status']
+MY_TRAINING_STATUS_ONTIME_FILTER: //label[normalize-space()='ONTIME']
+MY_TRAINING_LISTED_RECORDS_STATUS: //span[normalize-space()='On time']
+
+#Added Procedures In Training
+ADDED_PROCEDURE_HEADER_NAME: //th[contains(@class,'cdk-column-name')]/div/div
+ADDED_PROCEDURE_HEADER_CREATED_BY: //th[contains(@class,'cdk-column-completedByUsers')]/div/div
+ADDED_PROCEDURE_HEADER_VERSION: //th[contains(@class,'cdk-column-version')]/div/div
+ADDED_PROCEDURE_HEADER_UPDATED_BY: //th[contains(@class,'cdk-column-updatedBy')]/div/div
+ADDED_PROCEDURE_NAME: //td[contains(@class,'cdk-column-name')]//span
+ADDED_PROCEDURE_VERSION: //td[contains(@class,'cdk-column-version')]//span
+ADDED_PROCEDURE_UPDATED_BY_LOGO: //td[contains(@class,'cdk-column-updatedBy')]//span[@class="icon"]
+ADDED_PROCEDURE_UPDATED_BY_NAME: //td[contains(@class,'cdk-column-updatedBy')]//span[@class="title"]
+ADDED_PROCEDURE_COMPLETED_BY_STATUS_COLOR: //completed-by-users//span[@class="circle"]
+ADDED_PROCEDURE_COMPLETED_BY_USERS_COUNT: //completed-by-users//span[@class="content"]
+ADDED_PROCEDURE_COMPLETED_BY_BUTTON: //completed-by-users//mat-icon
+#My Training
+MY_TRAINING_START_BUTTON:   //div[normalize-space()='PROCEDURE_NAME']//parent::div[@class="procedure-container-header"]//button
+MY_TRAINING_RESTART_BUTTON:   //div[normalize-space()='PROCEDURE_NAME']//ancestor::div[@class="procedure-container-header"]//button
+MY_TRAINING_DETAILS_EXPAND_BUTTON:   //div[@class="header-actions"]/mat-icon
+MY_TRAINING_PROCEDURE_COUNT:   //td[contains(@class,'mat-column-procedureCount')]
+MY_TRAINING_ASSIGNED_DATE:   //td[contains(@class,'mat-column-assignedOn')]/app-date-cell
+MY_TRAINING_DUE_DATE:   //td[contains(@class,'mat-column-dueDate')]/app-date-cell
+MY_TRAINING_STATUS:   //span[contains(@class,'status-tag status-tag-green')]
+MY_TRAINING_PROCEDURE_PROGRESS_STATUS:   //td[contains(@class,'mat-column-progress')]//span[1]
+MY_TRAINING_PROCEDURE_STATUS_COUNT:   //td[contains(@class,'mat-column-progress')]//span[2]
+MY_TRAINING_PROCEDURE_PROGRESS_BAR:   //div[@class="status-bar"]
+MY_TRAINING_PROCEDURE_PROGRESS_BAR_COLOR:   //div[@class="status-bar"]/div
+SIGNOFF_STATUS_CELL_COMPLETED:  (//training-signoff-status-cell//div[contains(@class,'green')])[1]
+SIGNOFF_STATUS_CELL_FAILED:   (//training-signoff-status-cell//div[contains(@class,'red')])[1]
+SIGNOFF_STATUS_CELL_NOT_STARTED:   (//training-signoff-status-cell//div[contains(@class,'gray')])[1]
+MY_TRAINING_HEADER:   //shared-breadcrumb//li/div
+MY_TRAINING_PROCEDURE_NAME_HEADER:   //th[contains(@class,'mat-column-name')]/div/div
+MY_TRAINING_PROCEDURE_COUNT_HEADER:   //th[contains(@class,'mat-column-procedureCount')]/div/div
+MY_TRAINING_HEADER_ASSIGNED_DATE:   //th[contains(@class,'mat-column-assignedOn')]/div/div
+MY_TRAINING_HEADER_DUE_DATE:   //th[contains(@class,'mat-column-dueDate')]/div/div
+MY_TRAINING_HEADER_STATUS:   //th[contains(@class,'mat-column-status')]/div/div
+MY_TRAINING_HEADER_PROCEDURE_PROGRESS_STATUS:   //th[contains(@class,'mat-column-progress')]/div/div
+MY_TRAINING_HEADER_SIGNOFF_STATUS:   //th[contains(@class,'mat-column-signOffStatus')]/div/div
+
+#Sigoff procedure
+
+APPROVALS_BUTTON:   //span[.='Approvals']
+SIGNOFF_PROCEDURES_BUTTON:   //span[.='Sign Off Procedures']
+APPROVAL_STATUS_HEADER:   (//div[normalize-space()='Approval Status'])[1]
+
+#Sigoff procedure list page
+SIGNOFF_PROCEDURE_SEARCH:   //input[@placeholder="Search..."]
+SIGNOFF_PROCEDURE_NAME:   //td[contains(@class,'mat-column-procedureName')]//span
+SIGNOFF_PROCEDURE_LATEST_SUBMISSION_DATE:   //td[contains(@class,'mat-column-endTimeStamp ')]/app-date-cell
+SIGNOFF_PROCEDURE_VERSION:   //span[@class="version-font"]
+SIGNOFF_PROCEDURE_SUBMISSIONS:   //app-approval-status-bar//div[@class="approver-label"]
+SIGNOFF_PROCEDURE_USER_APPROVAL_STATUS_COMPLETED:   //div[@mattooltipclass="custom-tooltip" and contains(@class,'green')][1]
+SIGNOFF_PROCEDURE_USER_APPROVAL_STATUS_FAILED:   //div[@mattooltipclass="custom-tooltip" and contains(@class,'red')][1]
+SIGNOFF_PROCEDURE_USER_APPROVAL_STATUS_NOT_STARTED:   //div[@mattooltipclass="custom-tooltip" and contains(@class,'gray')][1]
+SIGNOFF_PROCEDURE_USER_APPROVAL_STATUS_PROGRESS_BAR:   //div[@class="bar-container"]
+
+#Signoff Procedure Details page
+SIGNOFF_PROCEDURE_DETAILS_USER:   //td[contains(@class,'mat-column-user')]//span[@class="title"]
+SIGNOFF_PROCEDURE_RECEIVED_ON_DATE:   //td[contains(@class,'mat-column-receivedOn')]/app-date-cell
+SIGNOFF_PROCEDURE_TRAINING_NAME:   //td[contains(@class,'mat-column-trainingName')]//span
+SIGNOFF_PROCEDURE_CYCLE_TIME:   //td[contains(@class,'mat-column-totalCycleTime')]
+SIGNOFF_PROCEDURE_TAKEN_TIME:   //td[contains(@class,'mat-column-timeTaken')]
+SIGNOFF_PROCEDURE_STATUS:   //span[contains(@class,'status-tag')]
+
+#Approve/Reject Procedure
+APPROVE_ICON: //div[@class="procedure-signoff-list-table-action"]/div[1]
+APPROVE_COMMENT: //textarea
+APPROVAL_SIGNOFF_APPROVE_BUTTON: //mat-dialog-actions/button[2]
+APPROVAL_SIGNOFF_REJECT_ICON: //procedure-signoff-list-table-action//mat-icon[@data-mat-icon-name="close"]
+APPROVAL_SIGNOFF_REJECT_COMMENT: //textarea
+APPROVAL_SIGNOFF_REJECT_BUTTON: //app-dialog-footer//button[2]
+APPROVAL_SIGNOFF_COMMENT_BUTTON: //signoff-comment-button
+APPROVAL_SIGNOFF_ADDED_COMMENT_DIALOG_HEADER: //mat-dialog-container//span[@class="dialog-header-title"]
+APPROVAL_SIGNOFF_ADDED_COMMENT_SIGNOFF_APPROVER: //mat-dialog-container//span[@class="title"]
+APPROVAL_SIGNOFF_ADDED_COMMENT_TEXT: //mat-dialog-container//div[@class="comment-text"]
+APPROVAL_SIGNOFF_ADDED_COMMENT_APPROVAL_STATUS: //mat-dialog-container//div[@class="status"]//span
+APPROVAL_SIGNOFF_ADDED_COMMENT_APPROVAL_DATE: //div[@class="status"]//following-sibling::div
+APPROVAL_SIGNOFF_ADDED_COMMENT_CROSS_BUTTON: //mat-dialog-container//mat-icon
+
+#My Training Flyout
+MY_TRAINING_FLYOUT_PROCEDURE_NAME: //div[contains(@class,'procedure-name')]
+MY_TRAINING_FLYOUT_TRAINING_START: //span[.='Start:']//following-sibling::span
+MY_TRAINING_FLYOUT_TRAINING_END: //span[.='End:']//following-sibling::span
+MY_TRAINING_FLYOUT_TRAINING_PROCEDURE_SIGNOFF: //span[.='Sign Off:']//following-sibling::span
+MY_TRAINING_FLYOUT_TRAINING_TIME_TAKEN: //span[.='Time Taken:']//following-sibling::span
+MY_TRAINING_FLYOUT_TRAINING_PROCEDURE_MANAGER: //span[.='Manager:']//following-sibling::span
+MY_TRAINING_FLYOUT_TRAINING_PROCEDURE_STATUS_APPROVED: (//div[@class="procedure-container-header"]//div[contains(@class,"status")])
+MY_TRAINING_FLYOUT_TRAINING_PROCEDURE_EXPAND_BUTTON: //div[@class="header-actions"]/mat-icon
+MY_TRAINING_FLYOUT_TRAINING_PROCEDURE_NAME: //div[contains(@class,'procedure-name')]
+MY_TRAINING_FLYOUT_CROSS_BUTTON: //div[@class="flyout-header"]/button
+
+#Training details
+ADD_TRAINING_DEFAULT_IMG: //img[@src="/assets/images/training_creation_background.png"]
+TRAINING_FLYOUT_CALENDER_ICON: //mat-icon[@svgicon="calendar"]
+TRAINING_FLYOUT_DATE_SELECTED: //div[@class="edit-date-section"]/span
+TRAINING_FLYOUT_UPDATE_FLYOUT_DONE_BUTTON: (//mat-dialog-actions//button)[2]
+TRAINING_FLYOUT_UNASSIGN_FLYOUT_DONE_BUTTON: (//mat-dialog-actions//button)[2]
+TRAINING_FLYOUT_UNASSIGN_BUTTON: //button//span[normalize-space()='Unassign']
+
+
+#Training Execution
+TRAINING_EXECUTION_PROCEDURE_STEP_RESET_EXPAND: //button[@aria-label="Toggle PROCEDURE"]
+TRAINING_EXECUTION_PROCEDURE_RESET_LABEL: //div[@class="step-header-title" and normalize-space()='PROCEDURE']
+TRAINING_EXECUTION_PROCEDURE_STEP_RESET_LABEL: //mat-dialog-container//div[@class="name-container"]
+TRAINING_EXECUTION_PROCEDURE_STEP_GROUP_RESET_LABEL: //div[contains(@class,'step-group-name')]
+PROCEDURE_DISPLAYED_ON_TRAINING_EXECUTION_SCREEN: //div[contains(@class,'step-header-title')]
+TRAINING_EXECUTION_PROCEDURE_STEP_GROUP_RESET_CHECK: //mat-icon[@data-mat-icon-name="check"]
+TRAINING_EXECUTION_RESET_POPUP_BUTTON: (//app-dialog-footer//button)[2]
+TRAINING_EXECUTION_LEFT_PANEL_PROCEDURE_EXPAND_BUTTON: //div[@class="step-container"]//button
+TRAINING_EXECUTION_LEFT_PANEL_PROCEDURE_STEP_UPDATED_CHECK: //div[ contains(@class,'step-name') and normalize-space()='New Step STEP_NUMBER']//ancestor::div[@class="name-container"]/span[contains(@class,'check')]
+PAUSE_EXECUTION_BACK_TO_TRAINING_BUTTON:  (//mat-dialog-actions//button)[1]
+

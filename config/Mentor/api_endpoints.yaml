@@ -1,0 +1,47 @@
+#workspace
+
+getWorkspaceApi: "https://orion-dev01.dovertech.co.in/api/administration/workspaces/{domain}"
+readWorkspaceApi: "https://orion-dev01.dovertech.co.in/api/administration/workspaces/{domain}/{workSpaceId}"
+updateWorkspaceAli: "https://orion-dev01.dovertech.co.in/api/administration/workspaces/{domain}/{workSpaceId}"
+deleteWorkspaceApi: "https://orion-dev01.dovertech.co.in/api/administration/workspaces/temp/delete/{domain}/{workSpaceId}"
+cloneWorkspaceApi: "https://orion-dev01.dovertech.co.in/api/administration/workspaces/clone/{domain}/{workSpaceId}"
+readWorkflowApi: "https://orion-dev01.dovertech.co.in/api/administration/workspaces/workflow/{domain}?setofFlags=&workSpaceId={workSpaceId}"
+createWorkflowApi: "https://orion-dev01.dovertech.co.in/api/administration/workspaces/workflow/{domain}/{workSpaceId}"
+
+#upload files
+validateFilesApi: "https://orion-dev01.dovertech.co.in/api/administration/action/validate?domain={domain}&workSpaceId={workSpaceId}"
+deployFilesApi: "https://orion-dev01.dovertech.co.in/api/administration/action/deploy?domain={domain}&workSpaceId={workSpaceId}"
+getDeployFilesApi: "https://orion-dev01.dovertech.co.in/api/administration/action/files?domain={domain}&workSpaceId={workSpaceId}"
+
+#Notification
+getNotificationsApi: "https://orion-dev01.dovertech.co.in/api/administration/notifications?domain={domain}"
+getNotificationCountApi: "https://orion-dev01.dovertech.co.in/api/administration/notifications/counts?domain={domain}"
+readAllNotificationApi: "https://orion-dev01.dovertech.co.in/api/administration/notifications/all/read?domain={domain}"
+deployAssestApi: "https://orion-dev01.dovertech.co.in/api/administration/history/tasks?domain={domain}&workSpaceId={workSpaceId}&family=Validate&name=PreProduction"
+monitorTasksApi: "https://orion-dev01.dovertech.co.in/api/administration/monitor/tasks?task_id=&user=&domain={domain}&workSpaceId={workSpaceId}&name=PreProduction&family=Validate"
+
+
+#elastic
+
+readPropertyApi: "https://orion-dev01.dovertech.co.in/api/administration/elastic/configuration/property/filter?domain={domain}&orgId={workSpaceId}"
+getPropertyApi: "https://orion-dev01.dovertech.co.in/api/administration/elastic/configuration/property?domain={domain}&orgId={workSpaceId}"
+
+#organisations
+
+getOrganisations: "https://orion-dev01.dovertech.co.in/api/administration/organisations?env=dev&status=all&sortBy=Organization%20Name&sortOrder=asc"
+createOrganization: "https://orion-dev01.dovertech.co.in/api/administration/elastic/configuration/property/?env=dev&domain={domain}&orgId={workSpaceId}"
+sortOrganizations: "https://orion-dev01.dovertech.co.in/api/administration/organisations?env=dev&status=all&sortBy={sortBy}&sortOrder={sortOrder}"
+clearFilter: "https://orion-dev01.dovertech.co.in/api/administration/organisations?env=dev&status=all&sortBy=organizationname&sortOrder=asc"
+activeInactiveOrganizations: "https://orion-dev01.dovertech.co.in/api/administration/organisations?env=dev&status={status}}&sortBy=organizationname&sortOrder=asc"
+
+#data
+
+getDataMatrixApi: "https://orion-dev01.dovertech.co.in/api/administration/data/ptdashboard/matrix?domain={domain}&workSpaceId={workSpaceId}&env=dev"
+
+
+#files
+
+getFilesBulkApi: "https://orion-dev01.dovertech.co.in/api/administration/files/bulk/download/{domain}/{workSpaceId}?type=catalogFiles"
+linkFilesApi: "https://orion-dev01.dovertech.co.in/api/administration/link/files/{domain}/{workSpaceId}"
+unlinkFilesApi: "https://orion-dev01.dovertech.co.in/api/administration/link/files/{domain}/{workSpaceId}"
+deleteFilesApi: "https://orion-dev01.dovertech.co.in/api/administration/delete/file/{domain}/{workSpaceId}?fileId=e6807d80-0119-4ed8-90f6-650ae0e93e31&version=5"
